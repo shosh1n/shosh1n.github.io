@@ -1,0 +1,182 @@
+#+MACRO: color @@html:<b><font color="$1">$2</font></b>@@
+#+OPTIONS:  num:nil 
+#+REVEAL_THEME: moon
+#+LATEX_HEADER: \usepackage{xcolor} 
+#+OPTIONS: toc:nil 
+#+REVEAL_TITLE_SLIDE: <h2>%t</h2><p>&nbsp;</p><h3>%s</h3><p>&nbsp;</p><h4>%A %a</h4>
+#+Title: Anwendung von nichtlinearer Akustik für Ultraschall
+#+Subtitle: Kolloquium
+#+Author: Christoph-Alexander Hermanns 
+#+Email: hermannschris@googlemail.com
+#+REVEAL_TITLE_SLIDE_BACKGROUND_OPACITY: 0.00001
+#+REVEAL_TITLE_SLIDE_BACKGROUND: ./img/Technik.png
+#+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE: 400px
+#+REVEAL_TITLE_SLIDE_BACKGROUND_POSITION: top +15px left +15px
+* Schall
+  Schall ist das Resultat einer sich durch ein Medium periodisch ausbreitenden Störung.
+  
+  Die Störung wird durch die mechanische Verschiebung der Teilchen des Mediums verursacht.
+
+  Dieses Phänomen wird als Schallwelle charakterisiert.
+* Bewegung im Medium
+ #+ATTR_ORG: :width 200px :height 200px
+ #+ATTR_HTML:  image :title Teilchenbewegung bei Schallwelle :align center :width 80% :height 80%
+ [[./img/partwave.gif]] \\
+
+
+** Oszillierende Bewegung
+  @@html:<video width="100%" height="100%" controls> <source src="./Video/sinusoid.webm" type="video/webm"> <video/>@@
+
+* Schallwelle
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Wellenbeschreibungsparameter im Raum :align center :width 45% :height 45%
+  [[./img/parameterwaves.png]] \\
+  {{{color(white, Schwingung)}}}: Frequenz, Amplitude \\
+  {{{color(white,Amplitude)}}}: Maß der Stärke der Verschiebung\\
+  {{{color(white,Frequenz)}}}: zeitliche Wiederholung der Bewegung \\
+#+REVEAL:split
+ #+ATTR_ORG: :width 200px :height 200px
+ #+ATTR_HTML:  image :title Schalleinteilung nach Frequenz im Raum :align center :width 90% :height 90%
+ [[./img/schall_frequency.jpg]] \\
+
+  Abhängig von der Frequzenz wird Schall eingeteilt: \\
+
+  {{{color(white, Infraschall: )}}} 
+  unter 16 Hz: Waschmaschinen, Heizungen \\
+ 
+  {{{color(white, Hörbarer Schall: )}}}
+  16 - 20 kHz: Sprache, Musik\\
+  
+  {{{color(white, Ultraschall: )}}}
+  über 16 kHz: Delfine, Feldermäuse - Echoortung\\
+
+* Kontinuität im Medium
+  Systemgrößen müssen bei Zustandsänderungen erhalten bleiben
+  auch wenn lokale Änderungen stattfinden.
+** Bildung der Schallwelle im Raum
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Schallwellenbildung im Raum :align center :width 80% :height 80%
+  [[./img/continuity_start.png]] \\
+  
+** Ausbreitung der Schallwelle
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Schallausbreitung im Raum :align center :width 80% :height 80%
+  [[./img/continuity_proceed.png]] \\
+
+* Zustandsübergänge des Mediums
+  System besitzt Kompressibilität\\
+  Schalldruck ändert die Gleichgewichtsdichte, bzw. das Volumen.
+
+** Verlauf der Zustandsänderungen
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Linear Druck-Dichte :align center :width 40% :height 40%
+  [[./img/prholinear.png]]\\
+  Aussagenmaß über Weitergabe von Schallwellen.\\
+  {{{color(white, Schallgeschwindigkeit)}}} als Verhältnis zwischen Druck und Dichte bleibt konstant.
+* Kurzzusammenfassung
+  \\
+  {{{color(white, Bewegung)}}} im Medium\\
+  \\
+  {{{color(white, Kontinuität)}}} des Mediums\\
+  \\
+  {{{color(white, Zustände)}}} des Mediums\\
+
+* Technische Anwendung von Schall
+   #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Lautsprecher Kugelwelle :align center :width 70% :height 70%
+  Ein Lautsprecher:Schall niedriger Frequenz. \\
+  [[./Video/audibleLoud.gif]] \\
+#+REVEAL:split
+ #+ATTR_ORG: :width 200px :height 200px
+ #+ATTR_HTML:  image :title Ausbreitung Kugelwelle :align center :width 60% :height 60%
+   [[./Video/auditorium_pulse_top.gif]] \\
+ Die Ausbreitung von hörbaren Schall.
+** Lautsprecher - Richtcharakteristik
+
+
+*** Änderung der Fläche
+   #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Änderung der Wellenlänge :align center :width 70% :height 70%
+   [[./Video/fixwaveLtoSizeLoud.gif]] \\
+
+*** Änderung der Frequenz
+   #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Änderung der Schallfläche :align center :width 70% :height 70%
+   [[./Video/waveLtofixSizeLoud.gif]] \\
+  
+#+REVEAL:split 
+   #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Hohe Frequenz Lautsprecher :align center :width 70% :height 70%
+   Schall hoher Frequenz \\
+   [[./Video/DirectedLoud.gif]] \\
+  Ein Lautsprecher mit starker Richtcharakteristik. 
+* Anwendungen mit Ultraschall
+** Besonderheit des Mediums
+  Starke Dämpfung in der Luft \\
+  Energiereicher Schall wird benötigt. \\
+  Übergänge der Zustände sind nichtlinear. \\
+  #+REVEAL:split 
+   #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Verlauf Druck-Dichte real :align center :width 50% :height 50%
+   [[./img/prho.png]] \\
+   Nichtlinearer Verlauf ändert die Schallgeschwindigkeit lokal. 
+  #+REVEAL:split
+   #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Ausbreitungsgeschwindigkeit - nichtlinear :align center :width 60% :height 60%
+  [[./img/BurgerSolution.png]] \\
+  Erlaubte Funktion der Schallwelle mit nichtlinearem Verhalten. \\
+  Es treten Frequenzvielfache auf.
+ 
+ 
+* Anwendung bei Ultraschall 
+  Hohe Frequenzen (Ultraschall) haben eine starke Richtcharakteristik. \\
+  \\
+  Ultraschall benötigt hohe Energie bei der Ausbreitung in Luft. \\
+  \\
+  {{{color(white, Konsequenz:)}}} \\ 
+  Nichtlinearität liegt nutzbaren Anwendungen zugrunde. \\
+
+** Ultraschall zu Hörschall
+   Amplituden Modulation wandelt Ultraschallfrequenzen zu hörbaren Schall. \\
+*** Prinzip AM
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Amplituden Modulation der Signale :align center :width 60% :height 60%
+  [[./img/AM-Modulated.png]] \\
+  Es bildet sich eine hörbare Differenzfrequenz zwischen beiden Ultraschallsignalen.\\
+#+REVEAL:split  
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Demodulation des Signals :align center :width 60% :height 60%
+  [[./img/Demodulation.png]] \\
+  Einflüsse durch höherfrequente Komponenten verschwinden. \\
+  Das Signal wird geglättet - bzw. demoduliert. \\
+#+REVEAL:split
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Virtuelle Schallquelle :align center :width 70% :height 70%
+  [[./img/AMLoud.png]] \\
+  Hörbarer Schall entsteht nicht an der mechanischen Quelle, sondern nach einiger Distanz in der Luft. \\
+
+** Beispiel: Paramtrisches Array
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Parametrische Array :align center :width 70% :height 70%
+  [[./img/parametric.png]] \\
+  Technische Anwendung der  \\
+  Nutzbarmachung der Nichtlinearität.
+
+
+* Fazit
+  Die Nichtlinearität der Luft kann genutzt werden
+  um Frequenzen aus dem Ultraschallbereich
+  für *besondere* hörakustische Anwendungen nutzbar zu machen.\\
+  \\
+  
+* Danke für die Aufmerksamkeit
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Museum Holosonic-Lautsprecher :align center :width 70% :height 70%
+  [[./img/HolosonicSolution.png]]
+** Weiterführende Links
+[[https://github.com/pvanberg/DGFEM-Acoustic][Framework für Schallausbreitung]] \\
+[[https://www.egr.msu.edu/~fultras-web/][Matlab-plugin für Ultraschall]] \\
+[[https://www.holosonics.com/][Hersteller von Richt-Lautsprechern]] \\
+
+Bei weiteren Fragen: \\
+hermannschris@googlemail.com
