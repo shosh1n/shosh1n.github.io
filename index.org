@@ -167,3 +167,19 @@
 
 Bei weiteren Fragen: \\
 hermannschris@googlemail.com
+
+* Quellen
+  [[https://www.acs.psu.edu/drussell/Demos/waves/wavemotion.html][Page 3]]: Dan Russel(2016) - Longitudinal and Transverse Wave Motion  abgerufen 30.01.20 \\
+  [[https://www.youtube.com/watch?v=XLfQpv2ZRPU][Page 4]]: Youtube - MED EL (2013) - Understanding Sound Waves abgerufen 30.01.20 \\
+  [[https://www.haustechnikdialog.de/SHKwissen/Images/Infraschall-Ultraschall.jpg][Page 5]]: HausTechnik Dialog - Lärm abgerufen 30.01.20 \\
+  *Page 6* Christoph-A. Hermanns (2020) - Kompression d. Einheitsvolumens \\
+  [[https://github.com/pvanberg/DGFEM-Acoustic/blob/master/DGFEM_acoustic.pdf][Page 9 - 10]]: Pierre-Oliver Vanberg, Martin Lacroix, Tom Servais (2019) - Multiphysics Integrated Computationl Project \\
+#+REVEAL:split
+  [[https://www.youtube.com/watch?v=dfLHVUcvnDo][Page 14, 18]]: Youtube - Finite Elemete Method Loudspeaker bgerufen 30.01.20 \\
+  [[https://www.holosonics.com/animated-directivity-demos][Page 16, 17]]: Holosonics - Directivity Demonstrations abgerufen 30.01.20 \\
+  [[https://github.com/pvanberg/DGFEM-Acoustic/blob/master/assets/auditorium_pulse_top.gif][Page 15]]: Pierre-Oliver Vanberg, Martin Lacroix, Tom Servais - DGFEM for Acoustic Wave Propagation(Repository) abgerufen 30.01.20 \\
+  *Page 7, 20, 25, 26*:  Dirk Olszweksi (2008) - Stark gerichtete Audio-Beschallung mit parametrischem Ultrschall-Lautsprecher P. 28, 49, 51 \\
+#+REVEAL:split
+  [[https://github.com/shosh1n/ultrasonic/blob/master/BurgerSolution.ipynb][Page 21]] Python 3.7.4 - Christoph-A. Hermanns (2020) n. [[http://cfdmoments.blogspot.com/2014/07/1d-burgers-equation.html?m=1][1D Burgers Equation]] - cfdmoments.blogspot.com abgerufen 30.01.20 \\ 
+  [[https://www.geogebra.org/m/njjf8ewe][Page 24]] Geogebra - Christoph-A. Hermanns (2020) - Skizze nichtlineare AmplitudenModulation  abgerufen 30.01.20 \\ 
+  [[https://www.holosonics.com/brochure-web-museum-galleries][Page 28]]: Holosonics - Museums & Galleries 30.01.20 \\
