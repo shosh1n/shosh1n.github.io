@@ -7,9 +7,9 @@
 <style type="text/css">
 .underline { text-decoration: underline; }
 </style>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css"/>
+<link rel="stylesheet" href="file:///home/shoshin/reveal.js/css/reveal.css"/>
 
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/moon.css" id="theme"/>
+<link rel="stylesheet" href="file:///home/shoshin/reveal.js/css/theme/league.css" id="theme"/>
 
 <!-- If the query includes 'print-pdf', include the PDF print sheet -->
 <script>
@@ -17,7 +17,7 @@
         var link = document.createElement( 'link' );
         link.rel = 'stylesheet';
         link.type = 'text/css';
-        link.href = 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/print/pdf.css';
+        link.href = 'file:///home/shoshin/reveal.js/css/print/pdf.css';
         document.getElementsByTagName( 'head' )[0].appendChild( link );
     }
 </script>
@@ -29,8 +29,8 @@
 <h2>Anwendung von nichtlinearer Akustik für Ultraschall</h2><p>&nbsp;</p><h3>Kolloquium</h3><p>&nbsp;</p><h4> Christoph-Alexander Hermanns</h4>
 </section>
 <section>
-<section id="slide-org18662dd">
-<h2 id="org18662dd">Schall</h2>
+<section id="slide-org29d1e6c">
+<h2 id="org29d1e6c">Schall</h2>
 <p>
 Schall ist das Resultat einer sich durch ein Medium periodisch ausbreitenden Störung.
 </p>
@@ -42,19 +42,25 @@ Die Störung wird durch die mechanische Verschiebung der Teilchen des Mediums ve
 <p>
 Dieses Phänomen wird als Schallwelle charakterisiert.
 </p>
+
 </section>
 </section>
 <section>
-<section id="slide-orge6eba21">
-<h2 id="orge6eba21">Bewegung im Medium</h2>
-<p title="Teilchenbewegung bei Schallwelle" align="center" width="80%" height="80%">
-<img src="./img/partwave.gif" alt="partwave.gif" title="Teilchenbewegung bei Schallwelle" align="center" width="80%" height="80%" /> <br />
+<section id="slide-org9923810">
+<h2 id="org9923810">Bewegung im Medium  Luft</h2>
+<p>
+Schall breitet sich als Kompressionwelle aus.
+</p>
+
+<p>
+<i>Praktisches Beispiel</i>
 </p>
 
 
+
 </section>
-<section id="slide-org18d88c1">
-<h3 id="org18d88c1">Oszillierende Bewegung</h3>
+<section id="slide-org1841a82">
+<h3 id="org1841a82">Oszillierende Bewegung</h3>
 <p>
 <video width="100%" height="100%" controls> <source src="./Video/sinusoid.webm" type="video/webm"> <video/>
 </p>
@@ -62,8 +68,8 @@ Dieses Phänomen wird als Schallwelle charakterisiert.
 </section>
 </section>
 <section>
-<section id="slide-org4437b1a">
-<h2 id="org4437b1a">Schall - Einteilung nach Frequenz</h2>
+<section id="slide-orgd4bfe1a">
+<h2 id="orgd4bfe1a">Schall - Einteilung nach Frequenz</h2>
 <p title="Schalleinteilung nach Frequenz im Raum" align="center" width="90%" height="90%">
 <img src="./img/schall_frequency.jpg" alt="schall_frequency.jpg" title="Schalleinteilung nach Frequenz im Raum" align="center" width="90%" height="90%" /> <br />
 </p>
@@ -89,50 +95,32 @@ unter 16 Hz: Waschmaschinen, Heizungen <br />
 </section>
 </section>
 <section>
-<section id="slide-orgf997ffa">
-<h2 id="orgf997ffa">Zustandsübergänge des Mediums</h2>
-<p title="Teilchenbewegung bei Schallwelle" align="center" width="80%" height="80%">
-<img src="./img/Compression.png" alt="Compression.png" title="Teilchenbewegung bei Schallwelle" align="center" width="80%" height="80%" /> <br />
- Medium ist Kompressibel.
-</p>
-
-
+<section id="slide-org0591b51">
+<h2 id="org0591b51">Die Lineare Akustik</h2>
+<div class="outline-text-2" id="text-org0591b51">
+</div>
 </section>
-<section id="slide-org6303076">
-<h3 id="org6303076">Verlauf der Zustandsänderungen</h3>
-<p title="Linear Druck-Dichte" align="center" width="40%" height="40%">
-<img src="./img/prholinear.png" alt="prholinear.png" title="Linear Druck-Dichte" align="center" width="40%" height="40%" /><br />
-Aussagenmaß der<b><font color="white"> Schallgeschwindigkeit</font></b>
-</p>
-
-</section>
-</section>
-<section>
-<section id="slide-org8806839">
-<h2 id="org8806839">Kontinuität im Medium</h2>
+<section id="slide-org3cf09e5">
+<h3 id="org3cf09e5">Superpositionsprinzip</h3>
 <p>
-Systemgrößen Druck, Dichte und Geschwindigkeit der Bewegung
-bleiben erhalten.
+Wellen überlagern sich ungestört. 
 </p>
-</section>
-<section id="slide-org9f91248">
-<h3 id="org9f91248">Bildung der Schallwelle im Raum</h3>
-<p title="Schallwellenbildung im Raum" align="center" width="80%" height="80%">
-<img src="./img/continuity_start.png" alt="continuity_start.png" title="Schallwellenbildung im Raum" align="center" width="80%" height="80%" /> <br />
+
+<p>
+Die Schwebung ist Beispiel einer Superposition.
 </p>
 
 </section>
-<section id="slide-org9c88e22">
-<h3 id="org9c88e22">Ausbreitung der Schallwelle</h3>
-<p title="Schallausbreitung im Raum" align="center" width="80%" height="80%">
-<img src="./img/continuity_proceed.png" alt="continuity_proceed.png" title="Schallausbreitung im Raum" align="center" width="80%" height="80%" /> <br />
+<section id="slide-orgf7c6452">
+<h3 id="orgf7c6452">Die Schwebung</h3>
+<p title="Die Schwebung" align="center" width="60%" height="60%">
+<img src="./img/Schwebung.png" alt="Schwebung.png" title="Die Schwebung" align="center" width="60%" height="60%" />
+<br>
+<audio controls><source src="./audio/180hz.wav" type="audio/wav"> </audio><br>
+   <audio controls><source src="./audio/188hz.wav" type="audio/wav"> </audio><br>
+   <audio controls><source src="./audio/180u188hz.wav" type="audio/wav"> </audio><br>
 </p>
 
-</section>
-</section>
-<section>
-<section id="slide-org19dfaef">
-<h2 id="org19dfaef">Kurzzusammenfassung</h2>
 <p>
 <br />
 <b><font color="white"> Bewegung</font></b> im Medium<br />
@@ -145,119 +133,66 @@ bleiben erhalten.
 </section>
 </section>
 <section>
-<section id="slide-org7f5cb3f">
-<h2 id="org7f5cb3f">Technische Anwendung von Schall</h2>
-<div class="outline-text-2" id="text-org7f5cb3f">
-</div>
-</section>
-<section id="slide-org3dbe210">
-<h3 id="org3dbe210">Lautsprecher - Richtcharakteristik</h3>
-</section>
-<section>
-<p title="Lautsprecher Kugelwelle" align="center" width="70%" height="70%">
-Schall niedriger Frequenz: <br />
-<img src="./Video/audibleLoud.gif" alt="audibleLoud.gif" title="Lautsprecher Kugelwelle" align="center" width="70%" height="70%" /> <br />
-Ein Lautsprecher mit schwacher Richtcharakteristik.
-</p>
-</section>
-<section>
-<p title="Ausbreitung Kugelwelle" align="center" width="60%" height="60%">
-  <img src="./Video/auditorium_pulse_top.gif" alt="auditorium_pulse_top.gif" title="Ausbreitung Kugelwelle" align="center" width="60%" height="60%" /> <br />
-Die Ausbreitung von hörbaren Schall.
-</p>
-
-
-</section>
-<section id="slide-org6748660">
-<h4 id="org6748660">Änderung der Fläche</h4>
-<p title="Änderung der Wellenlänge" align="center" width="70%" height="70%">
-<img src="./Video/fixwaveLtoSizeLoud.gif" alt="fixwaveLtoSizeLoud.gif" title="Änderung der Wellenlänge" align="center" width="70%" height="70%" /> <br />
-</p>
-
-</section>
-<section id="slide-orgc29f830">
-<h4 id="orgc29f830">Änderung der Frequenz</h4>
-<p title="Änderung der Schallfläche" align="center" width="70%" height="70%">
-<img src="./Video/waveLtofixSizeLoud.gif" alt="waveLtofixSizeLoud.gif" title="Änderung der Schallfläche" align="center" width="70%" height="70%" /> <br />
-</p>
-
-</section>
-<section>
-<p title="Hohe Frequenz Lautsprecher" align="center" width="70%" height="70%">
- Schall hoher Frequenz: <br />
- <img src="./Video/DirectedLoud.gif" alt="DirectedLoud.gif" title="Hohe Frequenz Lautsprecher" align="center" width="70%" height="70%" /> <br />
-Ein Lautsprecher mit starker Richtcharakteristik. 
-</p>
-
-</section>
-</section>
-<section>
-<section id="slide-orgf99ccb8">
-<h2 id="orgf99ccb8">Besonderheit des Mediums Luft</h2>
+<section id="slide-org8b3ec91">
+<h2 id="org8b3ec91">Die Nichtlineare Akustik</h2>
 <p>
 Starke Dämpfung hoher Frequenzen. <br />
 Übergänge der Zustände sind <b><font color="white"> nichtlinear</font></b>. <br />
 </p>
 </section>
-<section>
+<section id="slide-org5720f53">
+<h3 id="org5720f53">Zustandsübergänge in der Luft</h3>
 <p title="Verlauf Druck-Dichte real" align="center" width="50%" height="50%">
 <img src="./img/prho.png" alt="prho.png" title="Verlauf Druck-Dichte real" align="center" width="50%" height="50%" /> <br />
-Nichtlineare Übergänge der Zustände.
 </p>
+
 </section>
-<section>
+<section id="slide-orgd9bf25d">
+<h3 id="orgd9bf25d">Nichtlinearität ändert die Schallausbreitung</h3>
 <p title="Ausbreitungsgeschwindigkeit - nichtlinear" align="center" width="60%" height="60%">
-<img src="./img/BurgerSolution.png" alt="BurgerSolution.png" title="Ausbreitungsgeschwindigkeit - nichtlinear" align="center" width="60%" height="60%" /> <br />
-Entwickelte Funktion der Bewegungsgeschwindigkeit. <br />
- - Höhere Harmonische im Schwingung.
+<img src="./img/Burgers.png" alt="Burgers.png" title="Ausbreitungsgeschwindigkeit - nichtlinear" align="center" width="60%" height="60%" /> <br />
+Zusätzliche Frequenzen werden erzeugt .
 </p>
-
 
 </section>
 </section>
 <section>
-<section id="slide-orgcf9d27f">
-<h2 id="orgcf9d27f">Anwendung für Ultraschall</h2>
-<p>
-- Hohe Frequenzen (Ultraschall) - starke Richtcharakteristik. <br />
-<br />
- - Hohe Energie bei der Ausbreitung in Luft. <br />
-<br />
-<b><font color="white"> Konsequenz:</font></b> <br />
-Nichtlinearität liegt nutzbaren Anwendungen zugrunde. <br />
-</p>
-
+<section id="slide-org992ff00">
+<h2 id="org992ff00">Anwendung der Nichtlinearität</h2>
+<div class="outline-text-2" id="text-org992ff00">
+</div>
 </section>
-<section id="slide-orga745e51">
-<h3 id="orga745e51">Ultraschall zu Hörschall</h3>
-<p>
-Amplituden Modulation wandelt Ultraschallfrequenzen zu hörbaren Schall. <br />
-</p>
-</section>
-<section id="slide-org40d53e2">
-<h4 id="org40d53e2">Prinzip der Amplituden Modulation</h4>
-<p title="Amplituden Modulation der Signale" align="center" width="60%" height="60%">
-<img src="./img/AM-Modulated.png" alt="AM-Modulated.png" title="Amplituden Modulation der Signale" align="center" width="60%" height="60%" /> <br />
-Bildung der hörbaren Differenzfrequenz.<br />
-</p>
-</section>
-<section>
+<section id="slide-org4ae9ee4">
+<h3 id="org4ae9ee4">Ultraschall zu Hörschall</h3>
 <p title="Demodulation des Signals" align="center" width="60%" height="60%">
-<img src="./img/Demodulation.png" alt="Demodulation.png" title="Demodulation des Signals" align="center" width="60%" height="60%" /> <br />
-Einflüsse durch hochfrequente Komponenten verschwinden. <br />
-Das Signal wird geglättet - bzw. demoduliert. <br />
+<img src="./img/2fields.png" alt="2fields.png" title="Demodulation des Signals" align="center" width="60%" height="60%" /> <br />
+In der Luft existieren zwei Felder:
 </p>
+<ul>
+<li>Ein Feld mit nichtlinearer Interaktion</li>
+<li>Ein linear akustisches Feld</li>
+
+</ul>
+
+</section>
+<section>
+<p title="Virtuelle Schallquelle" align="center" width="70%" height="70%">
+<img src="./img/difffreq.png" alt="difffreq.png" title="Virtuelle Schallquelle" align="center" width="70%" height="70%" />
+Im nichtlinearen Feld der Luft wird durch Interaktion eine Neue Frequenz erzeugt.
+</p>
+
 </section>
 <section>
 <p title="Virtuelle Schallquelle" align="center" width="70%" height="70%">
 <img src="./img/AMLoud.png" alt="AMLoud.png" title="Virtuelle Schallquelle" align="center" width="70%" height="70%" /> <br />
-Hörbarer Schall entsteht nicht an der mechanischen Quelle, sondern nach einiger Distanz in der Luft. <br />
+Hörbarer Schall ist das Resultat der Nichtlinearität . <br />
 </p>
+
 </section>
 </section>
 <section>
-<section id="slide-org0539782">
-<h2 id="org0539782">Fazit</h2>
+<section id="slide-org4f31283">
+<h2 id="org4f31283">Fazit</h2>
 <p>
 Die Nichtlinearität der Luft kann genutzt werden
 um Frequenzen aus dem Ultraschallbereich
@@ -268,16 +203,16 @@ für <b>besondere</b> hörakustische Anwendungen nutzbar zu machen.<br />
 </section>
 </section>
 <section>
-<section id="slide-orgf26b541">
-<h2 id="orgf26b541">Danke für die Aufmerksamkeit</h2>
+<section id="slide-org2296702">
+<h2 id="org2296702">Danke für die Aufmerksamkeit</h2>
 
 <div class="figure">
 <p><img src="./img/HolosonicSolution.png" alt="HolosonicSolution.png" title="Museum Holosonic-Lautsprecher" align="center" width="70%" height="70%" />
 </p>
 </div>
 </section>
-<section id="slide-orge8269ba">
-<h3 id="orge8269ba">Weiterführende Links</h3>
+<section id="slide-org7e2a8d0">
+<h3 id="org7e2a8d0">Weiterführende Links</h3>
 <p>
 <a href="https://github.com/pvanberg/DGFEM-Acoustic">Framework für Schallausbreitung</a> <br />
 <a href="https://www.egr.msu.edu/~fultras-web/">Matlab-plugin für Ultraschall</a> <br />
@@ -288,16 +223,17 @@ für <b>besondere</b> hörakustische Anwendungen nutzbar zu machen.<br />
 Bei weiteren Fragen: <br />
 hermannschris@googlemail.com
 </p>
+
 </section>
 </section>
 <section>
-<section id="slide-orgdca1ee8">
-<h2 id="orgdca1ee8">Quellen</h2>
+<section id="slide-org961bdc1">
+<h2 id="org961bdc1">Quellen</h2>
 <p>
 <a href="https://www.acs.psu.edu/drussell/Demos/waves/wavemotion.html">Page 3</a>: Dan Russel(2016) - Longitudinal and Transverse Wave Motion  abgerufen 30.01.20 <br />
 <a href="https://www.youtube.com/watch?v=XLfQpv2ZRPU">Page 4</a>: Youtube - MED EL (2013) - Understanding Sound Waves abgerufen 30.01.20 <br />
 <a href="https://www.haustechnikdialog.de/SHKwissen/Images/Infraschall-Ultraschall.jpg">Page 5</a>: HausTechnik Dialog - Lärm abgerufen 30.01.20 <br />
-<b><font color="white"> Page 6 </font></b>: Christoph-A. Hermanns (2020) - Kompression d. Einheitsvolumens <br />
+<b>Page 6</b> Christoph-A. Hermanns (2020) - Kompression d. Einheitsvolumens <br />
 <a href="https://github.com/pvanberg/DGFEM-Acoustic/blob/master/DGFEM_acoustic.pdf">Page 9 - 10</a>: Pierre-Oliver Vanberg, Martin Lacroix, Tom Servais (2019) - Multiphysics Integrated Computationl Project <br />
 </p>
 </section>
@@ -306,7 +242,7 @@ hermannschris@googlemail.com
 <a href="https://www.youtube.com/watch?v=dfLHVUcvnDo">Page 14, 18</a>: Youtube - Finite Elemete Method Loudspeaker bgerufen 30.01.20 <br />
 <a href="https://www.holosonics.com/animated-directivity-demos">Page 16, 17</a>: Holosonics - Directivity Demonstrations abgerufen 30.01.20 <br />
 <a href="https://github.com/pvanberg/DGFEM-Acoustic/blob/master/assets/auditorium_pulse_top.gif">Page 15</a>: Pierre-Oliver Vanberg, Martin Lacroix, Tom Servais - DGFEM for Acoustic Wave Propagation(Repository) abgerufen 30.01.20 <br />
-<b><font color="white"> Page 7, 20, 25, 26 </font></b>:  Dirk Olszweksi (2008) - Stark gerichtete Audio-Beschallung mit parametrischem Ultrschall-Lautsprecher P. 28, 49, 51 <br />
+<b>Page 7, 20, 25, 26</b>:  Dirk Olszweksi (2008) - Stark gerichtete Audio-Beschallung mit parametrischem Ultrschall-Lautsprecher P. 28, 49, 51 <br />
 </p>
 </section>
 <section>
@@ -320,7 +256,7 @@ hermannschris@googlemail.com
 </div>
 </div>
 <script src="file:///home/shoshin/reveal.js/lib/js/head.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
+<script src="file:///home/shoshin/reveal.js/js/reveal.js"></script>
 <script>
 // Full list of configuration options available here:
 // https://github.com/hakimel/reveal.js#configuration
@@ -346,11 +282,11 @@ transitionSpeed: 'default',
 
 // Optional libraries used to extend reveal.js
 dependencies: [
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
- { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
+ { src: 'file:///home/shoshin/reveal.js/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/shoshin/reveal.js/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+ { src: 'file:///home/shoshin/reveal.js/plugin/notes/notes.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/shoshin/reveal.js/plugin/search/search.js', async: true, condition: function() { return !!document.body.classList; } },
+ { src: 'file:///home/shoshin/reveal.js/plugin/zoom-js/zoom.js', async: true, condition: function() { return !!document.body.classList; } }]
 
 });
 </script>
