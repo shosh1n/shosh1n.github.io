@@ -93,7 +93,7 @@
 #+REVEAL:split
   #+ATTR_ORG: :width 200px :height 200px
   #+ATTR_HTML:  image :title Virtuelle Schallquelle :align center :width 70% :height 70%
-  [[./img/difffreq.png]]
+  [[./img/difffreq.png]] \\
   Im nichtlinearen Feld der Luft wird durch Interaktion eine Neue Frequenz erzeugt.
 
 #+REVEAL:split
