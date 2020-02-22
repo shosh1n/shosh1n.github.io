@@ -100,7 +100,7 @@
 #+REVEAL:split
   #+ATTR_ORG: :width 200px :height 200px
   #+ATTR_HTML:  image :title Virtuelle Schallquelle :align center :width 70% :height 70%
-  [[./img/AMLoud.png]] \\
+  [[./img/Differenzfrequenz.png]]\\
   Hörbarer Schall ist das Resultat der Nichtlinearität . \\
 
 * Fazit
