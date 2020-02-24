@@ -12,6 +12,14 @@
 #+REVEAL_TITLE_SLIDE_BACKGROUND: ./img/Technik.png
 #+REVEAL_TITLE_SLIDE_BACKGROUND_SIZE: 400px
 #+REVEAL_TITLE_SLIDE_BACKGROUND_POSITION: top +15px left +15px
+* Motivation
+  Verständnis der nichtlinearen Interaktion beim parametrischen Array. \\
+  #+ATTR_REVEAL: :frag roll-in 
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Verlauf Druck-Dichte real :align top-right :width 30% :height 30%
+   [[./img/Paraarray.jpg]]
+  #+ATTR_REVEAL: :frag roll-in
+  Zwei Schwingungen addiert sollen Dritte ergeben.
 * Schall
   Schall ist das Resultat einer sich durch ein Medium periodisch ausbreitenden Störung.
   
@@ -19,18 +27,12 @@
 
   Dieses Phänomen wird als Schallwelle charakterisiert.
 
-* Bewegung im Medium  Luft
+** Bewegung im Medium  Luft
   
   Schall breitet sich als Kompressionwelle aus.
-
   /Praktisches Beispiel/
 
-
- 
-** Oszillierende Bewegung
-  @@html:<video width="100%" height="100%" controls> <source src="./Video/sinusoid.webm" type="video/webm"> <video/>@@
-
-* Schall - Einteilung nach Frequenz
+** Schall - Einteilung nach Frequenz
  #+ATTR_ORG: :width 200px :height 200px
  #+ATTR_HTML:  image :title Schalleinteilung nach Frequenz im Raum :align center :width 90% :height 90%
  [[./img/schall_frequency.jpg]] \\
@@ -46,7 +48,26 @@
   {{{color(white, Ultraschall: )}}}
   über 16 kHz: Delfine, Feldermäuse - Echoortung\\
 * Die Lineare Akustik
-** Superpositionsprinzip
+   #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Verlauf Druck-Dichte real :align center :width 30% :height 30%
+   Druck und Dichte verhalten zueinander linear.
+  [[./img/prholinear.png]] \\
+  Schallgeschwindigkeit als Charakteristik: \\
+ 
+   $c_0^2 = \frac{\partial{p}}{\partial{\rho}}$ , Luft $c_0 \approx 343 \frac{m}{s}$
+  
+** Gleichungen der linearen Akustik
+   Beschreibung der Vorgänge im Medium
+   - Zustandsgleichung: $p = p_0 + \left(\frac{\partial p}{\partial \rho}\right) \cdot(\rho - \rho_0)$
+   - Kontinuitätsgleichung: - $\nabla(\rho \cdot v) = \frac{\partial\rho}{\partial t}$ \\
+  
+   - Bewegungsgleichung: $\rho v_t = -\nabla p$
+*** Gültige Funktion der Gleichungen
+      [[./img/CompressionSine.png]] \\
+      $p(x) =   \psi sin(x)$ \\
+      $p(t) = \psi sin(t)$
+      
+** Anwendung: Superpositionsprinzip
   Wellen überlagern sich ungestört. 
 
   Die Schwebung ist Beispiel einer Superposition.
@@ -56,83 +77,85 @@
    #+ATTR_HTML:  image :title Die Schwebung :align center :width 60% :height 60%
    [[./img/Schwebung.png]]
    @@html:<br>@@
-   @@html:<audio controls><source src="./audio/180hz.wav" type="audio/wav"> </audio><br>
-   <audio controls><source src="./audio/188hz.wav" type="audio/wav"> </audio><br>
-   <audio controls><source src="./audio/180u188hz.wav" type="audio/wav"> </audio><br>@@
-  
-  \\
-  {{{color(white, Bewegung)}}} im Medium\\
-  \\
-  {{{color(white, Kontinuität)}}} des Mediums\\
-  \\
-  {{{color(white, Zustände)}}} des Mediums\\
+   @@html:<audio controls><source src="./audio/180hz.webm" type="audio/webm"> </audio><br>
+   <audio controls><source src="./audio/188hz.webm" type="audio/webm"> </audio><br>
+   <audio controls><source src="./audio/180u188hz.webm" type="audio/webm"> </audio><br>@@
+#+REVEAL:split
+  Keine Erzeugung von neuen Frequenzen. :(
 
 * Die Nichtlineare Akustik
   Starke Dämpfung hoher Frequenzen. \\
   Übergänge der Zustände sind {{{color(white, nichtlinear)}}}. \\
 ** Zustandsübergänge in der Luft
    #+ATTR_ORG: :width 200px :height 200px
-   #+ATTR_HTML:  image :title Verlauf Druck-Dichte real :align center :width 50% :height 50%
+   #+ATTR_HTML:  image :title Verlauf Druck-Dichte real :align center :width 30% :height 30%
    [[./img/prho.png]] \\
-
-** Nichtlinearität ändert die Schallausbreitung
+  Erweiterung der Zustandsgleichung:  $p = p_0 + \left(\frac{\partial p}{\partial \rho}\right) \cdot(\rho - \rho_0) {\color{red}+}\frac{1}{2}\left(\frac{\partial^2p}{\partial \rho^2}\right)\cdot(\rho- \rho)^2$
+** Begrenzt gültige Funktion
+   #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Geschwindigkeitszunahme :align center :width 40% :height 40%
+   [[./img/VeloUp.png]] \\
+   $u(x,t) =  sin(x -ut)$ und. $x(t)$ \\
+   blau: $t_0$ ... \\
+   rot: $t_{end}$
+** Erzeugung von zusätzlichen Harmonischen
    #+ATTR_ORG: :width 200px :height 200px
    #+ATTR_HTML:  image :title Ausbreitungsgeschwindigkeit - nichtlinear :align center :width 60% :height 60%
    [[./img/Burgers.png]] \\
-   Zusätzliche Frequenzen werden erzeugt .
+   Zusätzliche Frequenzen werden erzeugt! \\
+   Starke Dämpfung der Schwingung.
   
 * Anwendung der Nichtlinearität
+  Addition von zwei Schwingungen.
 ** Ultraschall zu Hörschall
-   #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_ORG: :width 200px :height 200px
+  #+ATTR_HTML:  image :title Virtuelle Schallquelle :align center :width 60% :height 60%
+  [[./img/AdditionNonlinear.png]] \\
+  Bildung einer neuen Schwingung.
+
+
+*** Ursache der Differenzfrequenz
+  #+ATTR_ORG: :width 200px :height 200px
   #+ATTR_HTML:  image :title Demodulation des Signals :align center :width 60% :height 60%  
   [[./img/2fields.png]] \\
   In der Luft existieren zwei Felder:
    - Ein Feld mit nichtlinearer Interaktion
    - Ein linear akustisches Feld
-
-#+REVEAL:split
-  #+ATTR_ORG: :width 200px :height 200px
-  #+ATTR_HTML:  image :title Virtuelle Schallquelle :align center :width 70% :height 70%
-  [[./img/SpektAM.png]] \\
-  Zwei amplituden modulierte Signale bilden eine für uns hörbare Differenzfrequenz (10 kHz).
-  
-
-#+REVEAL:split
-  #+ATTR_ORG: :width 200px :height 200px
-  #+ATTR_HTML:  image :title Virtuelle Schallquelle :align center :width 70% :height 70%
-  [[./img/Differenzfrequenz.png]]\\
-  Hörbarer Schall ist das Resultat der Nichtlinearität . \\
+*** Anwendungsmöglichkeit
+ [[./img/HolosonicSolution.png]] \\
+Gezielte Beschallung von Bereichen im Raum.
 
 * Fazit
-  Die Nichtlinearität der Luft kann genutzt werden
-  um Frequenzen aus dem Ultraschallbereich
-  für *besondere* hörakustische Anwendungen nutzbar zu machen.\\
+  Nichtlineares Verhalten der Luft bei Ultraschall kann für 
+ für *besondere* hörakustische Anwendungen nutzbar gemacht werden.\\
   \\
   
 * Danke für die Aufmerksamkeit
   #+ATTR_ORG: :width 200px :height 200px
   #+ATTR_HTML:  image :title Museum Holosonic-Lautsprecher :align center :width 70% :height 70%
-  [[./img/HolosonicSolution.png]]
+  [[./img/HolosonicReaction.png]]
 ** Weiterführende Links
 [[https://github.com/pvanberg/DGFEM-Acoustic][Framework für Schallausbreitung]] \\
 [[https://www.egr.msu.edu/~fultras-web/][Matlab-plugin für Ultraschall]] \\
 [[https://www.holosonics.com/][Hersteller von Richt-Lautsprechern]] \\
+[[https://iopscience.iop.org/article/10.1088/1742-6596/1075/1/012035/pdf][Modulationstechniken für ein Array]] \\
+[[http://perso.univ-lemans.fr/~vtournat/wa_files/NLALectureVT.pdf][Einleitung Nichtlineare Akustik]] \\
+[[https://www.homemade-circuits.com/making-ultrasonic-directive-speaker/][Workshop Parametric Speaker]] \\
 
 Bei weiteren Fragen: \\
 hermannschris@googlemail.com
 
 * Quellen
-  [[https://www.acs.psu.edu/drussell/Demos/waves/wavemotion.html][Page 3]]: Dan Russel(2016) - Longitudinal and Transverse Wave Motion  abgerufen 30.01.20 \\
-  [[https://www.youtube.com/watch?v=XLfQpv2ZRPU][Page 4]]: Youtube - MED EL (2013) - Understanding Sound Waves abgerufen 30.01.20 \\
+  [[https://hackaday.com/2019/02/14/creating-coherent-sound-beams-easily/][Page 2]]: Bryan Cockfield(2019) - Creating Coeherent Sound Beams, Easily aberufen 24.02.20 \\
   [[https://www.haustechnikdialog.de/SHKwissen/Images/Infraschall-Ultraschall.jpg][Page 5]]: HausTechnik Dialog - Lärm abgerufen 30.01.20 \\
-  *Page 6* Christoph-A. Hermanns (2020) - Kompression d. Einheitsvolumens \\
-  [[https://github.com/pvanberg/DGFEM-Acoustic/blob/master/DGFEM_acoustic.pdf][Page 9 - 10]]: Pierre-Oliver Vanberg, Martin Lacroix, Tom Servais (2019) - Multiphysics Integrated Computationl Project \\
+  *Page 6*:  Dirk Olszweksi (2008) - Stark gerichtete Audio-Beschallung mit parametrischem Ultrschall-Lautsprecher P. 28 \\
 #+REVEAL:split
-  [[https://www.youtube.com/watch?v=dfLHVUcvnDo][Page 14, 18]]: Youtube - Finite Elemete Method Loudspeaker bgerufen 30.01.20 \\
-  [[https://www.holosonics.com/animated-directivity-demos][Page 16, 17]]: Holosonics - Directivity Demonstrations abgerufen 30.01.20 \\
-  [[https://github.com/pvanberg/DGFEM-Acoustic/blob/master/assets/auditorium_pulse_top.gif][Page 15]]: Pierre-Oliver Vanberg, Martin Lacroix, Tom Servais - DGFEM for Acoustic Wave Propagation(Repository) abgerufen 30.01.20 \\
-  *Page 7, 20, 25, 26*:  Dirk Olszweksi (2008) - Stark gerichtete Audio-Beschallung mit parametrischem Ultrschall-Lautsprecher P. 28, 49, 51 \\
-#+REVEAL:split
-  [[https://github.com/shosh1n/ultrasonic/blob/master/BurgerSolution.ipynb][Page 21]] Python 3.7.4 - Christoph-A. Hermanns (2020) n. [[http://cfdmoments.blogspot.com/2014/07/1d-burgers-equation.html?m=1][1D Burgers Equation]] - cfdmoments.blogspot.com abgerufen 30.01.20 \\ 
-  [[https://www.geogebra.org/m/njjf8ewe][Page 24]] Geogebra - Christoph-A. Hermanns (2020) - Skizze nichtlineare AmplitudenModulation  abgerufen 30.01.20 \\ 
-  [[https://www.holosonics.com/brochure-web-museum-galleries][Page 28]]: Holosonics - Museums & Galleries 30.01.20 \\
+  [[https://github.com/shosh1n/pde_sine_characteristic/blob/master/SchwebungAlles.ipynb][Page 9]]:  Christoph-A. Hermanns 2020 Python 3.7.4 - Schwebung\\ 
+  *Page 13*:  Dirk Olszweksi (2008) - Stark gerichtete Audio-Beschallung mit parametrischem Ultrschall-Lautsprecher P. 28 \\
+  [[https://github.com/shosh1n/pde_sine_characteristic/blob/master/VeloUp.ipynb][Page 14]]: Christoph-A. Hermanns 2020 Python 3.7.4 - VeloUp\\ 
+  [[https://github.com/shosh1n/pde_sine_characteristic/blob/master/DiffuseB1.ipynb][Page 15]]: Christoph-A. Hermanns 2020 Python 3.7.4 - DiffuseB1(Burgers)\\
+  #+REVEAL:split
+  [[https://github.com/shosh1n/pde_sine_characteristic/blob/master/AdditionBurgers.ipynb][Page 17]]: Christoph-A. Hermanns Python 3.7.4 -  AdditionBurgers\\
+  [[http://perso.univ-lemans.fr/~vtournat/wa_files/NLALectureVT.pdf][Page 18]]: Vincent Tournat (2014) - Introductory Lecture on Nonlinear Acoustics\\
+  [[https://www.holosonics.com/brochure-web-museum-galleries][Page 19]]: Holosonics - Museums & Galleries 30.01.20 \\
+  [[https://www.youtube.com/watch?v=lk7PVZYS_TQ][Page 21]]: Holosonics - YouTube abgerufen 24.02.20
