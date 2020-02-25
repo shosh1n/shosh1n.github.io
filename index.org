@@ -19,7 +19,7 @@
   #+ATTR_HTML:  image :title Verlauf Druck-Dichte real :align top-right :width 30% :height 30%
    [[./img/Paraarray.jpg]]
   #+ATTR_REVEAL: :frag roll-in
-  Zwei Schwingungen addiert sollen Dritte ergeben.
+  Ultraschallschwingungen zu hörbaren Schall.
 * Schall
   Schall ist das Resultat einer sich durch ein Medium periodisch ausbreitenden Störung.
   
@@ -63,6 +63,8 @@
   
    - Bewegungsgleichung: $\rho v_t = -\nabla p$
 *** Gültige Funktion der Gleichungen
+    #+ATTR_ORG: :width 200px :height 200px
+   #+ATTR_HTML:  image :title Verlauf Druck-Dichte real :align center :width 60% :height 60%
       [[./img/CompressionSine.png]] \\
       $p(x) =   \psi sin(x)$ \\
       $p(t) = \psi sin(t)$
@@ -106,12 +108,12 @@
    Starke Dämpfung der Schwingung.
   
 * Anwendung der Nichtlinearität
-  Addition von zwei Schwingungen.
+  Eintonmodulation von zwei Schwingungen.
 ** Ultraschall zu Hörschall
   #+ATTR_ORG: :width 200px :height 200px
   #+ATTR_HTML:  image :title Virtuelle Schallquelle :align center :width 60% :height 60%
-  [[./img/AdditionNonlinear.png]] \\
-  Bildung einer neuen Schwingung.
+  [[./img/Eintonmodulationt1_2.png]] \\
+  Bildung einer hörbaren Schwingung.
 
 
 *** Ursache der Differenzfrequenz
