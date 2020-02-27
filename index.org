@@ -66,8 +66,8 @@
     #+ATTR_ORG: :width 200px :height 200px
    #+ATTR_HTML:  image :title Verlauf Druck-Dichte real :align center :width 60% :height 60%
       [[./img/CompressionSine.png]] \\
-      $p(x) =   \psi sin(x)$ \\
-      $p(t) = \psi sin(t)$
+      $p(x) =   \psi \mathrm{sin}(x)$ \\
+      $p(t) = \psi \mathrm{sin}(t)$
       
 ** Anwendung: Superpositionsprinzip
   Wellen überlagern sich ungestört. 
@@ -97,7 +97,7 @@
    #+ATTR_ORG: :width 200px :height 200px
    #+ATTR_HTML:  image :title Geschwindigkeitszunahme :align center :width 40% :height 40%
    [[./img/VeloUp.png]] \\
-   $u(x,t) =  sin(x -ut)$ und. $x(t)$ \\
+   $u(x,t) =  \mathrm{sin}(x -ut)$ und. $x(t)$ \\
    blau: $t_0$ ... \\
    rot: $t_{end}$
 ** Erzeugung von zusätzlichen Harmonischen
