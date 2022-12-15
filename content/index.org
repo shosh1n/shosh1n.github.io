@@ -1,0 +1,21 @@
+* This is my first org-mode website^-^!
+
+#+begin_src python
+import numpy as np
+
+x  = np.pi + 23
+
+for i in range 1:
+    print("hello world")
+
+#+end_src
+
+* Eine Gleichung
+\begin{equation}\label{eqn:ZylinderWelle}
+    -\frac{1}{2}\Big[ \frac{1}{\rho} \frac{\partial}{\partial \rho} \Big( \rho \frac{\partial}{\partial \rho} \Big) + \frac{1}{\rho^{2}}\frac{\partial^{2}}{\partial \varphi^{2}} + \frac{\partial^{2}}{\partial z^{2}} \Big] \psi = L\psi
+\end{equation}
+
+
+* Ein Link
+
+Hier ist ein Link [[./test.org][test]]
