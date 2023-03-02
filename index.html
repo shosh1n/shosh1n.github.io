@@ -42,34 +42,132 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org3492361">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
-<li><a href="#org15f3e36">Die harmonische Störung des dielektrischen Feldes</a></li>
-<li><a href="#orge1eef02">Eine Gleichung</a></li>
-<li><a href="#org5f4e0f8">Hier geht es weiter</a></li>
-<li><a href="#orgc7ba039">Grundlagen der Elektromagnetischen Wellen</a></li>
-<li><a href="#orgf922ea7">Finite Differenzen Methode</a></li>
+<li><a href="#orgeef5c31">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
+<li><a href="#org1030d8d">Die harmonische Störung des dielektrischen Feldes</a>
+<ul>
+<li><a href="#orgf86e113">Codebeispiel: Die Sinus-Funktion eine Lösung des freien Feldes</a></li>
+</ul>
+</li>
+<li><a href="#org902ce62">Lösung der Wellengleichung in endlichen Geometrien</a>
+<ul>
+<li><a href="#org2694eaa">Potential in einem Zylinder</a></li>
+</ul>
+</li>
+<li><a href="#org1c75602">Bestimmte Harmonische: Flüstergaleriemoden</a>
+<ul>
+<li><a href="#org4c37c56">Allgemeine Funktion der 3D-Wellengleichung</a></li>
+<li><a href="#orgc48f36e">Die Azimutale Funktion</a>
+<ul>
+<li><a href="#org9d9663f">Codebeispiel: Azimutale Funktion</a></li>
+</ul>
+</li>
+<li><a href="#org3ad36e4">Funktion der Z-Koordinate bzw. der Höhe</a>
+<ul>
+<li><a href="#orgd7e0023">Codebeispiel für die vertikale Richtung</a></li>
+</ul>
+</li>
+<li><a href="#org0a9b8cb">Die Radiale Funktion</a>
+<ul>
+<li><a href="#org9fd989c">Codebeispiel der Besselfunktionen</a></li>
+<li><a href="#org835b006">Codebeispiel der radialen Funktion innerhalb des Resonators</a></li>
+<li><a href="#org6d205a6">Codebeispiel der radialen Funktion außerhalb des Resonators</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a href="#orgb13060a">Numerische Approximation</a>
+<ul>
+<li><a href="#orgd5e6d20">Codebeispiel:</a></li>
+</ul>
+</li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org3492361" class="outline-2">
-<h2 id="org3492361">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
-<div class="outline-text-2" id="text-org3492361">
+<div id="outline-container-orgeef5c31" class="outline-2">
+<h2 id="orgeef5c31">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
+<div class="outline-text-2" id="text-orgeef5c31">
 <p>
 Auf dieser Site stelle ich vor, wie ein physikalisches Phänomen - nämlich die Lichtausbreitung in dielektrischen, runden Resonatoren
 mathematisch beschrieben werden kann. Dabei kommen Theorie und Code-Beispiele zum Einsatz. Im Resultat werden Lösungen von
-Differentialgleichungen mit einem numerischen Verfahren vorgestellt. Ich muss herausfinden, warum die site hier nicht gepublished wird.
+Differentialgleichungen mit einem numerischen Verfahren vorgestellt.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org15f3e36" class="outline-2">
-<h2 id="org15f3e36">Die harmonische Störung des dielektrischen Feldes</h2>
-<div class="outline-text-2" id="text-org15f3e36">
+<div id="outline-container-org1030d8d" class="outline-2">
+<h2 id="org1030d8d">Die harmonische Störung des dielektrischen Feldes</h2>
+<div class="outline-text-2" id="text-org1030d8d">
 <p>
 Zunächst wird im Zuge auf die Ausbreitung des Lichtes festgelegt, dass nur harmonische Veränderungen des Feldes betrachtet werden. D.h. dass periodische Veränderungen
-des Feldes durch Sinus- und Cosinusfunktionen beschrieben werden können.
+des Feldes durch Sinus- und Cosinusfunktionen beschrieben werden können. Mathematisch generell "gesprochen" kommen die periodischen Schwinungen aus der Wellengleichung:
 </p>
 
+\begin{equation}
+     \Delta\mathbf{E} - \frac{1}{c_{m}^{2}}\frac{\partial^{2}E}{\partial t^{2}} = 0
+\end{equation}
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" title="test" align="center">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(\Delta\)</td>
+<td class="org-left">Laplace-Operator</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\mathbf{E}\)</td>
+<td class="org-left">Elektrische Feld</td>
+</tr>
+
+<tr>
+<td class="org-left">\(c_{m}\)</td>
+<td class="org-left">Lichtgeschwindigkeit im Medium</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\mathbf{k}\)</td>
+<td class="org-left">Wellenvektor</td>
+</tr>
+
+<tr>
+<td class="org-left">\(j\)</td>
+<td class="org-left">Imaginäre Einheit</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\mathbf{r}\)</td>
+<td class="org-left">Ortsvektor</td>
+</tr>
+
+<tr>
+<td class="org-left">\(\omega\)</td>
+<td class="org-left">Kreisfrequenz: \hspace{.5mm} \(2\pi f\)</td>
+</tr>
+
+<tr>
+<td class="org-left">\(t\)</td>
+<td class="org-left">Zeiteinheit</td>
+</tr>
+</tbody>
+</table>
+
+<p>
+Allgemein kann das elektrische <b>Freie Feld</b> über folgenden algebraischen Ausdruck zusammengefasst werden:
+</p>
+\begin{equation}
+    \mathbf{E} (\mathbf{r},t) = E(\mathbf{z},t)
+    = E_{0}\exp{j\mathbf{k}\cdot\mathbf{r}-j\omega t}
+\end{equation}
+</div>
+<div id="outline-container-orgf86e113" class="outline-3">
+<h3 id="orgf86e113">Codebeispiel: Die Sinus-Funktion eine Lösung des freien Feldes</h3>
+<div class="outline-text-3" id="text-orgf86e113">
 <div class="org-src-container">
 <pre class="src src-python"><span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
 <span class="org-keyword">import</span> matplotlib
@@ -98,58 +196,306 @@ plt.savefig(<span class="org-string">'img/matplot-fig.png'</span>)
 </div>
 
 
-<div id="org097b18d" class="figure">
+<div id="org712a8cc" class="figure">
 <p><img src="./img/matplot-fig.png" alt="1DSinus" title="Sinus" align="center" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Eine 1D-Sinusfunktion</p>
 </div>
 </div>
 </div>
+</div>
 
 
-<div id="outline-container-orge1eef02" class="outline-2">
-<h2 id="orge1eef02">Eine Gleichung</h2>
-<div class="outline-text-2" id="text-orge1eef02">
+<div id="outline-container-org902ce62" class="outline-2">
+<h2 id="org902ce62">Lösung der Wellengleichung in endlichen Geometrien</h2>
+<div class="outline-text-2" id="text-org902ce62">
+<p>
+Zu Beginn des Textes wurde die Wellengleichung ohne große Einschränkungen gelöst. In realen Systemen ist so eine Lösung ungenau. In einem unendlich großen
+Störungsfreien Raum, stellt die 1D-Sinusfunktion eine gültige Lösung dar.
+Für endliche Räume müssen weitere Berücksichtigungen getroffen werden. Eine Einfache Geometrie für Resonatoren ist ein Zylinder.
+Ein Zylinder hat schon 3-Raumkoordinaten. Um die periodische Störung zu lösen müssen entsprechend dieser Raumkoordinaten Funktionen gefunden werden, die den
+Zylinderraum vollständig beschreiben können.
+</p>
+</div>
+
+<div id="outline-container-org2694eaa" class="outline-3">
+<h3 id="org2694eaa">Potential in einem Zylinder</h3>
+<div class="outline-text-3" id="text-org2694eaa">
+<p>
+Da eine Störung eine Veränderung herbeiführt, wird ein Differentialoperator auf eine Größe \(\psi\) angewandt. Dieser beschreibende Veränderungsoperator berücksichtigt
+die 3-Raumrichtungen.
+</p>
+
 \begin{equation}\label{eqn:ZylinderWelle}
     -\frac{1}{2}\Big[ \frac{1}{\rho} \frac{\partial}{\partial \rho} \Big( \rho \frac{\partial}{\partial \rho} \Big) + \frac{1}{\rho^{2}}\frac{\partial^{2}}{\partial \varphi^{2}} + \frac{\partial^{2}}{\partial z^{2}} \Big] \psi = L\psi
 \end{equation}
 </div>
 </div>
+</div>
 
 
-<div id="outline-container-org5f4e0f8" class="outline-2">
-<h2 id="org5f4e0f8">Hier geht es weiter</h2>
-<div class="outline-text-2" id="text-org5f4e0f8">
+
+<div id="outline-container-org1c75602" class="outline-2">
+<h2 id="org1c75602">Bestimmte Harmonische: Flüstergaleriemoden</h2>
+<div class="outline-text-2" id="text-org1c75602">
 <p>
-normale Laufschrift.
+Flüstergaleriemoden sind bestimmte Harmonische Störungen im Raum. Sie sind an der Seitenwand eines Resonators zu verorten.
+Ist die Wellenlänge sind bestimmte Größen des System bekannt, dann Eine Wellenzahl - oder auch ein quantisierter Zustand der Harmonischen Störung
+bestimmt werden.
+</p>
+</div>
+
+<div id="outline-container-org4c37c56" class="outline-3">
+<h3 id="org4c37c56">Allgemeine Funktion der 3D-Wellengleichung</h3>
+<div class="outline-text-3" id="text-org4c37c56">
+<p>
+Im Besten Fall kann eine Wellenfunktion gefunden werden, die sich aus 3 einzelnen Funktionen entsprechend der Raumkoordinaten zusammensetzt.
+Ohne große Überlegung kann die Funktion folgendermaßen geschrieben werden:
+</p>
+
+\begin{equation}\label{eqn:ZylinderPotential}
+    \psi = R(\rho)Z(z)\Phi(\varphi).
+\end{equation}
+
+<p>
+In den folgenden Abschnitte werden diese Funktionen einzeln betrachtet.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgc7ba039" class="outline-2">
-<h2 id="orgc7ba039">Grundlagen der Elektromagnetischen Wellen</h2>
-<div class="outline-text-2" id="text-orgc7ba039">
+<div id="outline-container-orgc48f36e" class="outline-3">
+<h3 id="orgc48f36e">Die Azimutale Funktion</h3>
+<div class="outline-text-3" id="text-orgc48f36e">
 <p>
-Elektromagnetische Wellen gehen aus der harmonischen Lösung der Maxwellgleichungen hervor.
-Eine Beschreibung und Einbettung in den Zusammenhang des hier vorgestellten Phänomens ist über den Link
-<a href="./Maxwell.html">Maxwell</a> nachvollziehbar.
-und <a href="./test.html">test</a>  new Change.
-kannten Wellenlänge und dem Brechungsindex des Mediums genähert werden&#x2026;
+Als erstes lässt sich relativ einfach die azimutale Funktion bestimmen. Die Azimutale Funktion umläuft den Zylinder.
+Folgendes Codebeispiel veranschautlicht diese.
 </p>
+</div>
+
+<div id="outline-container-org9d9663f" class="outline-4">
+<h4 id="org9d9663f">Codebeispiel: Azimutale Funktion</h4>
+<div class="outline-text-4" id="text-org9d9663f">
+<div class="org-src-container">
+<pre class="src src-python">
+
+<span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-keyword">import</span> matplotlib
+matplotlib.use(<span class="org-string">'Agg'</span>)
+<span class="org-keyword">from</span> matplotlib.patches <span class="org-keyword">import</span> FancyArrowPatch
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> proj3d
+<span class="org-keyword">import</span> mpl_toolkits.mplot3d.art3d <span class="org-keyword">as</span> art3d
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> Axes3D
+<span class="org-keyword">from</span> matplotlib.patches <span class="org-keyword">import</span> Circle
+<span class="org-keyword">from</span> matplotlib <span class="org-keyword">import</span> pyplot <span class="org-keyword">as</span> plt
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">Define a class for the coordinate-system</span>
+<span class="org-keyword">class</span> <span class="org-type">Arrow3D</span>(FancyArrowPatch):
+    <span class="org-keyword">def</span> <span class="org-function-name">__init__</span>(<span class="org-keyword">self</span>, xs, ys, zs, *args, **kwargs):
+        <span class="org-builtin">super</span>().__init__((0,0), (0,0), *args, **kwargs)
+        <span class="org-keyword">self</span>.<span class="org-variable-name">_verts3d</span> = xs, ys, zs
+
+    <span class="org-keyword">def</span> <span class="org-function-name">do_3d_projection</span>(<span class="org-keyword">self</span>, renderer=<span class="org-constant">None</span>):
+        xs3d, ys3d, zs3d = <span class="org-keyword">self</span>._verts3d
+        xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, <span class="org-keyword">self</span>.axes.M)
+        <span class="org-keyword">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+
+        <span class="org-keyword">return</span> np.<span class="org-builtin">min</span>(zs)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">This Function will draw a cylinder</span>
+<span class="org-keyword">def</span> <span class="org-function-name">plot_3D_cylinder</span>(radius, height, elevation=0, resolution=100, color=<span class="org-string">'b'</span>, x_center = 0, y_center = 0):
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">init where to draw the projections</span>
+    fig=plt.figure(figsize=(5,5))
+    ax = Axes3D(fig, azim=45, elev=21)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">take values from the function input</span>
+    x = np.linspace(x_center-radius, x_center+radius, resolution)
+    z = np.linspace(elevation, elevation+height, resolution)
+    X, Z = np.meshgrid(x, z)
+
+    theta = np.linspace(-1 * np.pi, 1 * np.pi, 1000)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">coordinate conversion cartesain x_,y_,z_ in cylindrical</span>
+    R = 1
+    x_ = radius * np.cos(theta)+x_center
+    y_ = radius *np.sin(theta)+y_center
+    z_ = np.sin(18*theta)
+    Y = np.sqrt(radius**2 - (X - x_center)**2) + y_center <span class="org-comment-delimiter"># </span><span class="org-comment">Pythagorean theorem</span>
+
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Color the cylinder surface-patches</span>
+    ax.plot_surface(X, Y, Z,alpha=0.3, linewidth=0, color=<span class="org-string">'deepskyblue'</span>)
+    ax.plot_surface(X, (2*y_center-Y), Z,alpha=0.2, linewidth=0, color=<span class="org-string">'lightskyblue'</span>)
+    floor = Circle((x_center, y_center), radius, color=<span class="org-string">'deepskyblue'</span>,alpha=0.3)
+    ax.add_patch(floor)
+    art3d.pathpatch_2d_to_3d(floor, z=elevation, zdir=<span class="org-string">"z"</span>)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Color the circle-surfaces</span>
+    ceiling = Circle((x_center, y_center), radius, color=<span class="org-string">'deepskyblue'</span>,alpha=0.5)
+    ax.add_patch(ceiling)
+    art3d.pathpatch_2d_to_3d(ceiling, z=elevation+height, zdir=<span class="org-string">"z"</span>)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Plot the encircling function</span>
+    ax.plot(x_, y_, z_, color = <span class="org-string">'fuchsia'</span>)
+
+    arrow_prop_dict = <span class="org-builtin">dict</span>(mutation_scale=20, arrowstyle=<span class="org-string">'-&gt;'</span>, shrinkA=0, shrinkB=0)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add an arrow that outlines the function's path</span>
+    a = Arrow3D([0, 79], [0, 15], [0, 2.8], **arrow_prop_dict, color=<span class="org-string">'darkorchid'</span>, linestyle=<span class="org-string">"dashed"</span>,linewidth=3.0)
+    ax.add_artist(a)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a red orthogonal arrow in the \rho respectively y-direction</span>
+    a = Arrow3D([0, 0], [0, 75], [0, 0], **arrow_prop_dict, color=<span class="org-string">'red'</span>,linewidth=5.0)
+    ax.add_artist(a)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a black arrow indicating the y-cartesain coordinate</span>
+    a = Arrow3D([0, 0], [0, 95], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+    ax.add_artist(a)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a black arrow indicating the x-cartesain coordinate</span>
+    a = Arrow3D([0, 95], [0, 0], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+    ax.add_artist(a)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a black arrow indicating the z-direction</span>
+    a = Arrow3D([0, 0], [0, 0], [0, 6.8], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+    ax.add_artist(a)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a blue arrow indicating the z-direction</span>
+    a = Arrow3D([0, 0], [0, 0], [0, 6], **arrow_prop_dict, color=<span class="org-string">'blue'</span>,linewidth=5.0)
+    ax.add_artist(a)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">add letters for orientation o-origin, \rho etc. ...</span>
+    ax.text(3, 0.0, -.35, r<span class="org-string">'$o$'</span>)
+    ax.text(0, 75, 0, r<span class="org-string">'$\rho$'</span>)
+    ax.text(60, 60, 0, r<span class="org-string">'$\varphi$'</span>)
+    ax.text(0, -2, 7, r<span class="org-string">'$z$'</span>)
+    ax.text(107, 15, 3.4, r<span class="org-string">'$\psi(\rho,z,\varphi)$'</span>)
+    ax.text(100, 0, 0, r<span class="org-string">'$x$'</span>)
+    ax.text(0, 98, 0, r<span class="org-string">'$y$'</span>)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Now draw the \varphi-axis *hint: it's angle dependent 'cause it's a cylinder</span>
+    thetaAng = np.linspace(0,np.pi/2,100)  <span class="org-comment-delimiter"># </span><span class="org-comment">0 &lt;= &#952; &lt;= 2&#960;</span>
+    rAng =  50.0 <span class="org-comment-delimiter">#</span><span class="org-comment">circle radius</span>
+    x1 = rAng * np.cos(thetaAng) + 0
+    x2 = rAng * np.sin(thetaAng) + 0
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Plot this axis as a function and make it green</span>
+    ax.plot(x1, x2, color=<span class="org-string">'g'</span>,linewidth=5.0)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">name the axis</span>
+    ax.set_xlabel(<span class="org-string">'x-Achse'</span>, fontsize=16)
+    ax.set_ylabel(<span class="org-string">'y-Achse'</span>, fontsize=16)
+    ax.set_zlabel(<span class="org-string">'z-Achse'</span>, fontsize=16)
+
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">set a limit on the z-axis/**sorry it's messy &lt;2023-03-02 Thu&gt; shoshin</span>
+    ax.set_zlim(-4,4)
+
+    <span class="org-comment-delimiter">#</span><span class="org-comment">clean the canvas no grid whatsoever or other oob stuff</span>
+    ax.xaxis.pane.fill = <span class="org-constant">False</span>
+    ax.yaxis.pane.fill = <span class="org-constant">False</span>
+    ax.zaxis.pane.fill = <span class="org-constant">False</span>
+    ax.xaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+    ax.yaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+    ax.zaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+
+    ax.grid(<span class="org-constant">False</span>)
+    font = {<span class="org-string">'family'</span> : <span class="org-string">'sans-serif'</span>,
+        <span class="org-string">'weight'</span> : <span class="org-string">'normal'</span>,
+        <span class="org-string">'size'</span>   : 20}
+    plt.rc(<span class="org-string">'font'</span>, **font)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">fig.suptitle("Zylindrische Kavit&#228;t", fontsize=25)</span>
+    plt.axis(<span class="org-string">'off'</span>)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">fig.savefig('ZylinderSystem.png', dpi=320)</span>
+    plt.show()
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">create a figure for plotting</span>
+fig = plt.figure()
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">create a 3d ax-element</span>
+ax = fig.add_subplot(111, projection=<span class="org-string">'3d'</span>)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">adjust view on the art-piece</span>
+ax.view_init(azim=-90, elev=90)
+ax.set_axis_off()
+plt.show()
+
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">Write parameters to be passed to above cylinder function</span>
+radius = 50
+height = 2
+elevation = -1
+resolution = 100
+color = <span class="org-string">'lightskyblue'</span>
+x_center = 0
+y_center = 0
+
+<span class="org-comment-delimiter"># </span><span class="org-comment">pass the parameter</span>
+plot_3D_cylinder(radius, height, elevation=elevation, resolution=resolution, color=color, x_center=x_center, y_center=y_center)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">save the figure</span>
+plt.savefig(<span class="org-string">'img/matplot-azimuthal.png'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">return 'img/matplot-azimuthal.png'</span>
+
+
+</pre>
+</div>
+
+
+<div id="org52c5132" class="figure">
+<p><img src="./img/matplot-azimuthal.png" alt="matplot-azimuthal.png" title="AzimutaleFunktion" align="center" />
+</p>
+<p><span class="figure-number">Figure 2: </span>Die azimutale Funktion beschreibt die Umlaufrichtung</p>
+</div>
 
 \begin{equation}\label{eqn:azimuthal-Zahl}
   m = \frac{2\pi r n_{m}}{\lambda_{0}}
 \end{equation}
-\begin{tabbing}
-  \hspace{.75cm} \= \hspace{.5 cm} \= \hspace{4.5mm} \= \hspace{2.5mm}  \kill
-  $m$ \> -- \> Azimutale Quantenzahl \\
-   $r$ \> -- \> Radius \\
-  $n_{m}$ \> -- \> Brechungsindex des Mediums \\
-\end{tabbing}
+
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" title="test" align="center">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(m\)</td>
+<td class="org-left">Azimutale Quantenzahl</td>
+</tr>
+
+<tr>
+<td class="org-left">\(r\)</td>
+<td class="org-left">Radius</td>
+</tr>
+
+<tr>
+<td class="org-left">\(n_{m}\)</td>
+<td class="org-left">Brechungsindex</td>
+</tr>
+</tbody>
+</table>
 
 <p>
-Für die Funktion \(Z(z)\) ergeben sich in symmetrischen Lösungen&#x2026;
+Der mathematische Ausdruck ist im Vergleich zum oberen Codebeispiel ziemlich unspektakulär:
 </p>
+\begin{equation}
+     \Phi(\varphi) = e^{(jm \varphi)}
+\end{equation}
+</div>
+</div>
+</div>
+
+<div id="outline-container-org3ad36e4" class="outline-3">
+<h3 id="org3ad36e4">Funktion der Z-Koordinate bzw. der Höhe</h3>
+<div class="outline-text-3" id="text-org3ad36e4">
+<p>
+Für die Funktion \(Z(z)\) ergeben sich unterschiedliche Funktionen. Symmetrische, auch als unsymmetrische  Funktionen.
+Das Liegt daran, dass sowohl Cosinus als auch Sinus zulässig sind.
+</p>
+
 
 \begin{equation}
      Z(z) = \left\{\begin{array}{lr}
@@ -171,18 +517,50 @@ und unsymmetrischen Lösungen:
         \end{array}\right.
 \end{equation}
 
-\begin{tabbing}
-   \hspace{.75 cm} \= \hspace{.5 cm} \= \hspace{2.5mm} \= \hspace{2.5mm}  \kill
-  $k_{eff}$ \> -- \> effektive Wellenzahl einer Mode \\
-  $k_{i}$  \> -- \> Wellenzahl im Festkörper\\
-   $k_{0}$  \> -- \> Wellenzahl im Vakuum\\
-\end{tabbing}
+<table border="2" cellspacing="0" cellpadding="6" rules="groups" frame="hsides" title="Wellenzahlen" align="center">
+
+
+<colgroup>
+<col  class="org-left" />
+
+<col  class="org-left" />
+</colgroup>
+<tbody>
+<tr>
+<td class="org-left">\(k_{eff}\)</td>
+<td class="org-left">effektive Wellenzahl einer Mode</td>
+</tr>
+
+<tr>
+<td class="org-left">\(k_{i}\)</td>
+<td class="org-left">Wellenzahl im Festkörper</td>
+</tr>
+
+<tr>
+<td class="org-left">\(k_{0}\)</td>
+<td class="org-left">Wellenzahl im Vakuum</td>
+</tr>
+
+<tr>
+<td class="org-left">\(h\)</td>
+<td class="org-left">Höhe eines Resonators</td>
+</tr>
+</tbody>
+</table>
 
 <p>
-Die Lösungen für \(Z(z)\) hängen von der Höhe \(h\) und der Wellenzahl \(k = \frac{2\pi}{\lambda}\) ab. Dieser Zusammenhang sollte bei einer gegebenen Wellenlänge hinsichtlich einer Mindesthöhe berücksichtigt werden. Bei gegebener Höhe und Wellenlänge ist eine Quantisierung durch die Funktionen in vertikaler Richtung möglich. Ausgedrückt wird dies durch &#x2026;
+Die Höhe \(h\) gibt die Randbedingung für die Gültigkeit der Sinus/Cosinus Funktion für die $Z$-Koordinate wieder. Jenseits einer gegebenen Höhe sind andere Funktionen definiert, die mit zunehmendem/abnehmenden \(z\) exponential abfallen und gegen \(0\) gehen.
 </p>
+</div>
 
+<div id="outline-container-orgd7e0023" class="outline-4">
+<h4 id="orgd7e0023">Codebeispiel für die vertikale Richtung</h4>
+</div>
+</div>
 
+<div id="outline-container-org0a9b8cb" class="outline-3">
+<h3 id="org0a9b8cb">Die Radiale Funktion</h3>
+<div class="outline-text-3" id="text-org0a9b8cb">
 <p>
 Für die radiale Funktion \(R(\rho)\) ergibt sich durch die Separation der Variablen Bessels-Differentialgleichung.
 </p>
@@ -200,21 +578,283 @@ Durch die Substitution \(\mathbf{k \rho = x}\) ist der Ausdruck aus Gleichung al
 \end{equation}
 
 <p>
-Diese Differentialgleichung kann durch Besselfunktionen und Hankelfunktionen erster Gattung gelöst werden. Das Innere des Resonators wird dabei durch Besselfunktionen beschrieben \cite{vollmer2020optical}.
+Diese Differentialgleichung kann durch Besselfunktionen und Hankelfunktionen erster Gattung gelöst werden. Das Innere des Resonators wird dabei durch Besselfunktionen beschrieben.
 </p>
 \begin{equation}
    R(\rho) = J_{m}\Big(\frac{k_{eff}\cdot \rho}{r}\Big), \hspace{0.5cm} \rho < r
 \end{equation}
+</div>
 
+
+<div id="outline-container-org9fd989c" class="outline-4">
+<h4 id="org9fd989c">Codebeispiel der Besselfunktionen</h4>
+<div class="outline-text-4" id="text-org9fd989c">
 <p>
-Auf den Außenbereich entfallen die Hankelfunktionen.
+Im Folgenden wird in Python ein Codebeispiel gezeigt, in welchem das Innere eines Resonators dargestellt wird. Es veranschaulicht eine radiale Veränderung des Elektromagnetischen Feldes.
 </p>
-\begin{equation}
-     R(\rho) = H^{1}_{m}\Big(\frac{k_{0}\cdot \rho}{r}\Big),  \hspace{0.5cm} \rho > r
-\end{equation}
+</div>
+</div>
+
+<div id="outline-container-org835b006" class="outline-4">
+<h4 id="org835b006">Codebeispiel der radialen Funktion innerhalb des Resonators</h4>
+<div class="outline-text-4" id="text-org835b006">
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-keyword">import</span> scipy.special <span class="org-keyword">as</span> sp
+<span class="org-keyword">import</span> matplotlib
+<span class="org-keyword">from</span> scipy.special <span class="org-keyword">import</span> hankel1e, y1_zeros
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> Axes3D
+matplotlib.use(<span class="org-string">'Agg'</span>)
+<span class="org-keyword">import</span> matplotlib.pyplot <span class="org-keyword">as</span> plt
+<span class="org-keyword">from</span> matplotlib.patches <span class="org-keyword">import</span> FancyArrowPatch
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> proj3d
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">needed for 3D-coordinate system</span>
+<span class="org-keyword">class</span> <span class="org-type">Arrow3D</span>(FancyArrowPatch):
+    <span class="org-keyword">def</span> <span class="org-function-name">__init__</span>(<span class="org-keyword">self</span>, xs, ys, zs, *args, **kwargs):
+        <span class="org-builtin">super</span>().__init__((0,0), (0,0), *args, **kwargs)
+        <span class="org-keyword">self</span>.<span class="org-variable-name">_verts3d</span> = xs, ys, zs
+
+    <span class="org-keyword">def</span> <span class="org-function-name">do_3d_projection</span>(<span class="org-keyword">self</span>, renderer=<span class="org-constant">None</span>):
+        xs3d, ys3d, zs3d = <span class="org-keyword">self</span>._verts3d
+        xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, <span class="org-keyword">self</span>.axes.M)
+        <span class="org-keyword">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+
+        <span class="org-keyword">return</span> np.<span class="org-builtin">min</span>(zs)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">using circular coordinates again! range of theta-axis is needed</span>
+thetaAng = np.linspace(0,np.pi/2,100)  <span class="org-comment-delimiter"># </span><span class="org-comment">0 &lt;= &#952; &lt;= 2&#960;</span>
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">assume the edge of the resonator to be rAng = 50</span>
+rAng =  50.0
+x1 = rAng * np.cos(thetaAng) + 0
+x2 = rAng * np.sin(thetaAng) + 0
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">prepare the canvas and axis for the function</span>
+fig=plt.figure(figsize=(5,5))
+ax = Axes3D(fig, azim=45, elev=21)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">create coordinate arrows for cylindrical and cartesian directions</span>
+arrow_prop_dict = <span class="org-builtin">dict</span>(mutation_scale=20, arrowstyle=<span class="org-string">'-&gt;'</span>, shrinkA=0, shrinkB=0)
+a = Arrow3D([0, 0], [0, 70], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+ax.add_artist(a)
+a = Arrow3D([0, 70], [0, 0], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+ax.add_artist(a)
+a = Arrow3D([0, 0], [0, 0], [0, 0.8], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+ax.add_artist(a)
+a = Arrow3D([0, 0], [0, 0], [0, 0.7], **arrow_prop_dict, color=<span class="org-string">'blue'</span>,linewidth=5.0)
+ax.add_artist(a)
+a = Arrow3D([0, 0], [0, 55], [0, 0], **arrow_prop_dict, color=<span class="org-string">'red'</span>,linewidth=5.0)
+ax.add_artist(a)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">create the phi-coordinate</span>
+ax.plot(x1, x2, color=<span class="org-string">'g'</span>,linewidth=5.0)
+
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">add symbols for orientation</span>
+ax.text(0, -2, -.06, r<span class="org-string">'$o$'</span>)
+ax.text(0, 55, 0, r<span class="org-string">'$\rho$'</span>)
+ax.text(45, 45, 0, r<span class="org-string">'$\varphi$'</span>)
+ax.text(0, -2, 0.81, r<span class="org-string">'$z$'</span>)
+ax.text(75, 0, 0, r<span class="org-string">'$x$'</span>)
+ax.text(0, 70, 0, r<span class="org-string">'$y$'</span>)
+ax.text(-20, 15, 0.25, r<span class="org-string">'$R(\rho)$'</span>)
+
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">create the bessel-function</span>
+<span class="org-keyword">def</span> <span class="org-function-name">drumhead_height</span>(n, k, distance, angle, t):
+
+   kth_zero = sp.jn_zeros(n, k)[-1]
+
+   <span class="org-keyword">return</span> np.cos(t) * np.cos(n*angle) * sp.jn(n, distance*kth_zero)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">focus on the interesting part of the hankel function --outside the cylinder reminder: it's not defined inside</span>
+theta = np.r_[0:2*np.pi:50j]
+radius = np.r_[0:50:50j]
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">transform cartesian coordinates into cylindrical ones</span>
+x = np.array([r * np.cos(theta) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+y = np.array([r * np.sin(theta) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+z = np.array([drumhead_height(0,2, r, theta,1) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">plot the results outside</span>
+ax.plot_surface(x[1:50], y[1:50], z[1:50], rstride=1, cstride=1, cmap=<span class="org-string">'jet'</span>,alpha=0.5)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">set axis names and labels</span>
+ax.set_xlabel(<span class="org-string">'x'</span>)
+ax.set_ylabel(<span class="org-string">'y'</span>)
+ax.set_zlabel(<span class="org-string">'z'</span>)
+
+ax.set_xlabel(<span class="org-string">'Radius [$kR$]'</span>, labelpad=20 ,fontsize=16)
+ax.set_ylabel(<span class="org-string">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
+ax.set_zlabel(<span class="org-string">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
+
+ax.set_zlim3d(0,1)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">strip the figure of unnecessary stuff</span>
+ax.xaxis.pane.fill = <span class="org-constant">False</span>
+ax.yaxis.pane.fill = <span class="org-constant">False</span>
+ax.zaxis.pane.fill = <span class="org-constant">False</span>
+ax.xaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+ax.yaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+ax.zaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+font = {<span class="org-string">'family'</span> : <span class="org-string">'sans-serif'</span>,
+        <span class="org-string">'weight'</span> : <span class="org-string">'normal'</span>,
+        <span class="org-string">'size'</span>   : 20}
+plt.rc(<span class="org-string">'font'</span>, **font)
+<span class="org-comment-delimiter">#</span><span class="org-comment">fig.suptitle("Bessel", fontsize=25)</span>
+plt.axis(<span class="org-string">'off'</span>)
+fig.tight_layout(pad=1.0)
+<span class="org-comment-delimiter">#</span><span class="org-comment">plt.title('Radiale Funktion', x=0.525, y=0.75)</span>
+fig.savefig(<span class="org-string">'./img/BRadialeFunktion.png'</span>)
+plt.show()
+
+
+
+</pre>
+</div>
+
+
+<div id="org7f9b62b" class="figure">
+<p><img src="./img/BRadialeFunktion.png" alt="BRadialeFunktion.png" title="Bessel-Funktion" align="center" />
+</p>
+<p><span class="figure-number">Figure 3: </span>Die Funktion die radial die Umlaufrichtung beschreibt</p>
+</div>
+</div>
+</div>
+
+
+<div id="outline-container-org6d205a6" class="outline-4">
+<h4 id="org6d205a6">Codebeispiel der radialen Funktion außerhalb des Resonators</h4>
+<div class="outline-text-4" id="text-org6d205a6">
+<p>
+Außerhalb der endlichen Geometrie des Resonator fallen die Ausprägungen des elektromagntischen Feldes stark ab. Durch Hankelfunktionen wird diesem Umstand mathematisch
+Rechung getragen.
+</p>
+<div class="org-src-container">
+<pre class="src src-python"><span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-keyword">import</span> scipy.special <span class="org-keyword">as</span> sp
+<span class="org-keyword">import</span> matplotlib
+<span class="org-keyword">from</span> scipy.special <span class="org-keyword">import</span> hankel1e, y1_zeros
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> Axes3D
+matplotlib.use(<span class="org-string">'Agg'</span>)
+<span class="org-keyword">import</span> matplotlib.pyplot <span class="org-keyword">as</span> plt
+<span class="org-keyword">from</span> matplotlib.patches <span class="org-keyword">import</span> FancyArrowPatch
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> proj3d
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">needed for 3D-coordinate system</span>
+<span class="org-keyword">class</span> <span class="org-type">Arrow3D</span>(FancyArrowPatch):
+    <span class="org-keyword">def</span> <span class="org-function-name">__init__</span>(<span class="org-keyword">self</span>, xs, ys, zs, *args, **kwargs):
+        <span class="org-builtin">super</span>().__init__((0,0), (0,0), *args, **kwargs)
+        <span class="org-keyword">self</span>.<span class="org-variable-name">_verts3d</span> = xs, ys, zs
+
+    <span class="org-keyword">def</span> <span class="org-function-name">do_3d_projection</span>(<span class="org-keyword">self</span>, renderer=<span class="org-constant">None</span>):
+        xs3d, ys3d, zs3d = <span class="org-keyword">self</span>._verts3d
+        xs, ys, zs = proj3d.proj_transform(xs3d, ys3d, zs3d, <span class="org-keyword">self</span>.axes.M)
+        <span class="org-keyword">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+
+        <span class="org-keyword">return</span> np.<span class="org-builtin">min</span>(zs)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">using circular coordinates again! range of theta-axis is needed</span>
+thetaAng = np.linspace(0,np.pi/2,100)  <span class="org-comment-delimiter"># </span><span class="org-comment">0 &lt;= &#952; &lt;= 2&#960;</span>
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">assume the edge of the resonator to be rAng = 50</span>
+rAng =  50.0
+x1 = rAng * np.cos(thetaAng) + 0
+x2 = rAng * np.sin(thetaAng) + 0
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">prepare the canvas and axis for the function</span>
+fig=plt.figure(figsize=(5,5))
+ax = Axes3D(fig, azim=45, elev=21)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">create coordinate arrows for cylindrical and cartesian directions</span>
+arrow_prop_dict = <span class="org-builtin">dict</span>(mutation_scale=20, arrowstyle=<span class="org-string">'-&gt;'</span>, shrinkA=0, shrinkB=0)
+
+a = Arrow3D([0, 0], [0, 70], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+ax.add_artist(a)
+a = Arrow3D([0, 70], [0, 0], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+ax.add_artist(a)
+a = Arrow3D([0, 0], [0, 0], [0, 0.8], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
+ax.add_artist(a)
+a = Arrow3D([0, 0], [0, 0], [0, 0.7], **arrow_prop_dict, color=<span class="org-string">'blue'</span>,linewidth=5.0)
+ax.add_artist(a)
+a = Arrow3D([0, 0], [0, 55], [0, 0], **arrow_prop_dict, color=<span class="org-string">'red'</span>,linewidth=5.0)
+ax.add_artist(a)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">create the phi-coordinate</span>
+ax.plot(x1, x2, color=<span class="org-string">'g'</span>,linewidth=5.0)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">add symbols for orientation</span>
+ax.text(0, -2, -.06, r<span class="org-string">'$o$'</span>)
+ax.text(0, 55, 0, r<span class="org-string">'$\rho$'</span>)
+ax.text(45, 45, 0, r<span class="org-string">'$\varphi$'</span>)
+ax.text(0, -2, 0.81, r<span class="org-string">'$z$'</span>)
+ax.text(75, 0, 0, r<span class="org-string">'$x$'</span>)
+ax.text(0, 70, 0, r<span class="org-string">'$y$'</span>)
+ax.text(-20, 15, 0.25, r<span class="org-string">'$R(\rho)$'</span>)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">create the hankel-function</span>
+<span class="org-keyword">def</span> <span class="org-function-name">drumhead_height</span>(n, k, distance, angle, t):
+
+   kth_zero = sp.jn_zeros(n, k)[-1]
+
+   <span class="org-keyword">return</span> np.cos(t) * np.cos(n*angle) * sp.hankel1e(n, distance*kth_zero)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">focus on the interesting part of the hankel function --outside the cylinder reminder: it's not defined inside</span>
+theta = np.r_[0:2*np.pi:50j]
+radius = np.r_[55:75:50j]
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">transform cartesian coordinates into cylindrical ones</span>
+x = np.array([r * np.cos(theta) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+y = np.array([r * np.sin(theta) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+z = np.array([drumhead_height(0,2, r, theta,1) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">plot the results outside</span>
+ax.plot_surface(x[1:50], y[1:50], z[1:50], rstride=1, cstride=1, cmap=<span class="org-string">'jet'</span>,alpha=0.5)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">set axis names and labels</span>
+ax.set_xlabel(<span class="org-string">'x'</span>)
+ax.set_ylabel(<span class="org-string">'y'</span>)
+ax.set_zlabel(<span class="org-string">'z'</span>)
+
+ax.set_xlabel(<span class="org-string">'Radius [$kR$]'</span>, labelpad=20 ,fontsize=16)
+ax.set_ylabel(<span class="org-string">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
+ax.set_zlabel(<span class="org-string">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
+
+ax.set_zlim3d(0,1)
+
+<span class="org-comment-delimiter">#</span><span class="org-comment">strip the figure of unnecessary stuff</span>
+ax.xaxis.pane.fill = <span class="org-constant">False</span>
+ax.yaxis.pane.fill = <span class="org-constant">False</span>
+ax.zaxis.pane.fill = <span class="org-constant">False</span>
+ax.xaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+ax.yaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+ax.zaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+font = {<span class="org-string">'family'</span> : <span class="org-string">'sans-serif'</span>,
+        <span class="org-string">'weight'</span> : <span class="org-string">'normal'</span>,
+        <span class="org-string">'size'</span>   : 20}
+plt.rc(<span class="org-string">'font'</span>, **font)
+<span class="org-comment-delimiter">#</span><span class="org-comment">fig.suptitle("Bessel", fontsize=25)</span>
+plt.axis(<span class="org-string">'off'</span>)
+fig.tight_layout(pad=1.0)
+<span class="org-comment-delimiter">#</span><span class="org-comment">plt.title('Radiale Funktion', x=0.525, y=0.75)</span>
+fig.savefig(<span class="org-string">'./img/HRadialeFunktion.png'</span>)
+plt.show()
+
+
+</pre>
+</div>
+
+
+<div id="org9c8ee3e" class="figure">
+<p><img src="./img/HRadialeFunktion.png" alt="HRadialeFunktion.png" title="Hankel-Funktion" align="center" />
+</p>
+<p><span class="figure-number">Figure 4: </span>Die Funktion die radial die Umlaufrichtung beschreibt</p>
+</div>
 
 <p>
-Dabei können zu einer Funktion mit dem Index \(m\) mehrere Nullstellen gefunden werden, deren Lage aus Tabellen bekannt ist&#x2026; Mit einem gewählten Radius \(r\) und einer Wellenzahl \(k\) können die Nullstellen für ein System bestimmt werden &#x2026;
+Zu einer Funktion mit dem Index \(m\) können mehrere Nullstellen gefunden werden, deren Lage aus Tabellen bekannt ist&#x2026; Mit einem gewählten Radius \(r\) und einer Wellenzahl \(k\) können die Nullstellen für ein System bestimmt werden.
 </p>
 
 <p>
@@ -226,7 +866,7 @@ Mit den drei Quantenzahlen kann eine Eigenmode in einem Zylinder bestimmt werden
 \end{equation}
 
 <p>
-In den hier vorgestellten Verhältnissen ist \(k_{eff}\) nicht bekannt. Aus der Bedingung, dass das magnetische Feld \(B(r) = -\frac{j}{\omega} \nabla\times E(r)\) an dem Übergang  \(\rho = r\) kontinuierlich ist, ergibt sich das Verhältnis, dass die radiale innere Lösung an diesem Punkt gleich der radialen äußeren Lösung sein muss \cite{vollmer2020optical}./
+In den hier vorgestellten Verhältnissen ist \(k_{eff}\) nicht bekannt. Aus der Bedingung, dass das magnetische Feld \(B(r) = -\frac{j}{\omega} \nabla\times E(r)\) an dem Übergang  \(\rho = r\) kontinuierlich ist, ergibt sich das Verhältnis, dass die radiale innere Lösung an diesem Punkt gleich der radialen äußeren Lösung sein muss.
 </p>
 
 \begin{equation}\label{eqn:effektiveWellenzahl}
@@ -235,27 +875,26 @@ In den hier vorgestellten Verhältnissen ist \(k_{eff}\) nicht bekannt. Aus der 
 
 <p>
 Die Änderung der Funktion \([J_{m}(k_{eff}\cdot r)]'\) bzw. \([H^{1}_{m}(k_{0}\cdot r)]'\)  kann durch eine Finite-Elementen-Analyse numerisch genähert und gelöst werden. Dadurch kann die effektive Wellenzahl einer Mode gefunden werden.
-<a href="./index.html">Zurück</a>
 </p>
 </div>
 </div>
+</div>
+</div>
 
-<div id="outline-container-orgf922ea7" class="outline-2">
-<h2 id="orgf922ea7">Finite Differenzen Methode</h2>
-<div class="outline-text-2" id="text-orgf922ea7">
+
+<div id="outline-container-orgb13060a" class="outline-2">
+<h2 id="orgb13060a">Numerische Approximation</h2>
+<div class="outline-text-2" id="text-orgb13060a">
 <p>
-Lösungen der Maxwellgleichungen können numerisch über das Finite-Differenzen Verfahren approximiert werden. Dabei werden zu untersuchende Strukturen auf einem Rechengitter projiziert. Ein einfaches Rechengitter lässt sich über folgenden Code in C realisieren:
+Lösungen der Maxwellgleichungen können numerisch approximiert werden. Dabei werden zu untersuchende Strukturen auf einem Rechengitter projiziert. Ein einfaches Rechengitter lässt sich über folgenden Code in C realisieren
 </p>
-
-<div class="org-src-container">
-<pre class="src src-python"><span class="org-keyword">import</span> matplotlib
-<span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
-
-<span class="org-builtin">print</span>(<span class="org-string">"Hello World!"</span>)
-
-
-
-</pre>
+</div>
+<div id="outline-container-orgd5e6d20" class="outline-3">
+<h3 id="orgd5e6d20">Codebeispiel:</h3>
+<div class="outline-text-3" id="text-orgd5e6d20">
+<p>
+Ich habe den Code in folgendes Repository verlagert: <a href="https://github.com/shosh1n/EMCuda">EM-Cuda</a>. Er beinhaltet momentan verschiedene Matrixtransformationen, die Parallel auf einer Grafikkarte ausgeführt werden können. Im Sinne des Clean Code Prinzips muss dieser noch refaktorisiert werden.
+</p>
 </div>
 </div>
 </div>
