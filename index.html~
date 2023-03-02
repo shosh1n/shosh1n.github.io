@@ -42,18 +42,18 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org622194d">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
-<li><a href="#org942a8af">Die harmonische Störung des dielektrischen Feldes</a></li>
-<li><a href="#org53b96b9">Eine Gleichung</a></li>
-<li><a href="#orga57fc32">Hier geht es weiter</a></li>
-<li><a href="#orgb18e7d4">Grundlagen der Elektromagnetischen Wellen</a></li>
-<li><a href="#org4e41b52">Finite Differenzen Methode</a></li>
+<li><a href="#orge9869ec">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
+<li><a href="#org33bde75">Die harmonische Störung des dielektrischen Feldes</a></li>
+<li><a href="#org9a4990e">Eine Gleichung</a></li>
+<li><a href="#org10550dc">Hier geht es weiter</a></li>
+<li><a href="#org9ae8654">Grundlagen der Elektromagnetischen Wellen</a></li>
+<li><a href="#org8f5af8b">Finite Differenzen Methode</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org622194d" class="outline-2">
-<h2 id="org622194d">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
-<div class="outline-text-2" id="text-org622194d">
+<div id="outline-container-orge9869ec" class="outline-2">
+<h2 id="orge9869ec">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
+<div class="outline-text-2" id="text-orge9869ec">
 <p>
 Auf dieser Site stelle ich vor, wie ein physikalisches Phänomen - nämlich die Lichtausbreitung in dielektrischen, runden Resonatoren
 mathematisch beschrieben werden kann. Dabei kommen Theorie und Code-Beispiele zum Einsatz. Im Resultat werden Lösungen von
@@ -62,24 +62,27 @@ Differentialgleichungen mit einem numerischen Verfahren vorgestellt. Ich muss he
 </div>
 </div>
 
-<div id="outline-container-org942a8af" class="outline-2">
-<h2 id="org942a8af">Die harmonische Störung des dielektrischen Feldes</h2>
-<div class="outline-text-2" id="text-org942a8af">
+<div id="outline-container-org33bde75" class="outline-2">
+<h2 id="org33bde75">Die harmonische Störung des dielektrischen Feldes</h2>
+<div class="outline-text-2" id="text-org33bde75">
 <p>
 Zunächst wird im Zuge auf die Ausbreitung des Lichtes festgelegt, dass nur harmonische Veränderungen des Feldes betrachtet werden. D.h. dass periodische Veränderungen
 des Feldes durch Sinus- und Cosinusfunktionen beschrieben werden können.
 </p>
 
-<p alt="1DSinus" title="Sinus" align="center">
-<a href="./img/matplot-fig.png" alt="1DSinus" title="Sinus" align="center">Sinus</a>
+
+<div id="org84ed8e6" class="figure">
+<p><img src="./img/matplot-fig.png" alt="1DSinus" title="Sinus" align="center" />
 </p>
+<p><span class="figure-number">Figure 1: </span>Eine 1D-Sinusfunktion</p>
+</div>
 </div>
 </div>
 
 
-<div id="outline-container-org53b96b9" class="outline-2">
-<h2 id="org53b96b9">Eine Gleichung</h2>
-<div class="outline-text-2" id="text-org53b96b9">
+<div id="outline-container-org9a4990e" class="outline-2">
+<h2 id="org9a4990e">Eine Gleichung</h2>
+<div class="outline-text-2" id="text-org9a4990e">
 \begin{equation}\label{eqn:ZylinderWelle}
     -\frac{1}{2}\Big[ \frac{1}{\rho} \frac{\partial}{\partial \rho} \Big( \rho \frac{\partial}{\partial \rho} \Big) + \frac{1}{\rho^{2}}\frac{\partial^{2}}{\partial \varphi^{2}} + \frac{\partial^{2}}{\partial z^{2}} \Big] \psi = L\psi
 \end{equation}
@@ -87,18 +90,18 @@ des Feldes durch Sinus- und Cosinusfunktionen beschrieben werden können.
 </div>
 
 
-<div id="outline-container-orga57fc32" class="outline-2">
-<h2 id="orga57fc32">Hier geht es weiter</h2>
-<div class="outline-text-2" id="text-orga57fc32">
+<div id="outline-container-org10550dc" class="outline-2">
+<h2 id="org10550dc">Hier geht es weiter</h2>
+<div class="outline-text-2" id="text-org10550dc">
 <p>
 normale Laufschrift.
 </p>
 </div>
 </div>
 
-<div id="outline-container-orgb18e7d4" class="outline-2">
-<h2 id="orgb18e7d4">Grundlagen der Elektromagnetischen Wellen</h2>
-<div class="outline-text-2" id="text-orgb18e7d4">
+<div id="outline-container-org9ae8654" class="outline-2">
+<h2 id="org9ae8654">Grundlagen der Elektromagnetischen Wellen</h2>
+<div class="outline-text-2" id="text-org9ae8654">
 <p>
 Elektromagnetische Wellen gehen aus der harmonischen Lösung der Maxwellgleichungen hervor.
 Eine Beschreibung und Einbettung in den Zusammenhang des hier vorgestellten Phänomens ist über den Link
@@ -210,9 +213,9 @@ Die Änderung der Funktion \([J_{m}(k_{eff}\cdot r)]'\) bzw. \([H^{1}_{m}(k_{0}\
 </div>
 </div>
 
-<div id="outline-container-org4e41b52" class="outline-2">
-<h2 id="org4e41b52">Finite Differenzen Methode</h2>
-<div class="outline-text-2" id="text-org4e41b52">
+<div id="outline-container-org8f5af8b" class="outline-2">
+<h2 id="org8f5af8b">Finite Differenzen Methode</h2>
+<div class="outline-text-2" id="text-org8f5af8b">
 <p>
 Lösungen der Maxwellgleichungen können numerisch über das Finite-Differenzen Verfahren approximiert werden. Dabei werden zu untersuchende Strukturen auf einem Rechengitter projiziert. Ein einfaches Rechengitter lässt sich über folgenden Code in C realisieren:
 </p>
