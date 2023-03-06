@@ -42,61 +42,60 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents" role="doc-toc">
 <ul>
-<li><a href="#org9536a50">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
-<li><a href="#orgd2e87bd">Die harmonische Störung des dielektrischen Feldes</a>
+<li><a href="#org557fde7">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
+<li><a href="#orgfee7c4e">Die harmonische Störung des dielektrischen Feldes</a>
 <ul>
-<li><a href="#org1dbf1ce">Codebeispiel: Die Sinus-Funktion eine Lösung des freien Feldes</a></li>
+<li><a href="#orgf3aa4b8">Codebeispiel: Die Sinus-Funktion eine Lösung des freien Feldes</a></li>
 </ul>
 </li>
-<li><a href="#org34901cf">Lösung der Wellengleichung in endlichen Geometrien</a>
+<li><a href="#org3e5f7ac">Lösung der Wellengleichung in endlichen Geometrien</a>
 <ul>
-<li><a href="#org1ce1e0e">Potential in einem Zylinder</a></li>
+<li><a href="#org083d01f">Potential in einem Zylinder</a></li>
 </ul>
 </li>
-<li><a href="#org206c7e0">Bestimmte Harmonische: Flüstergaleriemoden</a>
+<li><a href="#org5ed2712">Bestimmte Harmonische: Flüstergaleriemoden</a>
 <ul>
-<li><a href="#org4cb9db8">Allgemeine Funktion der 3D-Wellengleichung</a></li>
-<li><a href="#org0d9790d">Die Azimutale Funktion</a>
+<li><a href="#org588b49a">Allgemeine Funktion der 3D-Wellengleichung</a></li>
+<li><a href="#org28cb66a">Die Azimutale Funktion</a>
 <ul>
-<li><a href="#org3ce196c">Codebeispiel: Azimutale Funktion</a></li>
+<li><a href="#org89eb2b9">Codebeispiel: Azimutale Funktion</a></li>
 </ul>
 </li>
-<li><a href="#org59fd68c">Funktion der Z-Koordinate bzw. der Höhe</a>
+<li><a href="#org3cf597b">Funktion der Z-Koordinate bzw. der Höhe</a>
 <ul>
-<li><a href="#org70a0a5e">Codebeispiel für die vertikale Richtung</a></li>
+<li><a href="#org72b90ea">Codebeispiel für die vertikale Richtung</a></li>
 </ul>
 </li>
-<li><a href="#org368d7c7">Die Radiale Funktion</a>
+<li><a href="#orgd0c50cd">Die Radiale Funktion</a>
 <ul>
-<li><a href="#org09b6ac1">Codebeispiel der Besselfunktionen</a></li>
-<li><a href="#org3dfdebd">Codebeispiel der radialen Funktion innerhalb des Resonators</a></li>
-<li><a href="#orgd1b83a9">Codebeispiel der radialen Funktion außerhalb des Resonators</a></li>
+<li><a href="#org93b1224">Codebeispiel der Besselfunktionen</a></li>
+<li><a href="#org86583f0">Codebeispiel der radialen Funktion innerhalb des Resonators</a></li>
+<li><a href="#org2665f44">Codebeispiel der radialen Funktion außerhalb des Resonators</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org0d90540">Numerische Approximation</a>
+<li><a href="#orgf3677b8">Numerische Approximation</a>
 <ul>
-<li><a href="#org0d4713e">Codebeispiel: ACHTUNG DIESER CODE WIRD NOCH VERLAGERT ER IST ZUVIEL ;)</a></li>
+<li><a href="#orgef0beb1">Codebeispiel:</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org9536a50" class="outline-2">
-<h2 id="org9536a50">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
-<div class="outline-text-2" id="text-org9536a50">
+<div id="outline-container-org557fde7" class="outline-2">
+<h2 id="org557fde7">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
+<div class="outline-text-2" id="text-org557fde7">
 <p>
 Auf dieser Site stelle ich vor, wie ein physikalisches Phänomen - nämlich die Lichtausbreitung in dielektrischen, runden Resonatoren
-mathematisch beschrieben werden kann. Dabei kommen Theorie und Code-Beispiele zum Einsatz. Im Resultat werden Lösungen von
-Differentialgleichungen mit einem numerischen Verfahren vorgestellt.
+und wie sie mathematisch beschrieben werden kann. Dabei kommen Theorie und Code-Beispiele zum Einsatz. Im Resultat werden Lösungen von
+Differentialgleichungen mit einem numerischen Verfahren vorgestellt. <b>Hinweis:</b> momentan ist dieser Code noch in einem anderen Repository[FN:1]
 </p>
 </div>
 </div>
-
-<div id="outline-container-orgd2e87bd" class="outline-2">
-<h2 id="orgd2e87bd">Die harmonische Störung des dielektrischen Feldes</h2>
-<div class="outline-text-2" id="text-orgd2e87bd">
+<div id="outline-container-orgfee7c4e" class="outline-2">
+<h2 id="orgfee7c4e">Die harmonische Störung des dielektrischen Feldes</h2>
+<div class="outline-text-2" id="text-orgfee7c4e">
 <p>
 Zunächst wird im Zuge auf die Ausbreitung des Lichtes festgelegt, dass nur harmonische Veränderungen des Feldes betrachtet werden. D.h. dass periodische Veränderungen
 des Feldes durch Sinus- und Cosinusfunktionen beschrieben werden können. Mathematisch generell "gesprochen" kommen die periodischen Schwinungen aus der Wellengleichung:
@@ -165,9 +164,9 @@ Allgemein kann das elektrische <b>Freie Feld</b> über folgenden algebraischen A
     = E_{0}\exp{j\mathbf{k}\cdot\mathbf{r}-j\omega t}
 \end{equation}
 </div>
-<div id="outline-container-org1dbf1ce" class="outline-3">
-<h3 id="org1dbf1ce">Codebeispiel: Die Sinus-Funktion eine Lösung des freien Feldes</h3>
-<div class="outline-text-3" id="text-org1dbf1ce">
+<div id="outline-container-orgf3aa4b8" class="outline-3">
+<h3 id="orgf3aa4b8">Codebeispiel: Die Sinus-Funktion eine Lösung des freien Feldes</h3>
+<div class="outline-text-3" id="text-orgf3aa4b8">
 <div class="org-src-container">
 <pre class="src src-python"><span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
 <span class="org-keyword">import</span> matplotlib
@@ -196,7 +195,7 @@ plt.savefig(<span class="org-string">'img/matplot-fig.png'</span>)
 </div>
 
 
-<div id="org9043948" class="figure">
+<div id="orgab7c091" class="figure">
 <p><img src="./img/matplot-fig.png" alt="1DSinus" title="Sinus" align="center" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Eine 1D-Sinusfunktion</p>
@@ -206,9 +205,9 @@ plt.savefig(<span class="org-string">'img/matplot-fig.png'</span>)
 </div>
 
 
-<div id="outline-container-org34901cf" class="outline-2">
-<h2 id="org34901cf">Lösung der Wellengleichung in endlichen Geometrien</h2>
-<div class="outline-text-2" id="text-org34901cf">
+<div id="outline-container-org3e5f7ac" class="outline-2">
+<h2 id="org3e5f7ac">Lösung der Wellengleichung in endlichen Geometrien</h2>
+<div class="outline-text-2" id="text-org3e5f7ac">
 <p>
 Zu Beginn des Textes wurde die Wellengleichung ohne große Einschränkungen gelöst. In realen Systemen ist so eine Lösung ungenau. In einem unendlich großen
 Störungsfreien Raum, stellt die 1D-Sinusfunktion eine gültige Lösung dar.
@@ -218,9 +217,9 @@ Zylinderraum vollständig beschreiben können.
 </p>
 </div>
 
-<div id="outline-container-org1ce1e0e" class="outline-3">
-<h3 id="org1ce1e0e">Potential in einem Zylinder</h3>
-<div class="outline-text-3" id="text-org1ce1e0e">
+<div id="outline-container-org083d01f" class="outline-3">
+<h3 id="org083d01f">Potential in einem Zylinder</h3>
+<div class="outline-text-3" id="text-org083d01f">
 <p>
 Da eine Störung eine Veränderung herbeiführt, wird ein Differentialoperator auf eine Größe \(\psi\) angewandt. Dieser beschreibende Veränderungsoperator berücksichtigt
 die 3-Raumrichtungen.
@@ -235,9 +234,9 @@ die 3-Raumrichtungen.
 
 
 
-<div id="outline-container-org206c7e0" class="outline-2">
-<h2 id="org206c7e0">Bestimmte Harmonische: Flüstergaleriemoden</h2>
-<div class="outline-text-2" id="text-org206c7e0">
+<div id="outline-container-org5ed2712" class="outline-2">
+<h2 id="org5ed2712">Bestimmte Harmonische: Flüstergaleriemoden</h2>
+<div class="outline-text-2" id="text-org5ed2712">
 <p>
 Flüstergaleriemoden sind bestimmte Harmonische Störungen im Raum. Sie sind an der Seitenwand eines Resonators zu verorten.
 Ist die Wellenlänge sind bestimmte Größen des System bekannt, dann Eine Wellenzahl - oder auch ein quantisierter Zustand der Harmonischen Störung
@@ -245,9 +244,9 @@ bestimmt werden.
 </p>
 </div>
 
-<div id="outline-container-org4cb9db8" class="outline-3">
-<h3 id="org4cb9db8">Allgemeine Funktion der 3D-Wellengleichung</h3>
-<div class="outline-text-3" id="text-org4cb9db8">
+<div id="outline-container-org588b49a" class="outline-3">
+<h3 id="org588b49a">Allgemeine Funktion der 3D-Wellengleichung</h3>
+<div class="outline-text-3" id="text-org588b49a">
 <p>
 Im Besten Fall kann eine Wellenfunktion gefunden werden, die sich aus 3 einzelnen Funktionen entsprechend der Raumkoordinaten zusammensetzt.
 Ohne große Überlegung kann die Funktion folgendermaßen geschrieben werden:
@@ -263,18 +262,18 @@ In den folgenden Abschnitte werden diese Funktionen einzeln betrachtet.
 </div>
 </div>
 
-<div id="outline-container-org0d9790d" class="outline-3">
-<h3 id="org0d9790d">Die Azimutale Funktion</h3>
-<div class="outline-text-3" id="text-org0d9790d">
+<div id="outline-container-org28cb66a" class="outline-3">
+<h3 id="org28cb66a">Die Azimutale Funktion</h3>
+<div class="outline-text-3" id="text-org28cb66a">
 <p>
 Als erstes lässt sich relativ einfach die azimutale Funktion bestimmen. Die Azimutale Funktion umläuft den Zylinder.
 Folgendes Codebeispiel veranschautlicht diese.
 </p>
 </div>
 
-<div id="outline-container-org3ce196c" class="outline-4">
-<h4 id="org3ce196c">Codebeispiel: Azimutale Funktion</h4>
-<div class="outline-text-4" id="text-org3ce196c">
+<div id="outline-container-org89eb2b9" class="outline-4">
+<h4 id="org89eb2b9">Codebeispiel: Azimutale Funktion</h4>
+<div class="outline-text-4" id="text-org89eb2b9">
 <div class="org-src-container">
 <pre class="src src-python">
 
@@ -442,7 +441,7 @@ plt.savefig(<span class="org-string">'img/matplot-azimuthal.png'</span>)
 </div>
 
 
-<div id="orgdeecdc5" class="figure">
+<div id="orgc7db58c" class="figure">
 <p><img src="./img/matplot-azimuthal.png" alt="matplot-azimuthal.png" title="AzimutaleFunktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Die azimutale Funktion beschreibt die Umlaufrichtung</p>
@@ -488,9 +487,9 @@ Der mathematische Ausdruck ist im Vergleich zum oberen Codebeispiel ziemlich uns
 </div>
 </div>
 
-<div id="outline-container-org59fd68c" class="outline-3">
-<h3 id="org59fd68c">Funktion der Z-Koordinate bzw. der Höhe</h3>
-<div class="outline-text-3" id="text-org59fd68c">
+<div id="outline-container-org3cf597b" class="outline-3">
+<h3 id="org3cf597b">Funktion der Z-Koordinate bzw. der Höhe</h3>
+<div class="outline-text-3" id="text-org3cf597b">
 <p>
 Für die Funktion \(Z(z)\) ergeben sich unterschiedliche Funktionen. Symmetrische, auch als unsymmetrische  Funktionen.
 Das Liegt daran, dass sowohl Cosinus als auch Sinus zulässig sind.
@@ -553,14 +552,14 @@ Die Höhe \(h\) gibt die Randbedingung für die Gültigkeit der Sinus/Cosinus Fu
 </p>
 </div>
 
-<div id="outline-container-org70a0a5e" class="outline-4">
-<h4 id="org70a0a5e">Codebeispiel für die vertikale Richtung</h4>
+<div id="outline-container-org72b90ea" class="outline-4">
+<h4 id="org72b90ea">Codebeispiel für die vertikale Richtung</h4>
 </div>
 </div>
 
-<div id="outline-container-org368d7c7" class="outline-3">
-<h3 id="org368d7c7">Die Radiale Funktion</h3>
-<div class="outline-text-3" id="text-org368d7c7">
+<div id="outline-container-orgd0c50cd" class="outline-3">
+<h3 id="orgd0c50cd">Die Radiale Funktion</h3>
+<div class="outline-text-3" id="text-orgd0c50cd">
 <p>
 Für die radiale Funktion \(R(\rho)\) ergibt sich durch die Separation der Variablen Bessels-Differentialgleichung.
 </p>
@@ -586,18 +585,18 @@ Diese Differentialgleichung kann durch Besselfunktionen und Hankelfunktionen ers
 </div>
 
 
-<div id="outline-container-org09b6ac1" class="outline-4">
-<h4 id="org09b6ac1">Codebeispiel der Besselfunktionen</h4>
-<div class="outline-text-4" id="text-org09b6ac1">
+<div id="outline-container-org93b1224" class="outline-4">
+<h4 id="org93b1224">Codebeispiel der Besselfunktionen</h4>
+<div class="outline-text-4" id="text-org93b1224">
 <p>
 Im Folgenden wird in Python ein Codebeispiel gezeigt, in welchem das Innere eines Resonators dargestellt wird. Es veranschaulicht eine radiale Veränderung des Elektromagnetischen Feldes.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org3dfdebd" class="outline-4">
-<h4 id="org3dfdebd">Codebeispiel der radialen Funktion innerhalb des Resonators</h4>
-<div class="outline-text-4" id="text-org3dfdebd">
+<div id="outline-container-org86583f0" class="outline-4">
+<h4 id="org86583f0">Codebeispiel der radialen Funktion innerhalb des Resonators</h4>
+<div class="outline-text-4" id="text-org86583f0">
 <div class="org-src-container">
 <pre class="src src-python"><span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
 <span class="org-keyword">import</span> scipy.special <span class="org-keyword">as</span> sp
@@ -716,7 +715,7 @@ plt.show()
 </div>
 
 
-<div id="org0667834" class="figure">
+<div id="org882767b" class="figure">
 <p><img src="./img/BRadialeFunktion.png" alt="BRadialeFunktion.png" title="Bessel-Funktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 3: </span>Die Funktion die radial die Umlaufrichtung beschreibt</p>
@@ -725,9 +724,9 @@ plt.show()
 </div>
 
 
-<div id="outline-container-orgd1b83a9" class="outline-4">
-<h4 id="orgd1b83a9">Codebeispiel der radialen Funktion außerhalb des Resonators</h4>
-<div class="outline-text-4" id="text-orgd1b83a9">
+<div id="outline-container-org2665f44" class="outline-4">
+<h4 id="org2665f44">Codebeispiel der radialen Funktion außerhalb des Resonators</h4>
+<div class="outline-text-4" id="text-org2665f44">
 <p>
 Außerhalb der endlichen Geometrie des Resonator fallen die Ausprägungen des elektromagntischen Feldes stark ab. Durch Hankelfunktionen wird diesem Umstand mathematisch
 Rechung getragen.
@@ -847,7 +846,7 @@ plt.show()
 </div>
 
 
-<div id="org9979bc9" class="figure">
+<div id="orgd0bdca4" class="figure">
 <p><img src="./img/HRadialeFunktion.png" alt="HRadialeFunktion.png" title="Hankel-Funktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 4: </span>Die Funktion die radial die Umlaufrichtung beschreibt</p>
@@ -882,721 +881,19 @@ Die Änderung der Funktion \([J_{m}(k_{eff}\cdot r)]'\) bzw. \([H^{1}_{m}(k_{0}\
 </div>
 
 
-<div id="outline-container-org0d90540" class="outline-2">
-<h2 id="org0d90540">Numerische Approximation</h2>
-<div class="outline-text-2" id="text-org0d90540">
+<div id="outline-container-orgf3677b8" class="outline-2">
+<h2 id="orgf3677b8">Numerische Approximation</h2>
+<div class="outline-text-2" id="text-orgf3677b8">
 <p>
 Lösungen der Maxwellgleichungen können numerisch approximiert werden. Dabei werden zu untersuchende Strukturen auf einem Rechengitter projiziert. Ein einfaches Rechengitter lässt sich über folgenden Code in C realisieren
 </p>
 </div>
-<div id="outline-container-org0d4713e" class="outline-3">
-<h3 id="org0d4713e">Codebeispiel: ACHTUNG DIESER CODE WIRD NOCH VERLAGERT ER IST ZUVIEL ;)</h3>
-<div class="outline-text-3" id="text-org0d4713e">
-<div class="org-src-container">
-<pre class="src src-cuda">#include &lt;algorithm&gt;
-#include &lt;cublas.h&gt;
-#include &lt;iostream&gt;
-#include &lt;iterator&gt;
-#include &lt;math.h&gt;
-#include &lt;string.h&gt;
-#include &lt;thrust/complex.h&gt;
-#include &lt;thrust/device_vector.h&gt;
-#include &lt;thrust/execution_policy.h&gt;
-#include &lt;thrust/for_each.h&gt;
-#include &lt;thrust/functional.h&gt;
-#include &lt;thrust/gather.h&gt;
-#include &lt;thrust/host_vector.h&gt;
-#include &lt;thrust/iterator/counting_iterator.h&gt;
-#include &lt;thrust/iterator/transform_iterator.h&gt;
-#include &lt;thrust/iterator/zip_iterator.h&gt;
-#include &lt;thrust/partition.h&gt;
-#include &lt;thrust/fill.h&gt;
-#include &lt;thrust/transform.h&gt;
-#include &lt;thrust/scatter.h&gt;
-#include &lt;thrust/sequence.h&gt;
-#include &lt;thrust/tuple.h&gt;
-#include &lt;vector&gt;
-#include &lt;cusolverSp.h&gt;
-#include &lt;cusparse.h&gt;
-#include "cusolver_utils.h"
-#include &lt;string&gt;
-#include &lt;cmath&gt;
-#include &lt;cstdlib&gt;
-
-template &lt;typename Iterator&gt; class strided_range {
-public:
-  typedef typename thrust::iterator_difference&lt;Iterator&gt;::type difference_type;
-
-  struct stride_functor
-      : public thrust::unary_function&lt;difference_type, difference_type&gt; {
-    difference_type stride;
-
-    stride_functor(difference_type stride) : stride(stride) {}
-
-    __host__ __device__ difference_type
-    operator()(const difference_type &amp;i) const {
-      return stride * i;
-    }
-  };
-
-
-  typedef typename thrust::counting_iterator&lt;difference_type&gt; CountingIterator;
-  typedef typename thrust::transform_iterator&lt;stride_functor, CountingIterator&gt;
-      TransformIterator;
-  typedef typename thrust::permutation_iterator&lt;Iterator, TransformIterator&gt;
-      PermutationIterator;
-
-  // type of the strided_range iterator
-  typedef PermutationIterator iterator;
-
-  // construct strided_range for the range [first,last)
-  strided_range(Iterator first, Iterator last, difference_type stride)
-      : first(first), last(last), stride(stride) {}
-
-  iterator begin(void) const {
-    return PermutationIterator(
-	first, TransformIterator(CountingIterator(0), stride_functor(stride)));
-  }
-
-  iterator end(void) const {
-    return begin() + ((last - first) + (stride - 1)) / stride;
-  }
-
-protected:
-  Iterator first;
-  Iterator last;
-  difference_type stride;
-};
-
-// SPARSE MATRIX DIVISION
-struct sparseDivision
-{
-    __host__ __device__
-    thrust::tuple&lt;float,float&gt; operator()(const thrust::tuple&lt;float,float&gt;&amp; spMat, const thrust::tuple&lt;float&gt; &amp;divi) const
-    {
-      auto out = thrust::make_tuple(thrust::get&lt;0&gt;(spMat)/thrust::get&lt;0&gt;(divi),thrust::get&lt;1&gt;(spMat)/thrust::get&lt;0&gt;(divi));
-      return out;
-    }
-
-};
-
-// SPARSE MATRIX MULTIPLICATION
-
-__global__ void SpMM(float *d_A, float *d_B, float *d_C, int barrier, int* d_elem_scan, int *d_row_ptr, int *d_col_ptr)
-{
-int focus = blockIdx.x * blockDim.x + threadIdx.x;
-    if ((focus &lt; barrier))
-	{
-
-	float temp = 0;
-	int k = 0;
-	int d_elem_start = d_elem_scan[focus];
-	int d_elem_end = d_elem_scan[focus+1];
-
-	int elem = d_elem_end - d_elem_start;
-	for(int i = 0; i &lt; elem; i++)
-	{
-	  //this is a temp fix because otherwise the wrong col-element gets pulled
-	  //A fix will be implemented within generalized upcoming linear algebra routines
-	  if(i==1)
-	  {
-	    temp += d_A[d_row_ptr[focus+i]] * d_B[d_col_ptr[focus+i+1]];
-	  }
-
-	 else
-	 {
-	    temp += d_A[d_row_ptr[focus+i]] * d_B[d_col_ptr[focus+i]];
-	 }
-	    //DEBUGGING
-	    //uncomment to see why the fix above is neccessary; the root of the problems lies within the combination of threading and loop-increment
-	    //printf(" thread: %i  row: %i  col: %i  inc: %i escan: %i temp: %f \n", focus,d_row_ptr[focus +i], d_col_ptr[focus +i], i, elem, temp );
-	}
-	d_C[focus] = temp;
-	}
-    }
-
-void DiagAdd(float *diagonal, float* addMe, int diagSize )
-{
-
-    for(int diagIdx = 0; diagIdx &lt; diagSize; ++diagIdx)
-	{
-		if(diagIdx % 3 == 0)
-			{
-			    diagonal[diagIdx] =diagonal[diagIdx] + addMe[diagIdx/3];
-			}
-	}
-}
-
-//// Sequences for Matrix-Elements outside of CUDA-Kernels
-//void CreateRow_Ptr(int* h_rows,int size)
-//     {
-//        int input = 1;
-//        for (int  i = 0; i &lt; size; i+=2)
-//        {
-//            if(i == 0)
-//                {
-//                h_rows[i] = 0;
-//                }
-//            for(int k = 1; k &lt; 3; ++k)
-//                {
-//                    h_rows[i+k] = input;
-//                }
-//            ++input;
-//        }
-//     }
-//
-//void CreateCol_Ptr(int* h_cols, int size)
-//     {
-//         bool focus;
-//         int barrier = 4;
-//         int elem1 = 1;
-//         int elem2 = 1;
-//
-//         h_cols[0] =0;
-//         int i = 1;
-//
-//         while(i &lt; size)
-//         {
-//             if(barrier &gt; 2)
-//             {
-//                 h_cols[i] = elem1;
-//                 ++elem1;
-//                 barrier--;
-//                 focus = false;
-//                 ++i;
-//             }
-//
-//             if(barrier == 2)
-//             {
-//                 if(focus == false)
-//                     barrier = 0;
-//
-//                 if(focus == true)
-//                     barrier = 4;
-//             }
-//
-//             if( barrier &lt; 2)
-//             {
-//                 h_cols[i] = elem2;
-//                 ++elem2;
-//                 ++barrier;
-//                 focus = true;
-//                 ++i;
-//             }
-//
-//         }
-//     }
-//
-//
-void CreateElem_Scan(int *elem_list, int size)
-     {
-	int offset = 2;
-	int inc = 0;
-	int i = 0;
-	while (i &lt; size)
-	{
-
-	    if(i == 0)
-		{
-		    elem_list[i]=0;
-		    ++i;
-		}
-
-
-	    if(offset == 2)
-	    {
-		inc +=2;
-		elem_list[i] = inc;
-		offset = 0;
-		++i;
-	    }
-
-	    else
-	    {
-		++inc;
-		elem_list[i] =inc;
-		++offset;
-		++i;
-	    }
-	}
-
-     }
-
-struct vectorInversion
-{
-    __host__ __device__
-    float operator()(const float&amp; vec) const
-    {
-      auto out = 1/vec;
-      return out;
-    }
-
-};
-
-template &lt;typename V&gt;
-
-void print_matrix(const V &amp;A, int nr_rows_A, int nr_cols_A) {
-
-  for (int i = 0; i &lt; nr_rows_A; ++i) {
-    for (int j = 0; j &lt; nr_cols_A; ++j) {
-      std::cout &lt;&lt; A[j * nr_rows_A + i] &lt;&lt; " ";
-    }
-    std::cout &lt;&lt; std::endl;
-  }
-  std::cout &lt;&lt; std::endl;
-}
-
-//Sequence for Col-Elements in threading scheme
-void kernelCols(int *cols, int size)
-{
-    int barrier = 1;
-    int even = 2;
-    int normal = 0;
-    for(int i = 0;  i &lt; size; ++i)
-	{
-	    if((barrier) !=2 || (i == 0) ){
-		cols[i] = normal;
-		++normal;
-		++barrier;
-		}
-
-	    else if((barrier == 2) &amp;&amp;( i != 0))
-	    {
-		    cols[i]  = even;
-		    barrier=0;
-		    even+=2;
-	    }
-	    }
-}
-
-//Sequence for Row-Elements in threading scheme
-void kernelRows(int *rows, int size)
-    {
-
-    int inc = 0;
-    int k = 0;
-    while(k &lt;size)
-	{
-	    if((k!=0)&amp;&amp;(k%3==0))
-		{
-		rows[k] = inc-1;
-		++k;
-		}
-	    rows[k]=inc;
-	    ++inc;
-	    ++k;
-	    }
-    }
-
-void creat_sp_rows_ptr(int* sp_rows, int size)
-    {
-	int incr = -1;
-	int first= 0;
-	for(int i = 0; i &lt; size; ++i)
-	{
-
-	    sp_rows[i] = incr;
-	    if((i &lt; 2))
-	      {
-		sp_rows[i] = first;
-		first+=2;
-	      }
-	    incr+=3;
-	}
-    }
-
-void creat_sp_cols_ptr(int* sp_cols, int size  )
-    {
-     int incr = 0;
-     int barrier = 3;
-
-
-	for(int i = 0; i &lt; size; ++i)
-	    {
-		if(barrier == 0)
-		    {
-		      incr -= 2;
-		      barrier = 3;
-		      //printf("inside 1st \n");
-		    }
-
-		//neccessary
-		if((incr == 2)&amp;&amp;( i == 2))
-		    {
-		      incr -= 2;
-		      barrier = 3;
-		      //printf("inside 2nd\n");
-		    }
-		sp_cols[i] = incr;
-		incr++;
-		--barrier;
-	    }
-    }
-
-//&lt;---------------------Execute--------------------&gt;
-
-int main() {
-
-  float micrometers = 1;
-  float nanometers = 1e-3 * micrometers;
-
-  // WAVELENGTH AND MODE
-  float lam0 = 1.55 * micrometers; //
-  char MODE = 'H';
-
-  // SLAB WAVEGUIDE
-  float a = 1500 * nanometers;
-  float n1 = 1.0;
-  float n2 = 2.0;
-  float n3 = 1.5;
-
-  // GRID PARAMETERS
-  float nmax = n2;
-  float NRES = 20;    // 56.888990026/2;
-  float b = 3 * lam0; // 3
-
-  // NUMBER OF MODES TO CALCULATE
-  float NMODES = 4;
-
-  int m = 1;
-
-  float dx = lam0 / nmax / NRES;
-  float nx = ceil(a / dx);
-
-  dx = a / nx;
-
-  float Sx = b + a + b;
-  float Nx = ceil(Sx / dx);
-   Sx = Nx * dx;
-
-  int Nx2 = 2 * Nx;
-  float dx2 = dx / 2;
-  int size = Nx;
-  //  thrust::fill(xa.begin(), xa.end(),1);
-
-  // CREATE X-AXIS
-  thrust::device_vector&lt;float&gt; xa(Nx + 2); //+2
-
-  // AXIS STARTS AT 1 to 284
-  thrust::counting_iterator&lt;float&gt; iter(1);
-  thrust::copy(iter, iter + xa.size(), xa.begin());
-
-  // MULTIPLY AXIS-UNITS WITH THE STEPSIZE " dx "
-  thrust::transform(xa.begin(), xa.end(), thrust::make_constant_iterator(dx),
-		    xa.begin(), thrust::multiplies&lt;float&gt;());
-
-  // INITIALIZE ARRAY WITH ONES
-  thrust::device_vector&lt;float&gt; m_xa(Nx);
-  thrust::fill(m_xa.begin(), m_xa.end(), 1);
-
-  // CALCULATE MEAN OF THE THE STEP-SIZE-ARRAY SCALE
-  float xmean = thrust::reduce(xa.begin(), xa.end()) / size;
-
-  // SUBSTRACT THE MEAN FROM THE STEP-SIZE ARRAY
-  using namespace thrust::placeholders;
-  thrust::for_each(xa.begin(), xa.end(), _1 -= xmean);
-
-  // CREATE MAGNETIC AND ELECTRIC ARRAY
-  thrust::device_vector&lt;float&gt; ER2(Nx2);
-  thrust::device_vector&lt;float&gt; UR2(Nx2);
-
-  // DETERMINE THE ARRAY STARTING POSITIONS
-  float nx1 = 1 + ceil(b / dx);
-  float nx2 = 1 + round(b / dx2) - 1;
-
-  // BUILD SLAB WAVEGUIDE
-  // E-FIELD
-  thrust::fill(ER2.begin(), ER2.begin() + 2*(nx1-1), n1*n1);
-  thrust::fill(ER2.begin() + 2*(nx1-1), ER2.end() - (nx2-2), n2*n2);
-  thrust::fill(ER2.end() - (nx2-2), ER2.end(), n3*n3);
-
-  // BUILD SLAB WAVEGUIDE
-  // M-FIELD
-
-  // EXTRACT YEE GRID ARRAYS ERxx: odd Array-Elements, ERyy &amp; ERzz: even
-  // Array-Elements
-  typedef thrust::device_vector&lt;float&gt;::iterator Iterator;
-  strided_range&lt;Iterator&gt; ERxx(ER2.begin() + 1, ER2.end(), 2);
-  strided_range&lt;Iterator&gt; ERyy(ER2.begin(), ER2.end(), 2);
-  strided_range&lt;Iterator&gt; ERzz(ER2.begin(), ER2.end(), 2);
-
-  strided_range&lt;Iterator&gt; URxx(UR2.begin(), UR2.end(), 2);
-  strided_range&lt;Iterator&gt; URyy(UR2.begin() + 1, UR2.end(), 2);
-  strided_range&lt;Iterator&gt; URzz(UR2.begin() + 1, UR2.end(), 2);
-
-  // CREATE VECTORS B.C. of TO BE ABLE TO TYPECAST PROPERPLY
-  thrust::device_vector&lt;float&gt; dERxx(size);
-  thrust::device_vector&lt;float&gt; dERyy(size);
-  thrust::host_vector&lt;float&gt; dERzz(size);
-
-  thrust::device_vector&lt;float&gt; dURxx(size);
-  thrust::host_vector&lt;float&gt; dURyy(size);
-  thrust::device_vector&lt;float&gt; dURzz(size);
-
-  // COPY THE ITERATORS INTO VECTOR CONTAINERS
-  thrust::copy(thrust::device, ERxx.begin(), ERxx.end(), dERxx.begin());
-  thrust::copy(thrust::device, ERyy.begin(), ERyy.end(), dERyy.begin());
-  thrust::copy(thrust::host, ERzz.begin(), ERzz.end(), dERzz.begin());
-
-  thrust::fill(dURyy.begin(), dURyy.end(), 1);
-  thrust::copy(thrust::device, URxx.begin(), URxx.end(), dURxx.begin());
-  //thrust::copy(thrust::device, URyy.begin(), URyy.end(), dURyy.begin());
-  thrust::copy(thrust::device, URzz.begin(), URzz.end(), dURzz.begin());
-
-
-  thrust::device_vector&lt;float&gt; dERxx2(size * size);
-  thrust::copy(thrust::device, ERxx.begin(), ERxx.end(), dERxx2.begin());
-
-  // BUILD DERIVATIVE MATRICES
-  float k0 = 2 * M_PI / lam0;
-  float NS[2] = {Nx, 1};
-  float RES[2] = {dx, 1};
-  int BC[2] = {0, 0};
-
-  float d_Ns[2] = {Nx, 1};
-
-   Nx = d_Ns[0];
-  int Ny = d_Ns[1];
-
-  float dy = RES[1];
-
-  float kinc[2] = {0, 0};
-
-  int M = Nx * Ny;
-
-
-//BUILD DEX
-  thrust::host_vector&lt;float&gt;mid_Diag(size);
-  thrust::host_vector&lt;float&gt;top_Diag(size);
-
-  thrust::fill(mid_Diag.begin(), mid_Diag.end(), -1);
-  thrust::fill(top_Diag.begin(), top_Diag.end(), 1);
-
-  //thrust::transform(sub_Diag.begin(), sub_Diag.end(), thrust::make_constant_iterator(dx), sub_Diag.begin(), thrust::divides&lt;float&gt;());
-  thrust::transform(mid_Diag.begin(), mid_Diag.end(), thrust::make_constant_iterator(dx), mid_Diag.begin(), thrust::divides&lt;float&gt;());
-  thrust::transform(top_Diag.begin(), top_Diag.end(), thrust::make_constant_iterator(dx), top_Diag.begin(), thrust::divides&lt;float&gt;());
-
-//BUILD DHX
-  thrust::host_vector&lt;float&gt;subDH_Diag(size);
-
-  thrust::host_vector&lt;float&gt;midDH_Diag(size);
-
-  thrust::fill(subDH_Diag.begin(), subDH_Diag.end(), -1);
-  thrust::fill(midDH_Diag.begin(), midDH_Diag.end(), 1);
-
-  thrust::transform(subDH_Diag.begin(), subDH_Diag.end(), thrust::make_constant_iterator(dx), subDH_Diag.begin(), thrust::divides&lt;float&gt;());
-  thrust::transform(midDH_Diag.begin(), midDH_Diag.end(), thrust::make_constant_iterator(dx), midDH_Diag.begin(), thrust::divides&lt;float&gt;());
-
-
-//PREPARE DIVISION  DEX/ERzz
-//
-
-  typedef thrust::host_vector&lt;float&gt;::iterator midDiag;
-  typedef thrust::host_vector&lt;float&gt;::iterator topDiag;
-
-  typedef thrust::tuple&lt;midDiag,topDiag&gt; IteratorTuple;
-  typedef thrust::zip_iterator&lt;IteratorTuple&gt; ZipIterator;
-
-  ZipIterator zipper(thrust::make_tuple(subDH_Diag.begin(), midDH_Diag.begin()));
-
-  auto d_DEX_begin =  thrust::make_zip_iterator(thrust::make_tuple(&amp;mid_Diag[0], &amp;top_Diag[0]));
-  auto d_DEX_end =  thrust::make_zip_iterator(thrust::make_tuple(&amp;mid_Diag[size], &amp;top_Diag[size]));
-
-  thrust::host_vector&lt;float&gt; h_Bvec;
-
-    thrust::for_each(d_DEX_begin, d_DEX_end,
-		   [&amp;h_Bvec] (const thrust::tuple&lt;float, float&gt;&amp; tup)
-		   {
-		       h_Bvec.push_back(thrust::get&lt;0&gt;(tup));
-		       h_Bvec.push_back(thrust::get&lt;1&gt;(tup));
-		   });
-
-
-  thrust::transform(h_Bvec.begin(), h_Bvec.end(), thrust::make_constant_iterator(-1), h_Bvec.begin(), thrust::multiplies&lt;float&gt;());
-  thrust::device_vector&lt;float&gt; d_Bvec(562);
-  thrust::copy(h_Bvec.begin(), h_Bvec.end()-1, d_Bvec.begin());
-
-
-
-
-  auto d_ERzz_begin = thrust::make_zip_iterator(thrust::make_tuple(&amp;dERzz[0]));
-  auto d_ERzz_end   = thrust::make_zip_iterator(thrust::make_tuple(&amp;dERzz[size]));
-
-  thrust::host_vector&lt;float&gt; h_topResOut(size);
-  thrust::host_vector&lt;float&gt; h_midResOut(size);
-
-  thrust::zip_iterator&lt;thrust::tuple&lt;thrust::host_vector&lt;float&gt;::iterator,thrust::host_vector&lt;float&gt;::iterator&gt;&gt; zip_begin(thrust::make_tuple(mid_Diag.begin(), top_Diag.begin()));
-
-  thrust::zip_iterator&lt;thrust::tuple&lt;thrust::host_vector&lt;float&gt;::iterator,thrust::host_vector&lt;float&gt;::iterator&gt;&gt; zip_end(thrust::make_tuple(mid_Diag.end(), top_Diag.end()));
-
-  auto d_divRes_begin = thrust::make_zip_iterator(thrust::make_tuple(h_midResOut.begin(), h_topResOut.begin()));
-  auto d_divRes_end = thrust::make_zip_iterator(thrust::make_tuple(h_midResOut.end(), h_topResOut.end()));
-
-  //GET THE DIVISION FUNCTOR READY AND DIVIDE
-  sparseDivision divByERzz;
-
-  thrust::transform(zip_begin, zip_end, d_ERzz_begin, d_divRes_begin, divByERzz);
-
-  thrust::host_vector&lt;float&gt; h_Avec;
-
-
-  //thrust::transform(top_Diag.begin(), top_Diag.end(), thrust::make_constant_iterator(dx), top_Diag.begin(), thrust::divides&lt;float&gt;());
-
-
-
-  thrust::for_each(d_divRes_begin, d_divRes_end,
-		   [&amp;h_Avec] (const thrust::tuple&lt;float, float&gt;&amp; tup)
-		   {
-		       h_Avec.push_back(thrust::get&lt;0&gt;(tup));
-		       h_Avec.push_back(thrust::get&lt;1&gt;(tup));
-		   });
-
-
-  thrust::device_vector&lt;float&gt; d_Avec(562);
-
-  thrust::copy(h_Avec.begin(), h_Avec.end()-1, d_Avec.begin());
-
-
-
-
-
-  //DO THE MULTIPLICATION
-
-  // 1. CREATE THE ARRAYS OUT OF TU
-  // {
-  // PLE STRUCTURE
-  // 2. CREATE THE row_prt and col_ptr ARRAYS
-
-  // 3. FEED INTO THE SPARSE MATRIX MULTIPLICATION
-
-//sizeof(thrust::get&lt;0&gt;(spMat)
-
-  int* row_ptr;
-  int* col_ptr;
-  int* elem_scan;
-
-  int ptr_size = 842;
-  int ptr_size_buffer = 840;
-  row_ptr   = (int *)malloc(ptr_size_buffer*sizeof(int));
-  col_ptr   = (int *)malloc(ptr_size_buffer*sizeof(int));
-  elem_scan = (int *)malloc(ptr_size_buffer*sizeof(int));
-
-  float* d_C ;
-
-  //float* d_A = thrust::raw_pointer_cast(d_Avec.data());
-  //float* d_B = thrust::raw_pointer_cast(d_Bvec.data());
-  //cudaMemcpy(&amp;d_A, &amp;h_A, ptr_size*sizeof(float), cudaMemcpyHostToDevice);
-
-  CreateElem_Scan(elem_scan,ptr_size);
-  kernelCols(col_ptr, ptr_size-1);
-  kernelRows(row_ptr, ptr_size-1);
-//
-  int* d_col_ptr;
-  int* d_row_ptr;
-  int* d_elem_scan;
-//
-  cudaMalloc((void**) &amp;d_col_ptr, ptr_size*sizeof(int));
-  cudaMalloc((void**) &amp;d_row_ptr, ptr_size*sizeof(int));
-  cudaMalloc((void**) &amp;d_elem_scan, ptr_size*sizeof(int));
-//
-  cudaMalloc((void**) &amp;d_C, ptr_size*sizeof(float));
-//
-  cudaMemcpy(d_col_ptr, col_ptr, ptr_size*sizeof(int), cudaMemcpyHostToDevice);
-  cudaMemcpy(d_row_ptr, row_ptr, ptr_size*sizeof(int), cudaMemcpyHostToDevice);
-  cudaMemcpy(d_elem_scan, elem_scan, ptr_size*sizeof(int), cudaMemcpyHostToDevice);
-
-
-
-
-
-
-  SpMM&lt;&lt;&lt;1,ptr_size&gt;&gt;&gt;(thrust::raw_pointer_cast(&amp;d_Avec[0]),thrust::raw_pointer_cast(&amp;d_Bvec[0]), d_C, ptr_size, d_elem_scan, d_row_ptr, d_col_ptr);
-//
-  float* h_C;
-  h_C = (float *)malloc(ptr_size*sizeof(float));
-
-  cudaMemcpy(h_C, d_C, ptr_size*sizeof(float), cudaMemcpyDeviceToHost);
-
-  thrust::host_vector&lt;float&gt; hURyy(size);
-  thrust::copy(dURyy.begin(), dURyy.end(), hURyy.begin());
-
-  DiagAdd(h_C, thrust::raw_pointer_cast(&amp;hURyy[0]), ptr_size);
-
-
-  for(int i = 0; i &lt;= ptr_size_buffer; ++i)
-      {
-	  std::cout &lt;&lt; "IdX " &lt;&lt; i &lt;&lt; ": " &lt;&lt; h_C[i] &lt;&lt;", ";
-      }
-
-
- // vectorInversion vecInv;
-
- // thrust::host_vector &lt;float&gt; inv_dERzz(size);
-
-  //thrust::transform(dERzz.begin(), dERzz.end(), inv_dERzz.begin(), vecInv);
-  //size_t n = sizeof(h_C)/sizeof(h_C[0]);
-
-
-  cusolverSpHandle_t cusolverH = NULL;
-  csrqrInfo_t info = NULL;
-  cusparseMatDescr_t descrA  = NULL;
-  cudaStream_t stream = NULL;
-
-  //prepare Arrays for the solver to be loaded
-
-  int *d_csrRowPtrA = nullptr;
-  int *d_csrColIndA = nullptr;
-  double *d_csrValA = nullptr;
-
-  double *d_b = nullptr;
-  double *d_x = nullptr;
-
-  size_t size_qr = 0;
-  size_t size_internal = 0;
-
-  void *buffer_qr = nullptr;
-
-  const int i_m = size;
-  const int nnzA = 840;
-
-  int csrRowSize =  281;
-  int csrColSize =  839;
-  int *csrRow_ptr;
-  int *csrCol_ptr;
-
-  csrRow_ptr   = (int *)malloc(csrRowSize*sizeof(int));
-  csrCol_ptr   = (int *)malloc(csrColSize*sizeof(int));
-
-  creat_sp_rows_ptr(csrRow_ptr, csrRowSize);
-  creat_sp_cols_ptr(csrCol_ptr, csrColSize);
-
-
-  const std::vector&lt;int&gt; csrRowPtrA(csrRow_ptr, csrRow_ptr+csrRowSize);
-  const std::vector&lt;int&gt; csrColPtrA(csrCol_ptr, csrCol_ptr+csrColSize);
-
-  const std::vector&lt;float&gt; csrValA(h_C, h_C + 839);
-
-
-
-
-
-  //std::cout &lt;&lt; top_Diag.size() + mid_Diag.size();
-  cudaFree(d_col_ptr);
-  cudaFree(d_row_ptr);
-  cudaFree(d_elem_scan);
-  cudaFree(d_C);
-
-  free(row_ptr);
-  free(col_ptr);
-  free(elem_scan);
- // //thrust::copy(d_divRes.begin(), d_divRes.end(), std::ostream_iterator&lt;float&gt;(std::cout, " "));
- // thrust::for_each
- //std::cout &lt;&lt; d.size()  &lt;&lt; std::endl;
-  return 0;
-}
-
-</pre>
-</div>
+<div id="outline-container-orgef0beb1" class="outline-3">
+<h3 id="orgef0beb1">Codebeispiel:</h3>
+<div class="outline-text-3" id="text-orgef0beb1">
+<p>
+Ich habe den Code in folgendes Repository verlagert: [FN:1] <a href="https://github.com/shosh1n/EMCuda">EM-Cuda</a>. Er beinhaltet momentan verschiedene Matrixtransformationen, die Parallel auf einer Grafikkarte ausgeführt werden können. Im Sinne des Clean Code Prinzips muss dieser noch refaktorisiert werden.
+</p>
 </div>
 </div>
 </div>
