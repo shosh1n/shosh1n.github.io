@@ -1,13 +1,6 @@
 #+SETUPFILE: https://fniessen.github.io/org-html-themes/org/theme-readtheorg.setup
 #+bind: org-html-htmlize-output-type css
-#+BEGIN_SRC emacs-lisp :var css-file="code.css" :results raw
-  (unless noninteractive
-    (org-html-htmlize-generate-css)
-    (with-current-buffer "*html*"
-      (write-file css-file))
-    (format "#+html_head_extra: <link rel=\"stylesheet\" type=\"text/css\" href=\"%s\"/>"
-        css-file))
-#+END_SRC
+
 #+OPTIONS: tex:t
 #+TITLE: Arbeitsproben
 * Numerische Berechnungen von Elektro-magnetischen Phänomenen
