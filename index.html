@@ -43,50 +43,50 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#orga309269">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
-<li><a href="#orgb2ebd14">Die harmonische Störung des dielektrischen Feldes</a>
+<li><a href="#orgb41ddc1">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
+<li><a href="#orge3ee78b">Die harmonische Störung des dielektrischen Feldes</a>
 <ul>
-<li><a href="#org85b3f38">Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes</a></li>
+<li><a href="#org4e2a7b5">Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes</a></li>
 </ul>
 </li>
-<li><a href="#org18a8018">Lösung der Wellengleichung in endlichen Geometrien</a>
+<li><a href="#orgb8801ca">Lösung der Wellengleichung in endlichen Geometrien</a>
 <ul>
-<li><a href="#org6ea1d8b">Potential in einem Zylinder</a></li>
+<li><a href="#orgb75bb20">Potential in einem Zylinder</a></li>
 </ul>
 </li>
-<li><a href="#org992f73d">Bestimmte Harmonische: Flüstergaleriemoden</a>
+<li><a href="#org4d49f50">Bestimmte Harmonische: Flüstergaleriemoden</a>
 <ul>
-<li><a href="#org2a48810">Allgemeine Funktion der 3D-Wellengleichung</a></li>
-<li><a href="#orgf2f9aba">Die Azimutale Funktion</a>
+<li><a href="#org34b3a00">Allgemeine Funktion der 3D-Wellengleichung</a></li>
+<li><a href="#org07070cb">Die Azimutale Funktion</a>
 <ul>
-<li><a href="#orgcdc91d0">Codebeispiel: Azimutale Funktion</a></li>
+<li><a href="#org9613a90">Codebeispiel: Azimutale Funktion</a></li>
 </ul>
 </li>
-<li><a href="#orge6ef8e5">Funktion der Z-Koordinate bzw. der Höhe</a>
+<li><a href="#orgb5fa931">Funktion der Z-Koordinate bzw. der Höhe</a>
 <ul>
-<li><a href="#org0bc8a55">Codebeispiel für die vertikale Richtung</a></li>
+<li><a href="#orgb95a17d">Codebeispiel für die vertikale Richtung</a></li>
 </ul>
 </li>
-<li><a href="#org3a0aaf1">Die Radiale Funktion</a>
+<li><a href="#org1792446">Die Radiale Funktion</a>
 <ul>
-<li><a href="#orgfa35173">Codebeispiel der Besselfunktionen</a></li>
-<li><a href="#org359ec00">Codebeispiel der radialen Funktion innerhalb des Resonators</a></li>
-<li><a href="#orgcbe260f">Codebeispiel der radialen Funktion außerhalb des Resonators</a></li>
+<li><a href="#org4e4ee90">Codebeispiel der Besselfunktionen</a></li>
+<li><a href="#org4629d47">Codebeispiel der radialen Funktion innerhalb des Resonators</a></li>
+<li><a href="#org6773fd6">Codebeispiel der radialen Funktion außerhalb des Resonators</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org3617377">Numerische Approximation</a>
+<li><a href="#org8e0c4a9">Numerische Approximation</a>
 <ul>
-<li><a href="#org3938245">Codebeispiel:</a></li>
+<li><a href="#org9ad5d9e">Codebeispiel:</a></li>
 </ul>
 </li>
 </ul>
 </div>
 </div>
-<div id="outline-container-orga309269" class="outline-2">
-<h2 id="orga309269">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
-<div class="outline-text-2" id="text-orga309269">
+<div id="outline-container-orgb41ddc1" class="outline-2">
+<h2 id="orgb41ddc1">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
+<div class="outline-text-2" id="text-orgb41ddc1">
 <p>
 Auf dieser Site stelle ich vor, wie ein physikalisches Phänomen - nämlich die Lichtausbreitung in dielektrischen, runden Resonatoren
 und wie sie mathematisch beschrieben werden kann. Dabei kommen Theorie und Code-Beispiele zum Einsatz. Im Resultat werden Lösungen von
@@ -96,9 +96,9 @@ Das Phänomen, welches hier maßgeblich beschrieben werden soll, ist das Phänom
 </div>
 </div>
 
-<div id="outline-container-orgb2ebd14" class="outline-2">
-<h2 id="orgb2ebd14">Die harmonische Störung des dielektrischen Feldes</h2>
-<div class="outline-text-2" id="text-orgb2ebd14">
+<div id="outline-container-orge3ee78b" class="outline-2">
+<h2 id="orge3ee78b">Die harmonische Störung des dielektrischen Feldes</h2>
+<div class="outline-text-2" id="text-orge3ee78b">
 <p>
 Zunächst wird im Zuge auf die Ausbreitung des Lichts festgelegt, dass nur harmonische Veränderungen des Feldes betrachtet werden. D.h. dass periodische Veränderungen
 des Feldes durch Sinus- und Cosinusfunktionen beschrieben werden können. Mathematisch generell &ldquo;gesprochen&rdquo; kommen die periodischen Schwinungen aus der Wellengleichung:
@@ -167,34 +167,34 @@ Allgemein kann das elektrische <b>Freie Feld</b> über folgenden algebraischen A
     = E_{0}\exp{j\mathbf{k}\cdot\mathbf{r}-j\omega t}
 \end{equation}
 </div>
-<div id="outline-container-org85b3f38" class="outline-3">
-<h3 id="org85b3f38">Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes</h3>
-<div class="outline-text-3" id="text-org85b3f38">
+<div id="outline-container-org4e2a7b5" class="outline-3">
+<h3 id="org4e2a7b5">Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes</h3>
+<div class="outline-text-3" id="text-org4e2a7b5">
 <p>
 Eine einfache Lösung der Wellengleichung ist die Sinusfunktion. Durch diese können periodische Schwankungen am Ort oder in der Zeit beschrieben werden.
 </p>
 <div class="org-src-container">
 <pre class="src src-python">
-<span style="font-weight: bold;">import</span> numpy <span style="font-weight: bold;">as</span> np
-<span style="font-weight: bold;">import</span> matplotlib
-matplotlib.use(<span style="font-style: italic;">'Agg'</span>)
-<span style="font-weight: bold;">import</span> scipy.special <span style="font-weight: bold;">as</span> sp
-<span style="font-weight: bold;">import</span> matplotlib.pyplot <span style="font-weight: bold;">as</span> plt
+<span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-keyword">import</span> matplotlib
+matplotlib.use(<span class="org-string">'Agg'</span>)
+<span class="org-keyword">import</span> scipy.special <span class="org-keyword">as</span> sp
+<span class="org-keyword">import</span> matplotlib.pyplot <span class="org-keyword">as</span> plt
 
-<span style="font-weight: bold; font-style: italic;">x</span>  = np.linspace(0, 20, 100)
+<span class="org-variable-name">x</span>  = np.linspace(0, 20, 100)
 
-<span style="font-weight: bold;">for</span> n <span style="font-weight: bold;">in</span> <span style="font-weight: bold;">range</span>(1):
-    <span style="font-weight: bold; font-style: italic;">y</span> = np.sin(x);
-    plt.plot(x,y,label=r<span style="font-style: italic;">'$Sin(x)$'</span>)
+<span class="org-keyword">for</span> n <span class="org-keyword">in</span> <span class="org-builtin">range</span>(1):
+    <span class="org-variable-name">y</span> = np.sin(x);
+    plt.plot(x,y,label=r<span class="org-string">'$Sin(x)$'</span>)
 
-plt.axhline(0,color=<span style="font-style: italic;">'green'</span>, label=<span style="font-style: italic;">'_nolegend_'</span>)
+plt.axhline(0,color=<span class="org-string">'green'</span>, label=<span class="org-string">'_nolegend_'</span>)
 plt.grid()
 plt.legend()
-plt.xlabel(<span style="font-style: italic;">'$x$'</span>)
-plt.ylabel(<span style="font-style: italic;">'${Sin}(x)$'</span>)
-plt.title(r<span style="font-style: italic;">'Die Harmonische Schwingung - Sinusfunktion $Sin(x)$'</span>)
-plt.savefig(<span style="font-style: italic;">'img/matplot-fig.png'</span>)
-<span style="font-weight: bold;">return</span> <span style="font-style: italic;">'img/matplot-fig.png'</span>
+plt.xlabel(<span class="org-string">'$x$'</span>)
+plt.ylabel(<span class="org-string">'${Sin}(x)$'</span>)
+plt.title(r<span class="org-string">'Die Harmonische Schwingung - Sinusfunktion $Sin(x)$'</span>)
+plt.savefig(<span class="org-string">'img/matplot-fig.png'</span>)
+<span class="org-keyword">return</span> <span class="org-string">'img/matplot-fig.png'</span>
 
 </pre>
 </div>
@@ -202,7 +202,7 @@ plt.savefig(<span style="font-style: italic;">'img/matplot-fig.png'</span>)
 
 
 
-<div id="orgd89ad50" class="figure">
+<div id="org87c7c6f" class="figure">
 <p><img src="./img/matplot-fig.png" alt="1DSinus" title="Sinus" align="center" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Eine 1D-Sinusfunktion</p>
@@ -212,9 +212,9 @@ plt.savefig(<span style="font-style: italic;">'img/matplot-fig.png'</span>)
 </div>
 
 
-<div id="outline-container-org18a8018" class="outline-2">
-<h2 id="org18a8018">Lösung der Wellengleichung in endlichen Geometrien</h2>
-<div class="outline-text-2" id="text-org18a8018">
+<div id="outline-container-orgb8801ca" class="outline-2">
+<h2 id="orgb8801ca">Lösung der Wellengleichung in endlichen Geometrien</h2>
+<div class="outline-text-2" id="text-orgb8801ca">
 <p>
 Zu Beginn des Textes wurde die Wellengleichung ohne große Einschränkungen gelöst. In realen Systemen ist so eine Lösung ungenau. In einem unendlich großen
 störungsfreien Raum, stellt die 1D-Sinusfunktion eine gültige Lösung dar.
@@ -224,9 +224,9 @@ Zylinderraum vollständig beschreiben können.
 </p>
 </div>
 
-<div id="outline-container-org6ea1d8b" class="outline-3">
-<h3 id="org6ea1d8b">Potential in einem Zylinder</h3>
-<div class="outline-text-3" id="text-org6ea1d8b">
+<div id="outline-container-orgb75bb20" class="outline-3">
+<h3 id="orgb75bb20">Potential in einem Zylinder</h3>
+<div class="outline-text-3" id="text-orgb75bb20">
 <p>
 Da eine Störung eine Veränderung herbeiführt, wird ein Differentialoperator auf eine Größe \(\psi\) angewandt. Dieser beschreibende Veränderungsoperator berücksichtigt
 die 3-Raumrichtungen und hat folgende Funktionsvorschrift:
@@ -241,9 +241,9 @@ die 3-Raumrichtungen und hat folgende Funktionsvorschrift:
 
 
 
-<div id="outline-container-org992f73d" class="outline-2">
-<h2 id="org992f73d">Bestimmte Harmonische: Flüstergaleriemoden</h2>
-<div class="outline-text-2" id="text-org992f73d">
+<div id="outline-container-org4d49f50" class="outline-2">
+<h2 id="org4d49f50">Bestimmte Harmonische: Flüstergaleriemoden</h2>
+<div class="outline-text-2" id="text-org4d49f50">
 <p>
 Flüstergaleriemoden sind auch bestimmte Harmonische Störungen im Raum. Sie sind an der Seitenwand eines Resonators zu verorten. Ihre Entdeckung beruht auf einer akustischen Beobachtung von Schallwellen,
 die an der Wand einer Kuppel reflektiert werden, d.h. die Schallausbreitung findet über Reflektion der Schallwellen an der Kuppelwand statt.
@@ -252,9 +252,9 @@ bestimmt werden.
 </p>
 </div>
 
-<div id="outline-container-org2a48810" class="outline-3">
-<h3 id="org2a48810">Allgemeine Funktion der 3D-Wellengleichung</h3>
-<div class="outline-text-3" id="text-org2a48810">
+<div id="outline-container-org34b3a00" class="outline-3">
+<h3 id="org34b3a00">Allgemeine Funktion der 3D-Wellengleichung</h3>
+<div class="outline-text-3" id="text-org34b3a00">
 <p>
 Im Besten Fall kann eine Wellenfunktion gefunden werden, die sich aus 3 einzelnen Funktionen entsprechend der Raumkoordinaten zusammensetzt.
 Ohne große Überlegung kann die Funktion folgendermaßen geschrieben werden:
@@ -270,179 +270,179 @@ In den folgenden Abschnitte werden diese Funktionen einzeln betrachtet.
 </div>
 </div>
 
-<div id="outline-container-orgf2f9aba" class="outline-3">
-<h3 id="orgf2f9aba">Die Azimutale Funktion</h3>
-<div class="outline-text-3" id="text-orgf2f9aba">
+<div id="outline-container-org07070cb" class="outline-3">
+<h3 id="org07070cb">Die Azimutale Funktion</h3>
+<div class="outline-text-3" id="text-org07070cb">
 <p>
 Als erstes lässt sich relativ einfach die azimutale Funktion bestimmen. Die Azimutale Funktion umläuft den Zylinder.
 Folgendes Codebeispiel veranschautlicht diese.
 </p>
 </div>
 
-<div id="outline-container-orgcdc91d0" class="outline-4">
-<h4 id="orgcdc91d0">Codebeispiel: Azimutale Funktion</h4>
-<div class="outline-text-4" id="text-orgcdc91d0">
+<div id="outline-container-org9613a90" class="outline-4">
+<h4 id="org9613a90">Codebeispiel: Azimutale Funktion</h4>
+<div class="outline-text-4" id="text-org9613a90">
 <div class="org-src-container">
 <pre class="src src-python">
 
-<span style="font-weight: bold;">import</span> numpy <span style="font-weight: bold;">as</span> np
-<span style="font-weight: bold;">import</span> matplotlib
-matplotlib.use(<span style="font-style: italic;">'Agg'</span>)
-<span style="font-weight: bold;">from</span> matplotlib.patches <span style="font-weight: bold;">import</span> FancyArrowPatch
-<span style="font-weight: bold;">from</span> mpl_toolkits.mplot3d <span style="font-weight: bold;">import</span> proj3d
-<span style="font-weight: bold;">import</span> mpl_toolkits.mplot3d.art3d <span style="font-weight: bold;">as</span> art3d
-<span style="font-weight: bold;">from</span> mpl_toolkits.mplot3d <span style="font-weight: bold;">import</span> Axes3D
-<span style="font-weight: bold;">from</span> matplotlib.patches <span style="font-weight: bold;">import</span> Circle
-<span style="font-weight: bold;">from</span> matplotlib <span style="font-weight: bold;">import</span> pyplot <span style="font-weight: bold;">as</span> plt
+<span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-keyword">import</span> matplotlib
+matplotlib.use(<span class="org-string">'Agg'</span>)
+<span class="org-keyword">from</span> matplotlib.patches <span class="org-keyword">import</span> FancyArrowPatch
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> proj3d
+<span class="org-keyword">import</span> mpl_toolkits.mplot3d.art3d <span class="org-keyword">as</span> art3d
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> Axes3D
+<span class="org-keyword">from</span> matplotlib.patches <span class="org-keyword">import</span> Circle
+<span class="org-keyword">from</span> matplotlib <span class="org-keyword">import</span> pyplot <span class="org-keyword">as</span> plt
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Define a class for the coordinate-system</span>
-<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Arrow3D</span>(FancyArrowPatch):
-    <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">__init__</span>(<span style="font-weight: bold;">self</span>, xs, ys, zs, *args, **kwargs):
-        <span style="font-weight: bold;">super</span>().__init__((0,0), (0,0), *args, **kwargs)
-        <span style="font-weight: bold;">self</span>._verts3d = xs, ys, zs
+<span class="org-comment-delimiter">#</span><span class="org-comment">Define a class for the coordinate-system</span>
+<span class="org-keyword">class</span> <span class="org-type">Arrow3D</span>(FancyArrowPatch):
+    <span class="org-keyword">def</span> <span class="org-function-name">__init__</span>(<span class="org-keyword">self</span>, xs, ys, zs, *args, **kwargs):
+        <span class="org-builtin">super</span>().__init__((0,0), (0,0), *args, **kwargs)
+        <span class="org-keyword">self</span>._verts3d = xs, ys, zs
 
-    <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">do_3d_projection</span>(<span style="font-weight: bold;">self</span>, renderer=<span style="font-weight: bold; text-decoration: underline;">None</span>):
-        <span style="font-weight: bold; font-style: italic;">xs3d</span>, <span style="font-weight: bold; font-style: italic;">ys3d</span>, <span style="font-weight: bold; font-style: italic;">zs3d</span> = <span style="font-weight: bold;">self</span>._verts3d
-        <span style="font-weight: bold; font-style: italic;">xs</span>, <span style="font-weight: bold; font-style: italic;">ys</span>, <span style="font-weight: bold; font-style: italic;">zs</span> = proj3d.proj_transform(xs3d, ys3d, zs3d, <span style="font-weight: bold;">self</span>.axes.M)
-        <span style="font-weight: bold;">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+    <span class="org-keyword">def</span> <span class="org-function-name">do_3d_projection</span>(<span class="org-keyword">self</span>, renderer=<span class="org-constant">None</span>):
+        <span class="org-variable-name">xs3d</span>, <span class="org-variable-name">ys3d</span>, <span class="org-variable-name">zs3d</span> = <span class="org-keyword">self</span>._verts3d
+        <span class="org-variable-name">xs</span>, <span class="org-variable-name">ys</span>, <span class="org-variable-name">zs</span> = proj3d.proj_transform(xs3d, ys3d, zs3d, <span class="org-keyword">self</span>.axes.M)
+        <span class="org-keyword">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
 
-        <span style="font-weight: bold;">return</span> np.<span style="font-weight: bold;">min</span>(zs)
+        <span class="org-keyword">return</span> np.<span class="org-builtin">min</span>(zs)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">This Function will draw a cylinder</span>
-<span style="font-weight: bold;">def</span> <span style="font-weight: bold;">plot_3D_cylinder</span>(radius, height, elevation=0, resolution=100, color=<span style="font-style: italic;">'b'</span>, x_center = 0, y_center = 0):
+<span class="org-comment-delimiter">#</span><span class="org-comment">This Function will draw a cylinder</span>
+<span class="org-keyword">def</span> <span class="org-function-name">plot_3D_cylinder</span>(radius, height, elevation=0, resolution=100, color=<span class="org-string">'b'</span>, x_center = 0, y_center = 0):
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">init where to draw the projections</span>
-    <span style="font-weight: bold; font-style: italic;">fig</span>=plt.figure(figsize=(5,5))
-    <span style="font-weight: bold; font-style: italic;">ax</span> = Axes3D(fig, azim=45, elev=21)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">init where to draw the projections</span>
+    <span class="org-variable-name">fig</span>=plt.figure(figsize=(5,5))
+    <span class="org-variable-name">ax</span> = Axes3D(fig, azim=45, elev=21)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">take values from the function input</span>
-    <span style="font-weight: bold; font-style: italic;">x</span> = np.linspace(x_center-radius, x_center+radius, resolution)
-    <span style="font-weight: bold; font-style: italic;">z</span> = np.linspace(elevation, elevation+height, resolution)
-    <span style="font-weight: bold; font-style: italic;">X</span>, <span style="font-weight: bold; font-style: italic;">Z</span> = np.meshgrid(x, z)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">take values from the function input</span>
+    <span class="org-variable-name">x</span> = np.linspace(x_center-radius, x_center+radius, resolution)
+    <span class="org-variable-name">z</span> = np.linspace(elevation, elevation+height, resolution)
+    <span class="org-variable-name">X</span>, <span class="org-variable-name">Z</span> = np.meshgrid(x, z)
 
-    <span style="font-weight: bold; font-style: italic;">theta</span> = np.linspace(-1 * np.pi, 1 * np.pi, 1000)
+    <span class="org-variable-name">theta</span> = np.linspace(-1 * np.pi, 1 * np.pi, 1000)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">coordinate conversion cartesain x_,y_,z_ in cylindrical</span>
-    <span style="font-weight: bold; font-style: italic;">R</span> = 1
-    <span style="font-weight: bold; font-style: italic;">x_</span> = radius * np.cos(theta)+x_center
-    <span style="font-weight: bold; font-style: italic;">y_</span> = radius *np.sin(theta)+y_center
-    <span style="font-weight: bold; font-style: italic;">z_</span> = np.sin(18*theta)
-    <span style="font-weight: bold; font-style: italic;">Y</span> = np.sqrt(radius**2 - (X - x_center)**2) + y_center <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Pythagorean theorem</span>
+    <span class="org-comment-delimiter">#</span><span class="org-comment">coordinate conversion cartesain x_,y_,z_ in cylindrical</span>
+    <span class="org-variable-name">R</span> = 1
+    <span class="org-variable-name">x_</span> = radius * np.cos(theta)+x_center
+    <span class="org-variable-name">y_</span> = radius *np.sin(theta)+y_center
+    <span class="org-variable-name">z_</span> = np.sin(18*theta)
+    <span class="org-variable-name">Y</span> = np.sqrt(radius**2 - (X - x_center)**2) + y_center <span class="org-comment-delimiter"># </span><span class="org-comment">Pythagorean theorem</span>
 
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Color the cylinder surface-patches</span>
-    ax.plot_surface(X, Y, Z,alpha=0.3, linewidth=0, color=<span style="font-style: italic;">'deepskyblue'</span>)
-    ax.plot_surface(X, (2*y_center-Y), Z,alpha=0.2, linewidth=0, color=<span style="font-style: italic;">'lightskyblue'</span>)
-    <span style="font-weight: bold; font-style: italic;">floor</span> = Circle((x_center, y_center), radius, color=<span style="font-style: italic;">'deepskyblue'</span>,alpha=0.3)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Color the cylinder surface-patches</span>
+    ax.plot_surface(X, Y, Z,alpha=0.3, linewidth=0, color=<span class="org-string">'deepskyblue'</span>)
+    ax.plot_surface(X, (2*y_center-Y), Z,alpha=0.2, linewidth=0, color=<span class="org-string">'lightskyblue'</span>)
+    <span class="org-variable-name">floor</span> = Circle((x_center, y_center), radius, color=<span class="org-string">'deepskyblue'</span>,alpha=0.3)
     ax.add_patch(floor)
-    art3d.pathpatch_2d_to_3d(floor, z=elevation, zdir=<span style="font-style: italic;">"z"</span>)
+    art3d.pathpatch_2d_to_3d(floor, z=elevation, zdir=<span class="org-string">"z"</span>)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Color the circle-surfaces</span>
-    <span style="font-weight: bold; font-style: italic;">ceiling</span> = Circle((x_center, y_center), radius, color=<span style="font-style: italic;">'deepskyblue'</span>,alpha=0.5)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Color the circle-surfaces</span>
+    <span class="org-variable-name">ceiling</span> = Circle((x_center, y_center), radius, color=<span class="org-string">'deepskyblue'</span>,alpha=0.5)
     ax.add_patch(ceiling)
-    art3d.pathpatch_2d_to_3d(ceiling, z=elevation+height, zdir=<span style="font-style: italic;">"z"</span>)
+    art3d.pathpatch_2d_to_3d(ceiling, z=elevation+height, zdir=<span class="org-string">"z"</span>)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Plot the encircling function</span>
-    ax.plot(x_, y_, z_, color = <span style="font-style: italic;">'fuchsia'</span>)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Plot the encircling function</span>
+    ax.plot(x_, y_, z_, color = <span class="org-string">'fuchsia'</span>)
 
-    <span style="font-weight: bold; font-style: italic;">arrow_prop_dict</span> = <span style="font-weight: bold;">dict</span>(mutation_scale=20, arrowstyle=<span style="font-style: italic;">'-&gt;'</span>, shrinkA=0, shrinkB=0)
+    <span class="org-variable-name">arrow_prop_dict</span> = <span class="org-builtin">dict</span>(mutation_scale=20, arrowstyle=<span class="org-string">'-&gt;'</span>, shrinkA=0, shrinkB=0)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Add an arrow that outlines the function's path</span>
-    <span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 79], [0, 15], [0, 2.8], **arrow_prop_dict, color=<span style="font-style: italic;">'darkorchid'</span>, linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=3.0)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add an arrow that outlines the function's path</span>
+    <span class="org-variable-name">a</span> = Arrow3D([0, 79], [0, 15], [0, 2.8], **arrow_prop_dict, color=<span class="org-string">'darkorchid'</span>, linestyle=<span class="org-string">"dashed"</span>,linewidth=3.0)
     ax.add_artist(a)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Add a red orthogonal arrow in the \rho respectively y-direction</span>
-    <span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 75], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'red'</span>,linewidth=5.0)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a red orthogonal arrow in the \rho respectively y-direction</span>
+    <span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 75], [0, 0], **arrow_prop_dict, color=<span class="org-string">'red'</span>,linewidth=5.0)
     ax.add_artist(a)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Add a black arrow indicating the y-cartesain coordinate</span>
-    <span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 95], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a black arrow indicating the y-cartesain coordinate</span>
+    <span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 95], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
     ax.add_artist(a)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Add a black arrow indicating the x-cartesain coordinate</span>
-    <span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 95], [0, 0], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a black arrow indicating the x-cartesain coordinate</span>
+    <span class="org-variable-name">a</span> = Arrow3D([0, 95], [0, 0], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
     ax.add_artist(a)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Add a black arrow indicating the z-direction</span>
-    <span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 0], [0, 6.8], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a black arrow indicating the z-direction</span>
+    <span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 0], [0, 6.8], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
     ax.add_artist(a)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Add a blue arrow indicating the z-direction</span>
-    <span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 0], [0, 6], **arrow_prop_dict, color=<span style="font-style: italic;">'blue'</span>,linewidth=5.0)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Add a blue arrow indicating the z-direction</span>
+    <span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 0], [0, 6], **arrow_prop_dict, color=<span class="org-string">'blue'</span>,linewidth=5.0)
     ax.add_artist(a)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">add letters for orientation o-origin, \rho etc. ...</span>
-    ax.text(3, 0.0, -.35, r<span style="font-style: italic;">'$o$'</span>)
-    ax.text(0, 75, 0, r<span style="font-style: italic;">'$\rho$'</span>)
-    ax.text(60, 60, 0, r<span style="font-style: italic;">'$\varphi$'</span>)
-    ax.text(0, -2, 7, r<span style="font-style: italic;">'$z$'</span>)
-    ax.text(107, 15, 3.4, r<span style="font-style: italic;">'$\psi(\rho,z,\varphi)$'</span>)
-    ax.text(100, 0, 0, r<span style="font-style: italic;">'$x$'</span>)
-    ax.text(0, 98, 0, r<span style="font-style: italic;">'$y$'</span>)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">add letters for orientation o-origin, \rho etc. ...</span>
+    ax.text(3, 0.0, -.35, r<span class="org-string">'$o$'</span>)
+    ax.text(0, 75, 0, r<span class="org-string">'$\rho$'</span>)
+    ax.text(60, 60, 0, r<span class="org-string">'$\varphi$'</span>)
+    ax.text(0, -2, 7, r<span class="org-string">'$z$'</span>)
+    ax.text(107, 15, 3.4, r<span class="org-string">'$\psi(\rho,z,\varphi)$'</span>)
+    ax.text(100, 0, 0, r<span class="org-string">'$x$'</span>)
+    ax.text(0, 98, 0, r<span class="org-string">'$y$'</span>)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Now draw the \varphi-axis *hint: it's angle dependent 'cause it's a cylinder</span>
-    <span style="font-weight: bold; font-style: italic;">thetaAng</span> = np.linspace(0,np.pi/2,100)  <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">0 &lt;= &#952; &lt;= 2&#960;</span>
-    <span style="font-weight: bold; font-style: italic;">rAng</span> =  50.0 <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">circle radius</span>
-    <span style="font-weight: bold; font-style: italic;">x1</span> = rAng * np.cos(thetaAng) + 0
-    <span style="font-weight: bold; font-style: italic;">x2</span> = rAng * np.sin(thetaAng) + 0
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Now draw the \varphi-axis *hint: it's angle dependent 'cause it's a cylinder</span>
+    <span class="org-variable-name">thetaAng</span> = np.linspace(0,np.pi/2,100)  <span class="org-comment-delimiter"># </span><span class="org-comment">0 &lt;= &#952; &lt;= 2&#960;</span>
+    <span class="org-variable-name">rAng</span> =  50.0 <span class="org-comment-delimiter">#</span><span class="org-comment">circle radius</span>
+    <span class="org-variable-name">x1</span> = rAng * np.cos(thetaAng) + 0
+    <span class="org-variable-name">x2</span> = rAng * np.sin(thetaAng) + 0
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">Plot this axis as a function and make it green</span>
-    ax.plot(x1, x2, color=<span style="font-style: italic;">'g'</span>,linewidth=5.0)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">Plot this axis as a function and make it green</span>
+    ax.plot(x1, x2, color=<span class="org-string">'g'</span>,linewidth=5.0)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">name the axis</span>
-    ax.set_xlabel(<span style="font-style: italic;">'x-Achse'</span>, fontsize=16)
-    ax.set_ylabel(<span style="font-style: italic;">'y-Achse'</span>, fontsize=16)
-    ax.set_zlabel(<span style="font-style: italic;">'z-Achse'</span>, fontsize=16)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">name the axis</span>
+    ax.set_xlabel(<span class="org-string">'x-Achse'</span>, fontsize=16)
+    ax.set_ylabel(<span class="org-string">'y-Achse'</span>, fontsize=16)
+    ax.set_zlabel(<span class="org-string">'z-Achse'</span>, fontsize=16)
 
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">set a limit on the z-axis/**sorry it's messy &lt;2023-03-02 Thu&gt; shoshin</span>
+    <span class="org-comment-delimiter">#</span><span class="org-comment">set a limit on the z-axis/**sorry it's messy &lt;2023-03-02 Thu&gt; shoshin</span>
     ax.set_zlim(-4,4)
 
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">clean the canvas no grid whatsoever or other oob stuff</span>
-    <span style="font-weight: bold; font-style: italic;">ax.xaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-    <span style="font-weight: bold; font-style: italic;">ax.yaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-    <span style="font-weight: bold; font-style: italic;">ax.zaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-    ax.xaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
-    ax.yaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
-    ax.zaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">clean the canvas no grid whatsoever or other oob stuff</span>
+    <span class="org-variable-name">ax.xaxis.pane.fill</span> = <span class="org-constant">False</span>
+    <span class="org-variable-name">ax.yaxis.pane.fill</span> = <span class="org-constant">False</span>
+    <span class="org-variable-name">ax.zaxis.pane.fill</span> = <span class="org-constant">False</span>
+    ax.xaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+    ax.yaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+    ax.zaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
 
-    ax.grid(<span style="font-weight: bold; text-decoration: underline;">False</span>)
-    <span style="font-weight: bold; font-style: italic;">font</span> = {<span style="font-style: italic;">'family'</span> : <span style="font-style: italic;">'sans-serif'</span>,
-        <span style="font-style: italic;">'weight'</span> : <span style="font-style: italic;">'normal'</span>,
-        <span style="font-style: italic;">'size'</span>   : 20}
-    plt.rc(<span style="font-style: italic;">'font'</span>, **font)
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">fig.suptitle("Zylindrische Kavit&#228;t", fontsize=25)</span>
-    plt.axis(<span style="font-style: italic;">'off'</span>)
-    <span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">fig.savefig('ZylinderSystem.png', dpi=320)</span>
+    ax.grid(<span class="org-constant">False</span>)
+    <span class="org-variable-name">font</span> = {<span class="org-string">'family'</span> : <span class="org-string">'sans-serif'</span>,
+        <span class="org-string">'weight'</span> : <span class="org-string">'normal'</span>,
+        <span class="org-string">'size'</span>   : 20}
+    plt.rc(<span class="org-string">'font'</span>, **font)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">fig.suptitle("Zylindrische Kavit&#228;t", fontsize=25)</span>
+    plt.axis(<span class="org-string">'off'</span>)
+    <span class="org-comment-delimiter">#</span><span class="org-comment">fig.savefig('ZylinderSystem.png', dpi=320)</span>
     plt.show()
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">create a figure for plotting</span>
-<span style="font-weight: bold; font-style: italic;">fig</span> = plt.figure()
+<span class="org-comment-delimiter">#</span><span class="org-comment">create a figure for plotting</span>
+<span class="org-variable-name">fig</span> = plt.figure()
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">create a 3d ax-element</span>
-<span style="font-weight: bold; font-style: italic;">ax</span> = fig.add_subplot(111, projection=<span style="font-style: italic;">'3d'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">create a 3d ax-element</span>
+<span class="org-variable-name">ax</span> = fig.add_subplot(111, projection=<span class="org-string">'3d'</span>)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">adjust view on the art-piece</span>
+<span class="org-comment-delimiter">#</span><span class="org-comment">adjust view on the art-piece</span>
 ax.view_init(azim=-90, elev=90)
 ax.set_axis_off()
 plt.show()
 
 
-<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">Write parameters to be passed to above cylinder function</span>
-<span style="font-weight: bold; font-style: italic;">radius</span> = 50
-<span style="font-weight: bold; font-style: italic;">height</span> = 2
-<span style="font-weight: bold; font-style: italic;">elevation</span> = -1
-<span style="font-weight: bold; font-style: italic;">resolution</span> = 100
-<span style="font-weight: bold; font-style: italic;">color</span> = <span style="font-style: italic;">'lightskyblue'</span>
-<span style="font-weight: bold; font-style: italic;">x_center</span> = 0
-<span style="font-weight: bold; font-style: italic;">y_center</span> = 0
+<span class="org-comment-delimiter"># </span><span class="org-comment">Write parameters to be passed to above cylinder function</span>
+<span class="org-variable-name">radius</span> = 50
+<span class="org-variable-name">height</span> = 2
+<span class="org-variable-name">elevation</span> = -1
+<span class="org-variable-name">resolution</span> = 100
+<span class="org-variable-name">color</span> = <span class="org-string">'lightskyblue'</span>
+<span class="org-variable-name">x_center</span> = 0
+<span class="org-variable-name">y_center</span> = 0
 
-<span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">pass the parameter</span>
+<span class="org-comment-delimiter"># </span><span class="org-comment">pass the parameter</span>
 plot_3D_cylinder(radius, height, elevation=elevation, resolution=resolution, color=color, x_center=x_center, y_center=y_center)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">save the figure</span>
-plt.savefig(<span style="font-style: italic;">'img/matplot-azimuthal.png'</span>)
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">return 'img/matplot-azimuthal.png'</span>
+<span class="org-comment-delimiter">#</span><span class="org-comment">save the figure</span>
+plt.savefig(<span class="org-string">'img/matplot-azimuthal.png'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">return 'img/matplot-azimuthal.png'</span>
 
 
 </pre>
@@ -453,7 +453,7 @@ plt.savefig(<span style="font-style: italic;">'img/matplot-azimuthal.png'</span>
 </p>
 
 
-<div id="org0c2fe46" class="figure">
+<div id="orgb138bcc" class="figure">
 <p><img src="./img/matplot-azimuthal.png" alt="matplot-azimuthal.png" title="AzimutaleFunktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Die azimutale Funktion beschreibt die Umlaufrichtung</p>
@@ -499,9 +499,9 @@ Der mathematische Ausdruck ist im Vergleich zum oberen Codebeispiel ziemlich uns
 </div>
 </div>
 
-<div id="outline-container-orge6ef8e5" class="outline-3">
-<h3 id="orge6ef8e5">Funktion der Z-Koordinate bzw. der Höhe</h3>
-<div class="outline-text-3" id="text-orge6ef8e5">
+<div id="outline-container-orgb5fa931" class="outline-3">
+<h3 id="orgb5fa931">Funktion der Z-Koordinate bzw. der Höhe</h3>
+<div class="outline-text-3" id="text-orgb5fa931">
 <p>
 Für die Funktion \(Z(z)\) ergeben sich unterschiedliche Funktionen. Symmetrische, auch als unsymmetrische  Funktionen.
 Das Liegt daran, dass sowohl Cosinus als auch Sinus zulässig sind.
@@ -564,14 +564,14 @@ Die Höhe \(h\) gibt die Randbedingung für die Gültigkeit der Sinus/Cosinus Fu
 </p>
 </div>
 
-<div id="outline-container-org0bc8a55" class="outline-4">
-<h4 id="org0bc8a55">Codebeispiel für die vertikale Richtung</h4>
+<div id="outline-container-orgb95a17d" class="outline-4">
+<h4 id="orgb95a17d">Codebeispiel für die vertikale Richtung</h4>
 </div>
 </div>
 
-<div id="outline-container-org3a0aaf1" class="outline-3">
-<h3 id="org3a0aaf1">Die Radiale Funktion</h3>
-<div class="outline-text-3" id="text-org3a0aaf1">
+<div id="outline-container-org1792446" class="outline-3">
+<h3 id="org1792446">Die Radiale Funktion</h3>
+<div class="outline-text-3" id="text-org1792446">
 <p>
 Für die radiale Funktion \(R(\rho)\) ergibt sich durch die Separation der Variablen Bessels-Differentialgleichung.
 </p>
@@ -597,129 +597,129 @@ Diese Differentialgleichung kann durch Besselfunktionen und Hankelfunktionen ers
 </div>
 
 
-<div id="outline-container-orgfa35173" class="outline-4">
-<h4 id="orgfa35173">Codebeispiel der Besselfunktionen</h4>
-<div class="outline-text-4" id="text-orgfa35173">
+<div id="outline-container-org4e4ee90" class="outline-4">
+<h4 id="org4e4ee90">Codebeispiel der Besselfunktionen</h4>
+<div class="outline-text-4" id="text-org4e4ee90">
 <p>
 Im Folgenden wird in Python ein Codebeispiel gezeigt, in welchem das Innere eines Resonators dargestellt wird. Es veranschaulicht eine radiale Veränderung des Elektromagnetischen Feldes.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org359ec00" class="outline-4">
-<h4 id="org359ec00">Codebeispiel der radialen Funktion innerhalb des Resonators</h4>
-<div class="outline-text-4" id="text-org359ec00">
+<div id="outline-container-org4629d47" class="outline-4">
+<h4 id="org4629d47">Codebeispiel der radialen Funktion innerhalb des Resonators</h4>
+<div class="outline-text-4" id="text-org4629d47">
 <div class="org-src-container">
 <pre class="src src-python">
-<span style="font-weight: bold;">import</span> numpy <span style="font-weight: bold;">as</span> np
-<span style="font-weight: bold;">import</span> scipy.special <span style="font-weight: bold;">as</span> sp
-<span style="font-weight: bold;">import</span> matplotlib
-<span style="font-weight: bold;">from</span> scipy.special <span style="font-weight: bold;">import</span> hankel1e, y1_zeros
-<span style="font-weight: bold;">from</span> mpl_toolkits.mplot3d <span style="font-weight: bold;">import</span> Axes3D
-matplotlib.use(<span style="font-style: italic;">'Agg'</span>)
-<span style="font-weight: bold;">import</span> matplotlib.pyplot <span style="font-weight: bold;">as</span> plt
-<span style="font-weight: bold;">from</span> matplotlib.patches <span style="font-weight: bold;">import</span> FancyArrowPatch
-<span style="font-weight: bold;">from</span> mpl_toolkits.mplot3d <span style="font-weight: bold;">import</span> proj3d
+<span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-keyword">import</span> scipy.special <span class="org-keyword">as</span> sp
+<span class="org-keyword">import</span> matplotlib
+<span class="org-keyword">from</span> scipy.special <span class="org-keyword">import</span> hankel1e, y1_zeros
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> Axes3D
+matplotlib.use(<span class="org-string">'Agg'</span>)
+<span class="org-keyword">import</span> matplotlib.pyplot <span class="org-keyword">as</span> plt
+<span class="org-keyword">from</span> matplotlib.patches <span class="org-keyword">import</span> FancyArrowPatch
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> proj3d
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">needed for 3D-coordinate system</span>
-<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Arrow3D</span>(FancyArrowPatch):
-    <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">__init__</span>(<span style="font-weight: bold;">self</span>, xs, ys, zs, *args, **kwargs):
-        <span style="font-weight: bold;">super</span>().__init__((0,0), (0,0), *args, **kwargs)
-        <span style="font-weight: bold;">self</span>._verts3d = xs, ys, zs
+<span class="org-comment-delimiter">#</span><span class="org-comment">needed for 3D-coordinate system</span>
+<span class="org-keyword">class</span> <span class="org-type">Arrow3D</span>(FancyArrowPatch):
+    <span class="org-keyword">def</span> <span class="org-function-name">__init__</span>(<span class="org-keyword">self</span>, xs, ys, zs, *args, **kwargs):
+        <span class="org-builtin">super</span>().__init__((0,0), (0,0), *args, **kwargs)
+        <span class="org-keyword">self</span>._verts3d = xs, ys, zs
 
-    <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">do_3d_projection</span>(<span style="font-weight: bold;">self</span>, renderer=<span style="font-weight: bold; text-decoration: underline;">None</span>):
-        <span style="font-weight: bold; font-style: italic;">xs3d</span>, <span style="font-weight: bold; font-style: italic;">ys3d</span>, <span style="font-weight: bold; font-style: italic;">zs3d</span> = <span style="font-weight: bold;">self</span>._verts3d
-        <span style="font-weight: bold; font-style: italic;">xs</span>, <span style="font-weight: bold; font-style: italic;">ys</span>, <span style="font-weight: bold; font-style: italic;">zs</span> = proj3d.proj_transform(xs3d, ys3d, zs3d, <span style="font-weight: bold;">self</span>.axes.M)
-        <span style="font-weight: bold;">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+    <span class="org-keyword">def</span> <span class="org-function-name">do_3d_projection</span>(<span class="org-keyword">self</span>, renderer=<span class="org-constant">None</span>):
+        <span class="org-variable-name">xs3d</span>, <span class="org-variable-name">ys3d</span>, <span class="org-variable-name">zs3d</span> = <span class="org-keyword">self</span>._verts3d
+        <span class="org-variable-name">xs</span>, <span class="org-variable-name">ys</span>, <span class="org-variable-name">zs</span> = proj3d.proj_transform(xs3d, ys3d, zs3d, <span class="org-keyword">self</span>.axes.M)
+        <span class="org-keyword">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
 
-        <span style="font-weight: bold;">return</span> np.<span style="font-weight: bold;">min</span>(zs)
+        <span class="org-keyword">return</span> np.<span class="org-builtin">min</span>(zs)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">using circular coordinates again! range of theta-axis is needed</span>
-<span style="font-weight: bold; font-style: italic;">thetaAng</span> = np.linspace(0,np.pi/2,100)  <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">0 &lt;= &#952; &lt;= 2&#960;</span>
+<span class="org-comment-delimiter">#</span><span class="org-comment">using circular coordinates again! range of theta-axis is needed</span>
+<span class="org-variable-name">thetaAng</span> = np.linspace(0,np.pi/2,100)  <span class="org-comment-delimiter"># </span><span class="org-comment">0 &lt;= &#952; &lt;= 2&#960;</span>
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">assume the edge of the resonator to be rAng = 50</span>
-<span style="font-weight: bold; font-style: italic;">rAng</span> =  50.0
-<span style="font-weight: bold; font-style: italic;">x1</span> = rAng * np.cos(thetaAng) + 0
-<span style="font-weight: bold; font-style: italic;">x2</span> = rAng * np.sin(thetaAng) + 0
+<span class="org-comment-delimiter">#</span><span class="org-comment">assume the edge of the resonator to be rAng = 50</span>
+<span class="org-variable-name">rAng</span> =  50.0
+<span class="org-variable-name">x1</span> = rAng * np.cos(thetaAng) + 0
+<span class="org-variable-name">x2</span> = rAng * np.sin(thetaAng) + 0
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">prepare the canvas and axis for the function</span>
-<span style="font-weight: bold; font-style: italic;">fig</span>=plt.figure(figsize=(5,5))
-<span style="font-weight: bold; font-style: italic;">ax</span> = Axes3D(fig, azim=45, elev=21)
+<span class="org-comment-delimiter">#</span><span class="org-comment">prepare the canvas and axis for the function</span>
+<span class="org-variable-name">fig</span>=plt.figure(figsize=(5,5))
+<span class="org-variable-name">ax</span> = Axes3D(fig, azim=45, elev=21)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">create coordinate arrows for cylindrical and cartesian directions</span>
-<span style="font-weight: bold; font-style: italic;">arrow_prop_dict</span> = <span style="font-weight: bold;">dict</span>(mutation_scale=20, arrowstyle=<span style="font-style: italic;">'-&gt;'</span>, shrinkA=0, shrinkB=0)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 70], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+<span class="org-comment-delimiter">#</span><span class="org-comment">create coordinate arrows for cylindrical and cartesian directions</span>
+<span class="org-variable-name">arrow_prop_dict</span> = <span class="org-builtin">dict</span>(mutation_scale=20, arrowstyle=<span class="org-string">'-&gt;'</span>, shrinkA=0, shrinkB=0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 70], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
 ax.add_artist(a)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 70], [0, 0], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 70], [0, 0], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
 ax.add_artist(a)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 0], [0, 0.8], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 0], [0, 0.8], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
 ax.add_artist(a)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 0], [0, 0.7], **arrow_prop_dict, color=<span style="font-style: italic;">'blue'</span>,linewidth=5.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 0], [0, 0.7], **arrow_prop_dict, color=<span class="org-string">'blue'</span>,linewidth=5.0)
 ax.add_artist(a)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 55], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'red'</span>,linewidth=5.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 55], [0, 0], **arrow_prop_dict, color=<span class="org-string">'red'</span>,linewidth=5.0)
 ax.add_artist(a)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">create the phi-coordinate</span>
-ax.plot(x1, x2, color=<span style="font-style: italic;">'g'</span>,linewidth=5.0)
+<span class="org-comment-delimiter">#</span><span class="org-comment">create the phi-coordinate</span>
+ax.plot(x1, x2, color=<span class="org-string">'g'</span>,linewidth=5.0)
 
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">add symbols for orientation</span>
-ax.text(0, -2, -.06, r<span style="font-style: italic;">'$o$'</span>)
-ax.text(0, 55, 0, r<span style="font-style: italic;">'$\rho$'</span>)
-ax.text(45, 45, 0, r<span style="font-style: italic;">'$\varphi$'</span>)
-ax.text(0, -2, 0.81, r<span style="font-style: italic;">'$z$'</span>)
-ax.text(75, 0, 0, r<span style="font-style: italic;">'$x$'</span>)
-ax.text(0, 70, 0, r<span style="font-style: italic;">'$y$'</span>)
-ax.text(-20, 15, 0.25, r<span style="font-style: italic;">'$R(\rho)$'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">add symbols for orientation</span>
+ax.text(0, -2, -.06, r<span class="org-string">'$o$'</span>)
+ax.text(0, 55, 0, r<span class="org-string">'$\rho$'</span>)
+ax.text(45, 45, 0, r<span class="org-string">'$\varphi$'</span>)
+ax.text(0, -2, 0.81, r<span class="org-string">'$z$'</span>)
+ax.text(75, 0, 0, r<span class="org-string">'$x$'</span>)
+ax.text(0, 70, 0, r<span class="org-string">'$y$'</span>)
+ax.text(-20, 15, 0.25, r<span class="org-string">'$R(\rho)$'</span>)
 
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">create the bessel-function</span>
-<span style="font-weight: bold;">def</span> <span style="font-weight: bold;">drumhead_height</span>(n, k, distance, angle, t):
+<span class="org-comment-delimiter">#</span><span class="org-comment">create the bessel-function</span>
+<span class="org-keyword">def</span> <span class="org-function-name">drumhead_height</span>(n, k, distance, angle, t):
 
-   <span style="font-weight: bold; font-style: italic;">kth_zero</span> = sp.jn_zeros(n, k)[-1]
+   <span class="org-variable-name">kth_zero</span> = sp.jn_zeros(n, k)[-1]
 
-   <span style="font-weight: bold;">return</span> np.cos(t) * np.cos(n*angle) * sp.jn(n, distance*kth_zero)
+   <span class="org-keyword">return</span> np.cos(t) * np.cos(n*angle) * sp.jn(n, distance*kth_zero)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">focus on the interesting part of the hankel function --outside the cylinder reminder: it's not defined inside</span>
-<span style="font-weight: bold; font-style: italic;">theta</span> = np.r_[0:2*np.pi:50j]
-<span style="font-weight: bold; font-style: italic;">radius</span> = np.r_[0:50:50j]
+<span class="org-comment-delimiter">#</span><span class="org-comment">focus on the interesting part of the hankel function --outside the cylinder reminder: it's not defined inside</span>
+<span class="org-variable-name">theta</span> = np.r_[0:2*np.pi:50j]
+<span class="org-variable-name">radius</span> = np.r_[0:50:50j]
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">transform cartesian coordinates into cylindrical ones</span>
-<span style="font-weight: bold; font-style: italic;">x</span> = np.array([r * np.cos(theta) <span style="font-weight: bold;">for</span> r <span style="font-weight: bold;">in</span> radius])
-<span style="font-weight: bold; font-style: italic;">y</span> = np.array([r * np.sin(theta) <span style="font-weight: bold;">for</span> r <span style="font-weight: bold;">in</span> radius])
-<span style="font-weight: bold; font-style: italic;">z</span> = np.array([drumhead_height(0,2, r, theta,1) <span style="font-weight: bold;">for</span> r <span style="font-weight: bold;">in</span> radius])
+<span class="org-comment-delimiter">#</span><span class="org-comment">transform cartesian coordinates into cylindrical ones</span>
+<span class="org-variable-name">x</span> = np.array([r * np.cos(theta) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+<span class="org-variable-name">y</span> = np.array([r * np.sin(theta) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+<span class="org-variable-name">z</span> = np.array([drumhead_height(0,2, r, theta,1) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
 
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">plot the results outside</span>
-ax.plot_surface(x[1:50], y[1:50], z[1:50], rstride=1, cstride=1, cmap=<span style="font-style: italic;">'jet'</span>,alpha=0.5)
+<span class="org-comment-delimiter">#</span><span class="org-comment">plot the results outside</span>
+ax.plot_surface(x[1:50], y[1:50], z[1:50], rstride=1, cstride=1, cmap=<span class="org-string">'jet'</span>,alpha=0.5)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">set axis names and labels</span>
-ax.set_xlabel(<span style="font-style: italic;">'x'</span>)
-ax.set_ylabel(<span style="font-style: italic;">'y'</span>)
-ax.set_zlabel(<span style="font-style: italic;">'z'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">set axis names and labels</span>
+ax.set_xlabel(<span class="org-string">'x'</span>)
+ax.set_ylabel(<span class="org-string">'y'</span>)
+ax.set_zlabel(<span class="org-string">'z'</span>)
 
-ax.set_xlabel(<span style="font-style: italic;">'Radius [$kR$]'</span>, labelpad=20 ,fontsize=16)
-ax.set_ylabel(<span style="font-style: italic;">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
-ax.set_zlabel(<span style="font-style: italic;">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
+ax.set_xlabel(<span class="org-string">'Radius [$kR$]'</span>, labelpad=20 ,fontsize=16)
+ax.set_ylabel(<span class="org-string">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
+ax.set_zlabel(<span class="org-string">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
 
 ax.set_zlim3d(0,1)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">strip the figure of unnecessary stuff</span>
-<span style="font-weight: bold; font-style: italic;">ax.xaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-<span style="font-weight: bold; font-style: italic;">ax.yaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-<span style="font-weight: bold; font-style: italic;">ax.zaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-ax.xaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
-ax.yaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
-ax.zaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
-<span style="font-weight: bold; font-style: italic;">font</span> = {<span style="font-style: italic;">'family'</span> : <span style="font-style: italic;">'sans-serif'</span>,
-        <span style="font-style: italic;">'weight'</span> : <span style="font-style: italic;">'normal'</span>,
-        <span style="font-style: italic;">'size'</span>   : 20}
-plt.rc(<span style="font-style: italic;">'font'</span>, **font)
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">fig.suptitle("Bessel", fontsize=25)</span>
-plt.axis(<span style="font-style: italic;">'off'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">strip the figure of unnecessary stuff</span>
+<span class="org-variable-name">ax.xaxis.pane.fill</span> = <span class="org-constant">False</span>
+<span class="org-variable-name">ax.yaxis.pane.fill</span> = <span class="org-constant">False</span>
+<span class="org-variable-name">ax.zaxis.pane.fill</span> = <span class="org-constant">False</span>
+ax.xaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+ax.yaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+ax.zaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+<span class="org-variable-name">font</span> = {<span class="org-string">'family'</span> : <span class="org-string">'sans-serif'</span>,
+        <span class="org-string">'weight'</span> : <span class="org-string">'normal'</span>,
+        <span class="org-string">'size'</span>   : 20}
+plt.rc(<span class="org-string">'font'</span>, **font)
+<span class="org-comment-delimiter">#</span><span class="org-comment">fig.suptitle("Bessel", fontsize=25)</span>
+plt.axis(<span class="org-string">'off'</span>)
 fig.tight_layout(pad=1.0)
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">plt.title('Radiale Funktion', x=0.525, y=0.75)</span>
-fig.savefig(<span style="font-style: italic;">'./img/BRadialeFunktion.png'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">plt.title('Radiale Funktion', x=0.525, y=0.75)</span>
+fig.savefig(<span class="org-string">'./img/BRadialeFunktion.png'</span>)
 plt.show()
 
 
@@ -728,7 +728,7 @@ plt.show()
 </div>
 
 
-<div id="org3ed6f4c" class="figure">
+<div id="org43b79f1" class="figure">
 <p><img src="./img/BRadialeFunktion.png" alt="BRadialeFunktion.png" title="Bessel-Funktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 3: </span>Die Funktion die radial die Umlaufrichtung beschreibt</p>
@@ -737,122 +737,122 @@ plt.show()
 </div>
 
 
-<div id="outline-container-orgcbe260f" class="outline-4">
-<h4 id="orgcbe260f">Codebeispiel der radialen Funktion außerhalb des Resonators</h4>
-<div class="outline-text-4" id="text-orgcbe260f">
+<div id="outline-container-org6773fd6" class="outline-4">
+<h4 id="org6773fd6">Codebeispiel der radialen Funktion außerhalb des Resonators</h4>
+<div class="outline-text-4" id="text-org6773fd6">
 <p>
 Außerhalb der endlichen Geometrie des Resonator fallen die Ausprägungen des elektromagntischen Feldes stark ab. Durch Hankelfunktionen wird diesem Umstand mathematisch
 Rechung getragen.
 </p>
 <div class="org-src-container">
 <pre class="src src-python">
-<span style="font-weight: bold;">import</span> numpy <span style="font-weight: bold;">as</span> np
-<span style="font-weight: bold;">import</span> scipy.special <span style="font-weight: bold;">as</span> sp
-<span style="font-weight: bold;">import</span> matplotlib
-<span style="font-weight: bold;">from</span> scipy.special <span style="font-weight: bold;">import</span> hankel1e, y1_zeros
-<span style="font-weight: bold;">from</span> mpl_toolkits.mplot3d <span style="font-weight: bold;">import</span> Axes3D
-matplotlib.use(<span style="font-style: italic;">'Agg'</span>)
-<span style="font-weight: bold;">import</span> matplotlib.pyplot <span style="font-weight: bold;">as</span> plt
-<span style="font-weight: bold;">from</span> matplotlib.patches <span style="font-weight: bold;">import</span> FancyArrowPatch
-<span style="font-weight: bold;">from</span> mpl_toolkits.mplot3d <span style="font-weight: bold;">import</span> proj3d
+<span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
+<span class="org-keyword">import</span> scipy.special <span class="org-keyword">as</span> sp
+<span class="org-keyword">import</span> matplotlib
+<span class="org-keyword">from</span> scipy.special <span class="org-keyword">import</span> hankel1e, y1_zeros
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> Axes3D
+matplotlib.use(<span class="org-string">'Agg'</span>)
+<span class="org-keyword">import</span> matplotlib.pyplot <span class="org-keyword">as</span> plt
+<span class="org-keyword">from</span> matplotlib.patches <span class="org-keyword">import</span> FancyArrowPatch
+<span class="org-keyword">from</span> mpl_toolkits.mplot3d <span class="org-keyword">import</span> proj3d
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">needed for 3D-coordinate system</span>
-<span style="font-weight: bold;">class</span> <span style="font-weight: bold; text-decoration: underline;">Arrow3D</span>(FancyArrowPatch):
-    <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">__init__</span>(<span style="font-weight: bold;">self</span>, xs, ys, zs, *args, **kwargs):
-        <span style="font-weight: bold;">super</span>().__init__((0,0), (0,0), *args, **kwargs)
-        <span style="font-weight: bold;">self</span>._verts3d = xs, ys, zs
+<span class="org-comment-delimiter">#</span><span class="org-comment">needed for 3D-coordinate system</span>
+<span class="org-keyword">class</span> <span class="org-type">Arrow3D</span>(FancyArrowPatch):
+    <span class="org-keyword">def</span> <span class="org-function-name">__init__</span>(<span class="org-keyword">self</span>, xs, ys, zs, *args, **kwargs):
+        <span class="org-builtin">super</span>().__init__((0,0), (0,0), *args, **kwargs)
+        <span class="org-keyword">self</span>._verts3d = xs, ys, zs
 
-    <span style="font-weight: bold;">def</span> <span style="font-weight: bold;">do_3d_projection</span>(<span style="font-weight: bold;">self</span>, renderer=<span style="font-weight: bold; text-decoration: underline;">None</span>):
-        <span style="font-weight: bold; font-style: italic;">xs3d</span>, <span style="font-weight: bold; font-style: italic;">ys3d</span>, <span style="font-weight: bold; font-style: italic;">zs3d</span> = <span style="font-weight: bold;">self</span>._verts3d
-        <span style="font-weight: bold; font-style: italic;">xs</span>, <span style="font-weight: bold; font-style: italic;">ys</span>, <span style="font-weight: bold; font-style: italic;">zs</span> = proj3d.proj_transform(xs3d, ys3d, zs3d, <span style="font-weight: bold;">self</span>.axes.M)
-        <span style="font-weight: bold;">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
+    <span class="org-keyword">def</span> <span class="org-function-name">do_3d_projection</span>(<span class="org-keyword">self</span>, renderer=<span class="org-constant">None</span>):
+        <span class="org-variable-name">xs3d</span>, <span class="org-variable-name">ys3d</span>, <span class="org-variable-name">zs3d</span> = <span class="org-keyword">self</span>._verts3d
+        <span class="org-variable-name">xs</span>, <span class="org-variable-name">ys</span>, <span class="org-variable-name">zs</span> = proj3d.proj_transform(xs3d, ys3d, zs3d, <span class="org-keyword">self</span>.axes.M)
+        <span class="org-keyword">self</span>.set_positions((xs[0],ys[0]),(xs[1],ys[1]))
 
-        <span style="font-weight: bold;">return</span> np.<span style="font-weight: bold;">min</span>(zs)
+        <span class="org-keyword">return</span> np.<span class="org-builtin">min</span>(zs)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">using circular coordinates again! range of theta-axis is needed</span>
-<span style="font-weight: bold; font-style: italic;">thetaAng</span> = np.linspace(0,np.pi/2,100)  <span style="font-weight: bold; font-style: italic;"># </span><span style="font-weight: bold; font-style: italic;">0 &lt;= &#952; &lt;= 2&#960;</span>
+<span class="org-comment-delimiter">#</span><span class="org-comment">using circular coordinates again! range of theta-axis is needed</span>
+<span class="org-variable-name">thetaAng</span> = np.linspace(0,np.pi/2,100)  <span class="org-comment-delimiter"># </span><span class="org-comment">0 &lt;= &#952; &lt;= 2&#960;</span>
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">assume the edge of the resonator to be rAng = 50</span>
-<span style="font-weight: bold; font-style: italic;">rAng</span> =  50.0
-<span style="font-weight: bold; font-style: italic;">x1</span> = rAng * np.cos(thetaAng) + 0
-<span style="font-weight: bold; font-style: italic;">x2</span> = rAng * np.sin(thetaAng) + 0
+<span class="org-comment-delimiter">#</span><span class="org-comment">assume the edge of the resonator to be rAng = 50</span>
+<span class="org-variable-name">rAng</span> =  50.0
+<span class="org-variable-name">x1</span> = rAng * np.cos(thetaAng) + 0
+<span class="org-variable-name">x2</span> = rAng * np.sin(thetaAng) + 0
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">prepare the canvas and axis for the function</span>
-<span style="font-weight: bold; font-style: italic;">fig</span>=plt.figure(figsize=(5,5))
-<span style="font-weight: bold; font-style: italic;">ax</span> = Axes3D(fig, azim=45, elev=21)
+<span class="org-comment-delimiter">#</span><span class="org-comment">prepare the canvas and axis for the function</span>
+<span class="org-variable-name">fig</span>=plt.figure(figsize=(5,5))
+<span class="org-variable-name">ax</span> = Axes3D(fig, azim=45, elev=21)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">create coordinate arrows for cylindrical and cartesian directions</span>
-<span style="font-weight: bold; font-style: italic;">arrow_prop_dict</span> = <span style="font-weight: bold;">dict</span>(mutation_scale=20, arrowstyle=<span style="font-style: italic;">'-&gt;'</span>, shrinkA=0, shrinkB=0)
+<span class="org-comment-delimiter">#</span><span class="org-comment">create coordinate arrows for cylindrical and cartesian directions</span>
+<span class="org-variable-name">arrow_prop_dict</span> = <span class="org-builtin">dict</span>(mutation_scale=20, arrowstyle=<span class="org-string">'-&gt;'</span>, shrinkA=0, shrinkB=0)
 
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 70], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 70], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
 ax.add_artist(a)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 70], [0, 0], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 70], [0, 0], [0, 0], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
 ax.add_artist(a)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 0], [0, 0.8], **arrow_prop_dict, color=<span style="font-style: italic;">'black'</span>,linestyle=<span style="font-style: italic;">"dashed"</span>,linewidth=1.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 0], [0, 0.8], **arrow_prop_dict, color=<span class="org-string">'black'</span>,linestyle=<span class="org-string">"dashed"</span>,linewidth=1.0)
 ax.add_artist(a)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 0], [0, 0.7], **arrow_prop_dict, color=<span style="font-style: italic;">'blue'</span>,linewidth=5.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 0], [0, 0.7], **arrow_prop_dict, color=<span class="org-string">'blue'</span>,linewidth=5.0)
 ax.add_artist(a)
-<span style="font-weight: bold; font-style: italic;">a</span> = Arrow3D([0, 0], [0, 55], [0, 0], **arrow_prop_dict, color=<span style="font-style: italic;">'red'</span>,linewidth=5.0)
+<span class="org-variable-name">a</span> = Arrow3D([0, 0], [0, 55], [0, 0], **arrow_prop_dict, color=<span class="org-string">'red'</span>,linewidth=5.0)
 ax.add_artist(a)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">create the phi-coordinate</span>
-ax.plot(x1, x2, color=<span style="font-style: italic;">'g'</span>,linewidth=5.0)
+<span class="org-comment-delimiter">#</span><span class="org-comment">create the phi-coordinate</span>
+ax.plot(x1, x2, color=<span class="org-string">'g'</span>,linewidth=5.0)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">add symbols for orientation</span>
-ax.text(0, -2, -.06, r<span style="font-style: italic;">'$o$'</span>)
-ax.text(0, 55, 0, r<span style="font-style: italic;">'$\rho$'</span>)
-ax.text(45, 45, 0, r<span style="font-style: italic;">'$\varphi$'</span>)
-ax.text(0, -2, 0.81, r<span style="font-style: italic;">'$z$'</span>)
-ax.text(75, 0, 0, r<span style="font-style: italic;">'$x$'</span>)
-ax.text(0, 70, 0, r<span style="font-style: italic;">'$y$'</span>)
-ax.text(-20, 15, 0.25, r<span style="font-style: italic;">'$R(\rho)$'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">add symbols for orientation</span>
+ax.text(0, -2, -.06, r<span class="org-string">'$o$'</span>)
+ax.text(0, 55, 0, r<span class="org-string">'$\rho$'</span>)
+ax.text(45, 45, 0, r<span class="org-string">'$\varphi$'</span>)
+ax.text(0, -2, 0.81, r<span class="org-string">'$z$'</span>)
+ax.text(75, 0, 0, r<span class="org-string">'$x$'</span>)
+ax.text(0, 70, 0, r<span class="org-string">'$y$'</span>)
+ax.text(-20, 15, 0.25, r<span class="org-string">'$R(\rho)$'</span>)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">create the hankel-function</span>
-<span style="font-weight: bold;">def</span> <span style="font-weight: bold;">drumhead_height</span>(n, k, distance, angle, t):
+<span class="org-comment-delimiter">#</span><span class="org-comment">create the hankel-function</span>
+<span class="org-keyword">def</span> <span class="org-function-name">drumhead_height</span>(n, k, distance, angle, t):
 
-   <span style="font-weight: bold; font-style: italic;">kth_zero</span> = sp.jn_zeros(n, k)[-1]
+   <span class="org-variable-name">kth_zero</span> = sp.jn_zeros(n, k)[-1]
 
-   <span style="font-weight: bold;">return</span> np.cos(t) * np.cos(n*angle) * sp.hankel1e(n, distance*kth_zero)
+   <span class="org-keyword">return</span> np.cos(t) * np.cos(n*angle) * sp.hankel1e(n, distance*kth_zero)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">focus on the interesting part of the hankel function --outside the cylinder reminder: it's not defined inside</span>
-<span style="font-weight: bold; font-style: italic;">theta</span> = np.r_[0:2*np.pi:50j]
-<span style="font-weight: bold; font-style: italic;">radius</span> = np.r_[55:75:50j]
+<span class="org-comment-delimiter">#</span><span class="org-comment">focus on the interesting part of the hankel function --outside the cylinder reminder: it's not defined inside</span>
+<span class="org-variable-name">theta</span> = np.r_[0:2*np.pi:50j]
+<span class="org-variable-name">radius</span> = np.r_[55:75:50j]
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">transform cartesian coordinates into cylindrical ones</span>
-<span style="font-weight: bold; font-style: italic;">x</span> = np.array([r * np.cos(theta) <span style="font-weight: bold;">for</span> r <span style="font-weight: bold;">in</span> radius])
-<span style="font-weight: bold; font-style: italic;">y</span> = np.array([r * np.sin(theta) <span style="font-weight: bold;">for</span> r <span style="font-weight: bold;">in</span> radius])
-<span style="font-weight: bold; font-style: italic;">z</span> = np.array([drumhead_height(0,2, r, theta,1) <span style="font-weight: bold;">for</span> r <span style="font-weight: bold;">in</span> radius])
+<span class="org-comment-delimiter">#</span><span class="org-comment">transform cartesian coordinates into cylindrical ones</span>
+<span class="org-variable-name">x</span> = np.array([r * np.cos(theta) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+<span class="org-variable-name">y</span> = np.array([r * np.sin(theta) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
+<span class="org-variable-name">z</span> = np.array([drumhead_height(0,2, r, theta,1) <span class="org-keyword">for</span> r <span class="org-keyword">in</span> radius])
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">plot the results outside</span>
-ax.plot_surface(x[1:50], y[1:50], z[1:50], rstride=1, cstride=1, cmap=<span style="font-style: italic;">'jet'</span>,alpha=0.5)
+<span class="org-comment-delimiter">#</span><span class="org-comment">plot the results outside</span>
+ax.plot_surface(x[1:50], y[1:50], z[1:50], rstride=1, cstride=1, cmap=<span class="org-string">'jet'</span>,alpha=0.5)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">set axis names and labels</span>
-ax.set_xlabel(<span style="font-style: italic;">'x'</span>)
-ax.set_ylabel(<span style="font-style: italic;">'y'</span>)
-ax.set_zlabel(<span style="font-style: italic;">'z'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">set axis names and labels</span>
+ax.set_xlabel(<span class="org-string">'x'</span>)
+ax.set_ylabel(<span class="org-string">'y'</span>)
+ax.set_zlabel(<span class="org-string">'z'</span>)
 
-ax.set_xlabel(<span style="font-style: italic;">'Radius [$kR$]'</span>, labelpad=20 ,fontsize=16)
-ax.set_ylabel(<span style="font-style: italic;">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
-ax.set_zlabel(<span style="font-style: italic;">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
+ax.set_xlabel(<span class="org-string">'Radius [$kR$]'</span>, labelpad=20 ,fontsize=16)
+ax.set_ylabel(<span class="org-string">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
+ax.set_zlabel(<span class="org-string">'H&#246;he [$hk$]'</span>, labelpad=20, fontsize=16)
 
 ax.set_zlim3d(0,1)
 
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">strip the figure of unnecessary stuff</span>
-<span style="font-weight: bold; font-style: italic;">ax.xaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-<span style="font-weight: bold; font-style: italic;">ax.yaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-<span style="font-weight: bold; font-style: italic;">ax.zaxis.pane.fill</span> = <span style="font-weight: bold; text-decoration: underline;">False</span>
-ax.xaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
-ax.yaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
-ax.zaxis.pane.set_edgecolor(<span style="font-style: italic;">'w'</span>)
-<span style="font-weight: bold; font-style: italic;">font</span> = {<span style="font-style: italic;">'family'</span> : <span style="font-style: italic;">'sans-serif'</span>,
-        <span style="font-style: italic;">'weight'</span> : <span style="font-style: italic;">'normal'</span>,
-        <span style="font-style: italic;">'size'</span>   : 20}
-plt.rc(<span style="font-style: italic;">'font'</span>, **font)
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">fig.suptitle("Bessel", fontsize=25)</span>
-plt.axis(<span style="font-style: italic;">'off'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">strip the figure of unnecessary stuff</span>
+<span class="org-variable-name">ax.xaxis.pane.fill</span> = <span class="org-constant">False</span>
+<span class="org-variable-name">ax.yaxis.pane.fill</span> = <span class="org-constant">False</span>
+<span class="org-variable-name">ax.zaxis.pane.fill</span> = <span class="org-constant">False</span>
+ax.xaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+ax.yaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+ax.zaxis.pane.set_edgecolor(<span class="org-string">'w'</span>)
+<span class="org-variable-name">font</span> = {<span class="org-string">'family'</span> : <span class="org-string">'sans-serif'</span>,
+        <span class="org-string">'weight'</span> : <span class="org-string">'normal'</span>,
+        <span class="org-string">'size'</span>   : 20}
+plt.rc(<span class="org-string">'font'</span>, **font)
+<span class="org-comment-delimiter">#</span><span class="org-comment">fig.suptitle("Bessel", fontsize=25)</span>
+plt.axis(<span class="org-string">'off'</span>)
 fig.tight_layout(pad=1.0)
-<span style="font-weight: bold; font-style: italic;">#</span><span style="font-weight: bold; font-style: italic;">plt.title('Radiale Funktion', x=0.525, y=0.75)</span>
-fig.savefig(<span style="font-style: italic;">'./img/HRadialeFunktion.png'</span>)
+<span class="org-comment-delimiter">#</span><span class="org-comment">plt.title('Radiale Funktion', x=0.525, y=0.75)</span>
+fig.savefig(<span class="org-string">'./img/HRadialeFunktion.png'</span>)
 plt.show()
 
 
@@ -860,7 +860,7 @@ plt.show()
 </div>
 
 
-<div id="orgddf88be" class="figure">
+<div id="orgd9bd01b" class="figure">
 <p><img src="./img/HRadialeFunktion.png" alt="HRadialeFunktion.png" title="Hankel-Funktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 4: </span>Die Funktion die radial die Umlaufrichtung beschreibt</p>
@@ -895,16 +895,16 @@ Die Änderung der Funktion \([J_{m}(k_{eff}\cdot r)]'\) bzw. \([H^{1}_{m}(k_{0}\
 </div>
 
 
-<div id="outline-container-org3617377" class="outline-2">
-<h2 id="org3617377">Numerische Approximation</h2>
-<div class="outline-text-2" id="text-org3617377">
+<div id="outline-container-org8e0c4a9" class="outline-2">
+<h2 id="org8e0c4a9">Numerische Approximation</h2>
+<div class="outline-text-2" id="text-org8e0c4a9">
 <p>
 Lösungen der Maxwellgleichungen können numerisch approximiert werden. Dabei werden zu untersuchende Strukturen auf einem Rechengitter projiziert. Ein einfaches Rechengitter lässt sich über folgenden Code in C realisieren
 </p>
 </div>
-<div id="outline-container-org3938245" class="outline-3">
-<h3 id="org3938245">Codebeispiel:</h3>
-<div class="outline-text-3" id="text-org3938245">
+<div id="outline-container-org9ad5d9e" class="outline-3">
+<h3 id="org9ad5d9e">Codebeispiel:</h3>
+<div class="outline-text-3" id="text-org9ad5d9e">
 <p>
 Ich habe den Code in folgendes Repository verlagert: Er beinhaltet momentan verschiedene Matrixtransformationen, die Parallel auf einer Grafikkarte ausgeführt werden können. Im Sinne des Clean Code Prinzips muss dieser noch refaktorisiert werden.
 </p>
