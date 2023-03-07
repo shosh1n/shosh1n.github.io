@@ -619,7 +619,7 @@ als würde man Brot schneiden. Statt eine Scheibe Brot pro einer Zeiteinheit wer
 
 Ein weiter Vorzug von CUDA ist, dass es auf der Programmiersprache C beruht und mit C++ kompatible ist, bzw. Programmiertechniken benutzt, die auch in C++ üblich sind. [[https://thrust.github.io/][Thrust]] ist eine Programmierbibliothek,
 die elegante Programmiermuster erlaubt. So sind z.B. über die [[https://de.wikipedia.org/wiki/Template_(C%2B%2B)][Template-Programmierung]] Funktionen möglich, die mehrere Arrays entgegennehmen und verarbeiten ein Beispiel ist folgendem Codeblock zu entnehmen:
-#+begin_src cuda
+#+begin_src cuda :eval never :results none
 // SPARSE MATRIX DIVISION
 // SPARSE MATRIX-FORM IS IN TUPLE
 // DIVIDE THE TUPLE BY A 1D-SEQUENCE
