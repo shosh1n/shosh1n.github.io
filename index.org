@@ -466,7 +466,7 @@ plt.show()
 
 #+end_src
 
-#+CAPTION: Die Funktion die radial die Umlaufrichtung beschreibt
+#+CAPTION: Die Besselfunktion beschreibt die radiale Veränderung der Wellenfunktion
 #+ATTR_HTML: :title Bessel-Funktion :align center
 [[./img/BRadialeFunktion.png]]
 
@@ -588,7 +588,7 @@ plt.show()
 
 #+end_src
 
-#+CAPTION: Die Funktion die radial die Umlaufrichtung beschreibt
+#+CAPTION: Die Hankelfunktion beschreibt mathematisch den Abfall jenseits der Kavität
 #+ATTR_HTML: :title Hankel-Funktion :align center
 [[./img/HRadialeFunktion.png]]
 
