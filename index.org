@@ -641,4 +641,4 @@ Im Funktionsbody berechnet sie die Division des 2D-Tuples durch des 1D-Tuples. W
 des Programms. Die Funktion erlaubt auch den Einsatz von Iteratoren, d.h. Container vom Typ Vector<float> können durch diese Funktion gezogen werden. Die Werte in den
 Containern werden entsprechend der Funktionsvorschrift miteinander verrechnet.
 
-* TODO Besser erklären und mehr Konzeptzeichenung bzw. Beispielcode. <2023-03-07 Tue>shoshin
+* TODO Besser erklären: Konzeptzeichnung bzw. Beispielcode. <2023-03-07 Tue>shoshin
