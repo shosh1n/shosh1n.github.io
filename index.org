@@ -612,4 +612,33 @@ Die Änderung der Funktion $[J_{m}(k_{eff}\cdot r)]'$ bzw. $[H^{1}_{m}(k_{0}\cdo
 * Numerische Approximation
 Lösungen der Maxwellgleichungen können numerisch approximiert werden. Dabei werden zu untersuchende Strukturen auf einem Rechengitter projiziert. Ein einfaches Rechengitter lässt sich über folgenden Code in C realisieren
 ** Codebeispiel:
-Ich habe den Code in folgendes Repository verlagert: Er beinhaltet momentan verschiedene Matrixtransformationen, die Parallel auf einer Grafikkarte ausgeführt werden können. Im Sinne des Clean Code Prinzips muss dieser noch refaktorisiert werden.
+Ich habe den Code in folgendes Repository [[https://github.com/shosh1n/EMCuda][EM-Cuda]] verlagert: Er beinhaltet momentan verschiedene Matrixtransformationen, die Parallel auf einer Grafikkarte ausgeführt werden können. Im Sinne des Clean Code Prinzips muss dieser noch refaktorisiert werden.
+
+Druch die Programmierung mit CUDA können viele Berechnungsschritte parallelisiert werden, d.h. zeitlich verkürzt, da diese nicht hintereinander gereiht werden müssen. Mann kann sich das so vorstellen,
+als würde man Brot schneiden. Statt eine Scheibe Brot pro einer Zeiteinheit werden durch Paralleliesierung alle Scheiben des Brotes pro einer Zeiteinheit geschnitten. Das muss natürlich besonders programmiert werden.
+
+Ein weiter Vorzug von CUDA ist, dass es auf der Programmiersprache C beruht und mit C++ kompatible ist, bzw. Programmiertechniken benutzt, die auch in C++ üblich sind. [[https://thrust.github.io/][Thrust]] ist eine Programmierbibliothek,
+die elegante Programmiermuster erlaubt. So sind z.B. über die [[https://de.wikipedia.org/wiki/Template_(C%2B%2B)][Template-Programmierung]] Funktionen möglich, die mehrere Arrays entgegennehmen und verarbeiten ein Beispiel ist folgendem Codeblock zu entnehmen:
+#+begin_src cuda
+// SPARSE MATRIX DIVISION
+// SPARSE MATRIX-FORM IS IN TUPLE
+// DIVIDE THE TUPLE BY A 1D-SEQUENCE
+struct sparseDiMatrixDivision
+{
+    __host__ __device__
+    thrust::tuple<float,float> operator()(const thrust::tuple<float,float>& spMat, const thrust::tuple<float> &divi) const
+    {
+      auto out = thrust::make_tuple(thrust::get<0>(spMat)/thrust::get<0>(divi),thrust::get<1>(spMat)/thrust::get<0>(divi));
+      return out;
+    }
+
+};
+
+#+end_src
+
+Die Funktion gibt ein Tuple des Typs <float, float> wieder. In der Eingabe nimmt sie ein 2D-Tuple mit <float,float> and und ein 1D-Tuple <float>.
+Im Funktionsbody berechnet sie die Division des 2D-Tuples durch des 1D-Tuples. Wird dieses *struct-Objekt* erstellt, speichert es außderdem einen Zustand zur Laufzeit
+des Programms. Die Funktion erlaubt auch den Einsatz von Iteratoren, d.h. Container vom Typ Vector<float> können durch diese Funktion gezogen werden. Die Werte in den
+Containern werden entsprechend der Funktionsvorschrift miteinander verrechnet.
+
+* TODO Besser erklären und mehr Konzeptzeichenung bzw. Beispielcode. <2023-03-07 Tue>shoshin
