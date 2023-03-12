@@ -70,6 +70,7 @@ return 'img/matplot-fig.png'
 * Lösung der Wellengleichung in endlichen Geometrien
 Zu Beginn des Textes wurde die Wellengleichung ohne große Einschränkungen gelöst. In realen Systemen ist so eine Lösung ungenau. In einem unendlich großen
 störungsfreien Raum, stellt die 1D-Sinusfunktion eine gültige Lösung dar.
+
 Für endliche Räume müssen weitere Berücksichtigungen getroffen werden. Eine einfache Geometrie für Resonatoren ist ein Zylinder.
 Ein Zylinder hat schon 3-Raumkoordinaten. Um die periodische Störung zu lösen müssen entsprechend dieser Raumkoordinaten Funktionen gefunden werden, die den
 Zylinderraum vollständig beschreiben können.

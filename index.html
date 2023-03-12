@@ -43,51 +43,51 @@
 <h2>Table of Contents</h2>
 <div id="text-table-of-contents">
 <ul>
-<li><a href="#org21a3bdb">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
-<li><a href="#org71fe9eb">Die harmonische Störung des dielektrischen Feldes</a>
+<li><a href="#orgd3e6742">Numerische Berechnungen von Elektro-magnetischen Phänomenen</a></li>
+<li><a href="#org930c090">Die harmonische Störung des dielektrischen Feldes</a>
 <ul>
-<li><a href="#orgef7b789">Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes</a></li>
+<li><a href="#orgc08526c">Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes</a></li>
 </ul>
 </li>
-<li><a href="#org0be3837">Lösung der Wellengleichung in endlichen Geometrien</a>
+<li><a href="#org52fd37e">Lösung der Wellengleichung in endlichen Geometrien</a>
 <ul>
-<li><a href="#org07de463">Potential in einem Zylinder</a></li>
+<li><a href="#org7151b6f">Potential in einem Zylinder</a></li>
 </ul>
 </li>
-<li><a href="#org63f47fd">Bestimmte Harmonische: Flüstergaleriemoden</a>
+<li><a href="#org65b3a82">Bestimmte Harmonische: Flüstergaleriemoden</a>
 <ul>
-<li><a href="#org4f34eb4">Allgemeine Funktion der 3D-Wellengleichung</a></li>
-<li><a href="#org9d0eaa0">Die Azimutale Funktion</a>
+<li><a href="#orgbd8e251">Allgemeine Funktion der 3D-Wellengleichung</a></li>
+<li><a href="#org67b1214">Die Azimutale Funktion</a>
 <ul>
-<li><a href="#org0c0455c">Codebeispiel: Azimutale Funktion</a></li>
+<li><a href="#orge91d041">Codebeispiel: Azimutale Funktion</a></li>
 </ul>
 </li>
-<li><a href="#orgf10e356">Funktion der Z-Koordinate bzw. der Höhe</a>
+<li><a href="#org6a89902">Funktion der Z-Koordinate bzw. der Höhe</a>
 <ul>
-<li><a href="#orgf27dc4b">Codebeispiel für die vertikale Richtung</a></li>
+<li><a href="#org7ccef00">Codebeispiel für die vertikale Richtung</a></li>
 </ul>
 </li>
-<li><a href="#orga0f9c4d">Die Radiale Funktion</a>
+<li><a href="#org200c513">Die Radiale Funktion</a>
 <ul>
-<li><a href="#org4396533">Codebeispiel der Besselfunktionen</a></li>
-<li><a href="#org8d5b42a">Codebeispiel der radialen Funktion innerhalb des Resonators</a></li>
-<li><a href="#org32f1c03">Codebeispiel der radialen Funktion außerhalb des Resonators</a></li>
+<li><a href="#org0a79846">Codebeispiel der Besselfunktionen</a></li>
+<li><a href="#orge8705ed">Codebeispiel der radialen Funktion innerhalb des Resonators</a></li>
+<li><a href="#org93b927e">Codebeispiel der radialen Funktion außerhalb des Resonators</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li><a href="#org2758af4">Numerische Approximation</a>
+<li><a href="#org9264527">Numerische Approximation</a>
 <ul>
-<li><a href="#org3640433">Codebeispiel:</a></li>
+<li><a href="#orgb7ceba7">Codebeispiel:</a></li>
 </ul>
 </li>
-<li><a href="#org86f090d"><span class="todo TODO">TODO</span> Besser erklären: Konzeptzeichnung bzw. Beispielcode. <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-03-07 Tue&gt;</span></span>shoshin</a></li>
+<li><a href="#orgd8eae65"><span class="todo TODO">TODO</span> Besser erklären: Konzeptzeichnung bzw. Beispielcode. <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-03-07 Tue&gt;</span></span>shoshin</a></li>
 </ul>
 </div>
 </div>
-<div id="outline-container-org21a3bdb" class="outline-2">
-<h2 id="org21a3bdb">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
-<div class="outline-text-2" id="text-org21a3bdb">
+<div id="outline-container-orgd3e6742" class="outline-2">
+<h2 id="orgd3e6742">Numerische Berechnungen von Elektro-magnetischen Phänomenen</h2>
+<div class="outline-text-2" id="text-orgd3e6742">
 <p>
 Auf dieser Site stelle ich vor, wie ein physikalisches Phänomen - nämlich die Lichtausbreitung in dielektrischen, runden Resonatoren
 und wie sie mathematisch beschrieben werden kann. Dabei kommen Theorie und Code-Beispiele zum Einsatz. Im Resultat werden Lösungen von
@@ -97,9 +97,9 @@ Das Phänomen, welches hier maßgeblich beschrieben werden soll, ist das Phänom
 </div>
 </div>
 
-<div id="outline-container-org71fe9eb" class="outline-2">
-<h2 id="org71fe9eb">Die harmonische Störung des dielektrischen Feldes</h2>
-<div class="outline-text-2" id="text-org71fe9eb">
+<div id="outline-container-org930c090" class="outline-2">
+<h2 id="org930c090">Die harmonische Störung des dielektrischen Feldes</h2>
+<div class="outline-text-2" id="text-org930c090">
 <p>
 Zunächst wird im Zuge auf die Ausbreitung des Lichts festgelegt, dass nur harmonische Veränderungen des Feldes betrachtet werden. D.h. dass periodische Veränderungen
 des Feldes durch Sinus- und Cosinusfunktionen beschrieben werden können. Mathematisch generell &ldquo;gesprochen&rdquo; kommen die periodischen Schwinungen aus der Wellengleichung:
@@ -168,9 +168,9 @@ Allgemein kann das elektrische <b>Freie Feld</b> über folgenden algebraischen A
     = E_{0}\exp{j\mathbf{k}\cdot\mathbf{r}-j\omega t}
 \end{equation}
 </div>
-<div id="outline-container-orgef7b789" class="outline-3">
-<h3 id="orgef7b789">Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes</h3>
-<div class="outline-text-3" id="text-orgef7b789">
+<div id="outline-container-orgc08526c" class="outline-3">
+<h3 id="orgc08526c">Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes</h3>
+<div class="outline-text-3" id="text-orgc08526c">
 <p>
 Eine einfache Lösung der Wellengleichung ist die Sinusfunktion. Durch diese können periodische Schwankungen am Ort oder in der Zeit beschrieben werden.
 </p>
@@ -203,7 +203,7 @@ plt.savefig(<span class="org-string">'img/matplot-fig.png'</span>)
 
 
 
-<div id="orgc20093f" class="figure">
+<div id="org260798c" class="figure">
 <p><img src="./img/matplot-fig.png" alt="1DSinus" title="Sinus" align="center" />
 </p>
 <p><span class="figure-number">Figure 1: </span>Eine 1D-Sinusfunktion</p>
@@ -213,21 +213,24 @@ plt.savefig(<span class="org-string">'img/matplot-fig.png'</span>)
 </div>
 
 
-<div id="outline-container-org0be3837" class="outline-2">
-<h2 id="org0be3837">Lösung der Wellengleichung in endlichen Geometrien</h2>
-<div class="outline-text-2" id="text-org0be3837">
+<div id="outline-container-org52fd37e" class="outline-2">
+<h2 id="org52fd37e">Lösung der Wellengleichung in endlichen Geometrien</h2>
+<div class="outline-text-2" id="text-org52fd37e">
 <p>
 Zu Beginn des Textes wurde die Wellengleichung ohne große Einschränkungen gelöst. In realen Systemen ist so eine Lösung ungenau. In einem unendlich großen
 störungsfreien Raum, stellt die 1D-Sinusfunktion eine gültige Lösung dar.
+</p>
+
+<p>
 Für endliche Räume müssen weitere Berücksichtigungen getroffen werden. Eine einfache Geometrie für Resonatoren ist ein Zylinder.
 Ein Zylinder hat schon 3-Raumkoordinaten. Um die periodische Störung zu lösen müssen entsprechend dieser Raumkoordinaten Funktionen gefunden werden, die den
 Zylinderraum vollständig beschreiben können.
 </p>
 </div>
 
-<div id="outline-container-org07de463" class="outline-3">
-<h3 id="org07de463">Potential in einem Zylinder</h3>
-<div class="outline-text-3" id="text-org07de463">
+<div id="outline-container-org7151b6f" class="outline-3">
+<h3 id="org7151b6f">Potential in einem Zylinder</h3>
+<div class="outline-text-3" id="text-org7151b6f">
 <p>
 Da eine Störung eine Veränderung herbeiführt, wird ein Differentialoperator auf eine Größe \(\psi\) angewandt. Dieser beschreibende Veränderungsoperator berücksichtigt
 die 3-Raumrichtungen und hat folgende Funktionsvorschrift:
@@ -242,9 +245,9 @@ die 3-Raumrichtungen und hat folgende Funktionsvorschrift:
 
 
 
-<div id="outline-container-org63f47fd" class="outline-2">
-<h2 id="org63f47fd">Bestimmte Harmonische: Flüstergaleriemoden</h2>
-<div class="outline-text-2" id="text-org63f47fd">
+<div id="outline-container-org65b3a82" class="outline-2">
+<h2 id="org65b3a82">Bestimmte Harmonische: Flüstergaleriemoden</h2>
+<div class="outline-text-2" id="text-org65b3a82">
 <p>
 Flüstergaleriemoden sind auch bestimmte Harmonische Störungen im Raum. Sie sind an der Seitenwand eines Resonators zu verorten. Ihre Entdeckung beruht auf einer akustischen Beobachtung von Schallwellen,
 die an der Wand einer Kuppel reflektiert werden, d.h. die Schallausbreitung findet über Reflektion der Schallwellen an der Kuppelwand statt.
@@ -253,9 +256,9 @@ bestimmt werden.
 </p>
 </div>
 
-<div id="outline-container-org4f34eb4" class="outline-3">
-<h3 id="org4f34eb4">Allgemeine Funktion der 3D-Wellengleichung</h3>
-<div class="outline-text-3" id="text-org4f34eb4">
+<div id="outline-container-orgbd8e251" class="outline-3">
+<h3 id="orgbd8e251">Allgemeine Funktion der 3D-Wellengleichung</h3>
+<div class="outline-text-3" id="text-orgbd8e251">
 <p>
 Im Besten Fall kann eine Wellenfunktion gefunden werden, die sich aus 3 einzelnen Funktionen entsprechend der Raumkoordinaten zusammensetzt.
 Ohne große Überlegung kann die Funktion folgendermaßen geschrieben werden:
@@ -271,18 +274,18 @@ In den folgenden Abschnitte werden diese Funktionen einzeln betrachtet.
 </div>
 </div>
 
-<div id="outline-container-org9d0eaa0" class="outline-3">
-<h3 id="org9d0eaa0">Die Azimutale Funktion</h3>
-<div class="outline-text-3" id="text-org9d0eaa0">
+<div id="outline-container-org67b1214" class="outline-3">
+<h3 id="org67b1214">Die Azimutale Funktion</h3>
+<div class="outline-text-3" id="text-org67b1214">
 <p>
 Als erstes lässt sich relativ einfach die azimutale Funktion bestimmen. Die Azimutale Funktion umläuft den Zylinder.
 Folgendes Codebeispiel veranschautlicht diese.
 </p>
 </div>
 
-<div id="outline-container-org0c0455c" class="outline-4">
-<h4 id="org0c0455c">Codebeispiel: Azimutale Funktion</h4>
-<div class="outline-text-4" id="text-org0c0455c">
+<div id="outline-container-orge91d041" class="outline-4">
+<h4 id="orge91d041">Codebeispiel: Azimutale Funktion</h4>
+<div class="outline-text-4" id="text-orge91d041">
 <div class="org-src-container">
 <pre class="src src-python">
 
@@ -454,7 +457,7 @@ plt.savefig(<span class="org-string">'img/matplot-azimuthal.png'</span>)
 </p>
 
 
-<div id="org632af04" class="figure">
+<div id="org713449c" class="figure">
 <p><img src="./img/matplot-azimuthal.png" alt="matplot-azimuthal.png" title="AzimutaleFunktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 2: </span>Die azimutale Funktion beschreibt die Umlaufrichtung</p>
@@ -500,9 +503,9 @@ Der mathematische Ausdruck ist im Vergleich zum oberen Codebeispiel ziemlich uns
 </div>
 </div>
 
-<div id="outline-container-orgf10e356" class="outline-3">
-<h3 id="orgf10e356">Funktion der Z-Koordinate bzw. der Höhe</h3>
-<div class="outline-text-3" id="text-orgf10e356">
+<div id="outline-container-org6a89902" class="outline-3">
+<h3 id="org6a89902">Funktion der Z-Koordinate bzw. der Höhe</h3>
+<div class="outline-text-3" id="text-org6a89902">
 <p>
 Für die Funktion \(Z(z)\) ergeben sich unterschiedliche Funktionen. Symmetrische, auch als unsymmetrische  Funktionen.
 Das Liegt daran, dass sowohl Cosinus als auch Sinus zulässig sind.
@@ -565,14 +568,14 @@ Die Höhe \(h\) gibt die Randbedingung für die Gültigkeit der Sinus/Cosinus Fu
 </p>
 </div>
 
-<div id="outline-container-orgf27dc4b" class="outline-4">
-<h4 id="orgf27dc4b">Codebeispiel für die vertikale Richtung</h4>
+<div id="outline-container-org7ccef00" class="outline-4">
+<h4 id="org7ccef00">Codebeispiel für die vertikale Richtung</h4>
 </div>
 </div>
 
-<div id="outline-container-orga0f9c4d" class="outline-3">
-<h3 id="orga0f9c4d">Die Radiale Funktion</h3>
-<div class="outline-text-3" id="text-orga0f9c4d">
+<div id="outline-container-org200c513" class="outline-3">
+<h3 id="org200c513">Die Radiale Funktion</h3>
+<div class="outline-text-3" id="text-org200c513">
 <p>
 Für die radiale Funktion \(R(\rho)\) ergibt sich durch die Separation der Variablen Bessels-Differentialgleichung.
 </p>
@@ -598,18 +601,18 @@ Diese Differentialgleichung kann durch Besselfunktionen und Hankelfunktionen ers
 </div>
 
 
-<div id="outline-container-org4396533" class="outline-4">
-<h4 id="org4396533">Codebeispiel der Besselfunktionen</h4>
-<div class="outline-text-4" id="text-org4396533">
+<div id="outline-container-org0a79846" class="outline-4">
+<h4 id="org0a79846">Codebeispiel der Besselfunktionen</h4>
+<div class="outline-text-4" id="text-org0a79846">
 <p>
 Im Folgenden wird in Python ein Codebeispiel gezeigt, in welchem das Innere eines Resonators dargestellt wird. Es veranschaulicht eine radiale Veränderung des Elektromagnetischen Feldes.
 </p>
 </div>
 </div>
 
-<div id="outline-container-org8d5b42a" class="outline-4">
-<h4 id="org8d5b42a">Codebeispiel der radialen Funktion innerhalb des Resonators</h4>
-<div class="outline-text-4" id="text-org8d5b42a">
+<div id="outline-container-orge8705ed" class="outline-4">
+<h4 id="orge8705ed">Codebeispiel der radialen Funktion innerhalb des Resonators</h4>
+<div class="outline-text-4" id="text-orge8705ed">
 <div class="org-src-container">
 <pre class="src src-python">
 <span class="org-keyword">import</span> numpy <span class="org-keyword">as</span> np
@@ -729,7 +732,7 @@ plt.show()
 </div>
 
 
-<div id="org3b52b06" class="figure">
+<div id="org8f36cc8" class="figure">
 <p><img src="./img/BRadialeFunktion.png" alt="BRadialeFunktion.png" title="Bessel-Funktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 3: </span>Die Besselfunktion beschreibt die radiale Veränderung der Wellenfunktion</p>
@@ -738,9 +741,9 @@ plt.show()
 </div>
 
 
-<div id="outline-container-org32f1c03" class="outline-4">
-<h4 id="org32f1c03">Codebeispiel der radialen Funktion außerhalb des Resonators</h4>
-<div class="outline-text-4" id="text-org32f1c03">
+<div id="outline-container-org93b927e" class="outline-4">
+<h4 id="org93b927e">Codebeispiel der radialen Funktion außerhalb des Resonators</h4>
+<div class="outline-text-4" id="text-org93b927e">
 <p>
 Außerhalb der endlichen Geometrie des Resonator fallen die Ausprägungen des elektromagntischen Feldes stark ab. Durch Hankelfunktionen wird diesem Umstand mathematisch
 Rechung getragen.
@@ -861,7 +864,7 @@ plt.show()
 </div>
 
 
-<div id="org86568ad" class="figure">
+<div id="org67f68f5" class="figure">
 <p><img src="./img/HRadialeFunktion.png" alt="HRadialeFunktion.png" title="Hankel-Funktion" align="center" />
 </p>
 <p><span class="figure-number">Figure 4: </span>Die Hankelfunktion beschreibt mathematisch den Abfall jenseits der Kavität</p>
@@ -896,16 +899,16 @@ Die Änderung der Funktion \([J_{m}(k_{eff}\cdot r)]'\) bzw. \([H^{1}_{m}(k_{0}\
 </div>
 
 
-<div id="outline-container-org2758af4" class="outline-2">
-<h2 id="org2758af4">Numerische Approximation</h2>
-<div class="outline-text-2" id="text-org2758af4">
+<div id="outline-container-org9264527" class="outline-2">
+<h2 id="org9264527">Numerische Approximation</h2>
+<div class="outline-text-2" id="text-org9264527">
 <p>
 Lösungen der Maxwellgleichungen können numerisch approximiert werden. Dabei werden zu untersuchende Strukturen auf einem Rechengitter projiziert. Ein einfaches Rechengitter lässt sich über folgenden Code in C realisieren
 </p>
 </div>
-<div id="outline-container-org3640433" class="outline-3">
-<h3 id="org3640433">Codebeispiel:</h3>
-<div class="outline-text-3" id="text-org3640433">
+<div id="outline-container-orgb7ceba7" class="outline-3">
+<h3 id="orgb7ceba7">Codebeispiel:</h3>
+<div class="outline-text-3" id="text-orgb7ceba7">
 <p>
 Ich habe den Code in folgendes Repository <a href="https://github.com/shosh1n/EMCuda">EM-Cuda</a> verlagert: Er beinhaltet momentan verschiedene Matrixtransformationen, die Parallel auf einer Grafikkarte ausgeführt werden können. Im Sinne des Clean Code Prinzips muss dieser noch refaktorisiert werden.
 </p>
@@ -947,8 +950,8 @@ Containern werden entsprechend der Funktionsvorschrift miteinander verrechnet.
 </div>
 </div>
 
-<div id="outline-container-org86f090d" class="outline-2">
-<h2 id="org86f090d"><span class="todo TODO">TODO</span> Besser erklären: Konzeptzeichnung bzw. Beispielcode. <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-03-07 Tue&gt;</span></span>shoshin</h2>
+<div id="outline-container-orgd8eae65" class="outline-2">
+<h2 id="orgd8eae65"><span class="todo TODO">TODO</span> Besser erklären: Konzeptzeichnung bzw. Beispielcode. <span class="timestamp-wrapper"><span class="timestamp">&lt;2023-03-07 Tue&gt;</span></span>shoshin</h2>
 </div>
 </div>
 <div id="postamble" class="status">
