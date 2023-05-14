@@ -1,0 +1,47 @@
+#+hugo_base_dir: ../
+
+* NO My first post :tag1:@category1:
+CLOSED: [2023-05-14 Sun 23:32]
+:PROPERTIES:
+:EXPORT_FILE_NAME: my-first-post
+:END:
+This is my post body etc. etc.
+#+options: tex:dvisvgm
+#+CAPTION: A Unicorn
+#+ATTR_HTML: :unicorn :title unicorn :align center
+[[../content/posts/img/featured.png]]
+
+
+Allgemein kann das elektrische *Freie Feld* über folgenden algebraischen Ausdruck zusammengefasst werden:
+
+\begin{equation}
+   \textcolor{white}{ \mathbf{E} (\mathbf{r},t) = E(\mathbf{z},t)
+    = E_{0}\exp{j\mathbf{k}\cdot\mathbf{r}-j\omega t}}
+\end{equation}
+
+** Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes
+Eine einfache Lösung der Wellengleichung ist die Sinusfunktion. Durch diese können periodische Schwankungen am Ort oder in der Zeit beschrieben werden.
+#+begin_src python :eval never :results none
+
+import numpy as np
+import matplotlib
+matplotlib.use('Agg')
+import scipy.special as sp
+import matplotlib.pyplot as plt
+
+x  = np.linspace(0, 20, 100)
+
+for n in range(1):
+    y = np.sin(x);
+    plt.plot(x,y,label=r'$Sin(x)$')
+
+plt.axhline(0,color='green', label='_nolegend_')
+plt.grid()
+plt.legend()
+plt.xlabel('$x$')
+plt.ylabel('${Sin}(x)$')
+plt.title(r'Die Harmonische Schwingung - Sinusfunktion $Sin(x)$')
+plt.savefig('img/matplot-fig.png')
+return 'img/matplot-fig.png'
+
+#+end_src

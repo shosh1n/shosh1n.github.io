@@ -1,0 +1,29 @@
+name: Publish to GitHub Pages
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+​      - uses: actions/checkout@v2
+        with:
+          submodules: true
+          fetch-depth: 1
+
+     - name: Setup Hugo
+	     uses: peaceiris/actions-hugo@v2
+       with:
+         hugo-version: 'latest'
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Publish generated content to GitHub Pages
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          branch: gh-pages
+          folder: public
