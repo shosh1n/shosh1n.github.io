@@ -1,3 +1,4 @@
+
 name: Publish to GitHub Pages
 
 on:
@@ -6,13 +7,11 @@ on:
       - master
 
 jobs:
-  build:
-  runs-on: ubuntu-latest
-  steps:
-    - uses: actions/checkout@v2
-      with:
-        submodules: true
-        fetch-depth: 1
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out
+        uses: actions/checkout@v2
 
       - name: Setup Hugo
         uses: peaceiris/actions-hugo@v2
