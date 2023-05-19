@@ -1,6 +1,6 @@
 #+hugo_base_dir: ../
 
-* DONE Another Chess :tag1:@category1
+* DONE Another Chess :chess:@openings:
 CLOSED: [2023-05-19 Fri 20:26]
 :PROPERTIES:
 :EXPORT_FILE_NAME: my chess
@@ -16,10 +16,9 @@ Program the chessboard:
 #+end_src
 
 #+RESULTS:
+#+ATTR_HTML: :chess :title white queenside :align center :width 200px
 [[file:startpos.svg]]
-:HELLO:
-Testing  some chess positions!
 
-** White has an advantage in queenside space!
-** Black has a weak pawn on c7.
-** and so on ...
+- White has an advantage in queenside space!
+- Black has a weak pawn on c7.
+- and so on ...

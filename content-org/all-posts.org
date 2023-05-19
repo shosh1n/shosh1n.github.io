@@ -1,16 +1,12 @@
 #+hugo_base_dir: ../
 
-* NO My first post :tag1:@category1:
+* NO My first post :Waves:@Optics:
 CLOSED: [2023-05-14 Sun 23:32]
 :PROPERTIES:
-:EXPORT_FILE_NAME: my-first-post
+:EXPORT_FILE_NAME: A Simple Wave
 :END:
-This is my post body etc. etc.
-#+options: tex:dvisvgm
-#+CAPTION: A Unicorn
-#+ATTR_HTML: :unicorn :title unicorn :align center
-[[../content/posts/img/featured.png]]
 
+*THIS IS JUST A TEST*
 
 Allgemein kann das elektrische *Freie Feld* über folgenden algebraischen Ausdruck zusammengefasst werden:
 
@@ -45,22 +41,3 @@ plt.savefig('img/matplot-fig.png')
 return 'img/matplot-fig.png'
 
 #+end_src
-* Another Chess
-Hola, this is a mode I discovered for evaluating chess games in eMacs.
-Greetings! ;)
-
-Program the chessboard:
-#+begin_src chess :file startpos.svg :notation fen :exports raw
-1.d4 Nf6 2.c4 e6 3.Nc3 Bb4 4.e3 b6 5.Bd3 Bb7 6.Nf3 0-0 7.0-0 d5 8.a3 Bd6
-9.cxd5 exd5 10.b4 Nbd7 11. b5 Ne4 12.Bb2 Re8 13.a4 Re6 14.Ne2 a5
-
-#+end_src
-
-#+RESULTS:
-[[file:startpos.svg]]
-:HELLO:
-Testing  some chess positions!
-
-** White has an advantage in queenside space!
-** Black has a weak pawn on c7.
-** and so on ...

@@ -1,7 +1,9 @@
 +++
-title = "Another Chess :tag1:@category1"
+title = "Another Chess"
 author = ["cherma"]
 date = 2023-05-19T20:26:00+02:00
+tags = ["chess"]
+categories = ["openings"]
 draft = false
 +++
 
@@ -15,15 +17,8 @@ Program the chessboard:
 9.cxd5 exd5 10.b4 Nbd7 11. b5 Ne4 12.Bb2 Re8 13.a4 Re6 14.Ne2 a5
 ```
 
-![](/ox-hugo/startpos.svg)
-:HELLO:
-Testing  some chess positions!
+{{< figure src="/ox-hugo/startpos.svg" title="white queenside" width="200px" >}}
 
-
-## White has an advantage in queenside space! {#white-has-an-advantage-in-queenside-space}
-
-
-## Black has a weak pawn on c7. {#black-has-a-weak-pawn-on-c7-dot}
-
-
-## and so on ... {#and-so-on-dot-dot-dot}
+-   White has an advantage in queenside space!
+-   Black has a weak pawn on c7.
+-   and so on ...
