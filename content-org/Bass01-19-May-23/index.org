@@ -1,0 +1,28 @@
+#+hugo_base_dir: ../../
+
+* DONE Some Chords
+CLOSED: [2023-05-19 Fri 22:37]
+:PROPERTIES:
+:EXPORT_FILE_NAME: Some Tunes...
+:END:
+#+options: tex:dvisvgm
+
+This is another test of trying out lilypond for html-export. More serious stuff
+is for sure to follow.
+
+#+begin_src lilypond :file test.png
+\header{ tagline="" }
+\relative c' {
+  f e d c
+  b a g a
+  b c d e
+  f g f e
+  d c b a
+  g 1
+}
+
+
+#+end_src
+
+#+RESULTS:
+[[file:test.png]]
