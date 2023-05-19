@@ -2,6 +2,8 @@
 title = "Some Chords"
 author = ["cherma"]
 date = 2023-05-19T22:37:00+02:00
+tags = ["music"]
+categories = ["base"]
 draft = false
 +++
 

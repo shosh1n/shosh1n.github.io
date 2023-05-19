@@ -1,6 +1,6 @@
 #+hugo_base_dir: ../../
 
-* DONE Some Chords
+* DONE Some Chords :music:@base:
 CLOSED: [2023-05-19 Fri 22:37]
 :PROPERTIES:
 :EXPORT_FILE_NAME: Some Tunes...
@@ -20,8 +20,6 @@ is for sure to follow.
   d c b a
   g 1
 }
-
-
 #+end_src
 
 #+RESULTS:
