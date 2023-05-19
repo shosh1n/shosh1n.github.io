@@ -1,7 +1,7 @@
 #+hugo_base_dir: ../
 
 * DONE Another Chess :chess:@openings:
-CLOSED: [2023-05-19 Fri 20:26]
+CLOSED: [2023-05-19 Fri 20:42]
 :PROPERTIES:
 :EXPORT_FILE_NAME: my chess
 :END:
@@ -15,8 +15,8 @@ Program the chessboard:
 
 #+end_src
 
-#+RESULTS:
-#+ATTR_HTML: :chess :title white queenside :align center :width 200px
+#+CAPTION: Strong White Queenside
+#+ATTR_HTML: :title white queenside :align center :width 200px
 [[file:startpos.svg]]
 
 - White has an advantage in queenside space!

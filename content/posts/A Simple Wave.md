@@ -1,23 +1,27 @@
-#+hugo_base_dir: ../
++++
+title = "My first post"
+author = ["cherma"]
+date = 2023-05-19T20:42:00+02:00
+tags = ["Waves"]
+categories = ["Optics"]
+draft = false
++++
 
-* DONE My first post :Waves:@Optics:
-CLOSED: [2023-05-19 Fri 20:42]
-:PROPERTIES:
-:EXPORT_FILE_NAME: A Simple Wave
-:END:
+**THIS IS JUST A TEST**
 
-*THIS IS JUST A TEST*
-
-Allgemein kann das elektrische *Freie Feld* über folgenden algebraischen Ausdruck zusammengefasst werden:
+Allgemein kann das elektrische **Freie Feld** über folgenden algebraischen Ausdruck zusammengefasst werden:
 
 \begin{equation}
    \textcolor{white}{ \mathbf{E} (\mathbf{r},t) = E(\mathbf{z},t)
-    = E_{0}\exp{j\mathbf{k}\cdot\mathbf{r}-j\omega t}}
+    = E\_{0}\exp{j\mathbf{k}\cdot\mathbf{r}-j\omega t}}
 \end{equation}
 
-** Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes
+
+## Codebeispiel: Die Sinusfunktion eine Lösung des freien Feldes {#codebeispiel-die-sinusfunktion-eine-lösung-des-freien-feldes}
+
 Eine einfache Lösung der Wellengleichung ist die Sinusfunktion. Durch diese können periodische Schwankungen am Ort oder in der Zeit beschrieben werden.
-#+begin_src python :eval never :results none
+
+```python
 
 import numpy as np
 import matplotlib
@@ -39,5 +43,4 @@ plt.ylabel('${Sin}(x)$')
 plt.title(r'Die Harmonische Schwingung - Sinusfunktion $Sin(x)$')
 plt.savefig('img/matplot-fig.png')
 return 'img/matplot-fig.png'
-
-#+end_src
+```

@@ -1,7 +1,7 @@
 +++
 title = "Another Chess"
 author = ["cherma"]
-date = 2023-05-19T20:26:00+02:00
+date = 2023-05-19T20:42:00+02:00
 tags = ["chess"]
 categories = ["openings"]
 draft = false
@@ -17,7 +17,7 @@ Program the chessboard:
 9.cxd5 exd5 10.b4 Nbd7 11. b5 Ne4 12.Bb2 Re8 13.a4 Re6 14.Ne2 a5
 ```
 
-{{< figure src="/ox-hugo/startpos.svg" title="white queenside" width="200px" >}}
+{{< figure src="/ox-hugo/startpos.svg" caption="<span class=\"figure-number\">Figure 1: </span>Strong White Queenside" title="white queenside" width="200px" >}}
 
 -   White has an advantage in queenside space!
 -   Black has a weak pawn on c7.
