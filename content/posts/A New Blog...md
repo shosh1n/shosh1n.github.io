@@ -2,14 +2,12 @@
 title = "My first post"
 author = ["cherma"]
 date = 2023-05-14T23:32:00+02:00
-tags = ["tag1"]
-categories = ["category1"]
+tags = ["Waves"]
+categories = ["Optics"]
 draft = false
 +++
 
-This is my post body etc. etc.
-
-{{< figure src="/ox-hugo/featured.png" caption="<span class=\"figure-number\">Figure 1: </span>A Unicorn" title="unicorn" >}}
+**IT'S JUST A TEST**
 
 Allgemein kann das elektrische **Freie Feld** über folgenden algebraischen Ausdruck zusammengefasst werden:
 

@@ -1,12 +1,13 @@
 #+hugo_base_dir: ../
 
 * DONE My first post :Waves:@Optics:
-CLOSED: [2023-05-19 Fri 20:42]
+CLOSED: [2023-05-14 Sun 23:32]
 :PROPERTIES:
-:EXPORT_FILE_NAME: A Simple Wave
+:EXPORT_FILE_NAME: A New Blog...
 :END:
+#+options: tex:dvisvgm
 
-*THIS IS JUST A TEST*
+*IT'S JUST A TEST*
 
 Allgemein kann das elektrische *Freie Feld* über folgenden algebraischen Ausdruck zusammengefasst werden:
 

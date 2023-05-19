@@ -16,8 +16,8 @@ Program the chessboard:
 #+end_src
 
 #+CAPTION: Strong White Queenside
-#+ATTR_HTML: :title white queenside :align center :width 200px
-[[file:startpos.svg]]
+#+ATTR_HTML: :title queenside :align center :width 200px
+[[./startpos.svg]]
 
 - White has an advantage in queenside space!
 - Black has a weak pawn on c7.
