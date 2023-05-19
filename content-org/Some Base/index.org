@@ -10,17 +10,26 @@ CLOSED: [2023-05-19 Fri 22:37]
 This is another test of trying out lilypond for html-export. More serious stuff
 is for sure to follow.
 
-#+begin_src lilypond :file test.png
-\header{ tagline="" }
+#+name: Lilypond
+#+begin_src lilypond :file patterns.png
 \relative c' {
-  f e d c
-  b a g a
-  b c d e
-  f g f e
-  d c b a
-  g 1
+  \time 5/4
+  \tweak font-size 4 f8
+  \override NoteHead.color = #darkred e
+  \once \override Tie.direction = #UP f2~
+  \shape #'((0 . 0) (10 . 5) (-10 . 5) (0 . 0)) Tie f~ | f1. ~ f2 |
 }
+#(set! paper-alist
+  (cons '("my size" . (cons (* 3 in) (* 1 in))) paper-alist))
+
+\paper {
+  #(set-paper-size "my size")
+}
+\header {
+  tagline = "rulz"
+}
+
 #+end_src
 
-#+RESULTS:
-[[file:test.png]]
+#+RESULTS: Lilypond
+[[file:patterns.png]]

@@ -10,4 +10,4 @@ draft = false
 This is another test of trying out lilypond for html-export. More serious stuff
 is for sure to follow.
 
-{{< figure src="/ox-hugo/test.png" >}}
+{{< figure src="/ox-hugo/patterns.png" >}}
