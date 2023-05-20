@@ -20,13 +20,13 @@
   weight = 20
 
 [[main]]
-  name = "Go To Posts"
+  name = "Posts"
   parent = "Parent"
   pageRef = "posts"
   weight = 20
 
 [[main]]
-  name = "Go To Tags"
+  name = "Tags"
   parent = "Parent"
   pageRef = "tags"
   weight = 20
@@ -39,7 +39,7 @@
 [[subnavigation]]
   name = "Find me on GitHub"
   pre = "github"
-  pageRef = "https://www.github.com/shosh1n"
+  pageRef = {{"https://www.github.com/shosh1n"}}
   weight = 20
 
 [[main]]
@@ -48,8 +48,8 @@
   weight = 20
 
 [[main]]
-  name = "Tags"
-  pageRef = "tags"
+  name = "Head 'em up, move 'em out'"
+  #pageRef = "tags"
   weight = 30
 
 
