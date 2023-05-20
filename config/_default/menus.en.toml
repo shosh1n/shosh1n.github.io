@@ -39,7 +39,7 @@
 [[subnavigation]]
   name = "Find me on GitHub"
   pre = "github"
-  pageRef = "links.github"
+  url = "https://www.github.com/shosh1n"
   weight = 20
 
 [[main]]
