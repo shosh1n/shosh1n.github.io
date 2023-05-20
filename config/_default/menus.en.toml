@@ -16,30 +16,30 @@
   weight = 10
 
 [[main]]
-  name = "Parent"
+  name = "Links"
   weight = 20
 
 [[main]]
-  name = "example sub-menu 1"
+  name = "Go To Posts"
   parent = "Parent"
   pageRef = "posts"
   weight = 20
 
 [[main]]
-  name = "example sub-menu 2"
+  name = "Go To Tags"
   parent = "Parent"
-  pageRef = "posts"
+  pageRef = "tags"
   weight = 20
 
 [[subnavigation]]
-  name = "An interesting topic"
-  pageRef = "tags/interesting-topic"
+  name = "some selfish excentric advertising"
+  #pageRef = "tags/interesting-topic"
   weight = 10
 
 [[subnavigation]]
-  name = "My Awesome Category"
+  name = "Find me on GitHub"
   pre = "github"
-  pageRef = "categories/awesome"
+  pageRef = "https://www.github.com/shosh1n"
   weight = 20
 
 [[main]]
