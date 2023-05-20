@@ -31,10 +31,10 @@
   pageRef = "tags"
   weight = 20
 
-[[subnavigation]]
-  name = "More from me..."
-  #pageRef = "tags/interesting-topic"
-  weight = 10
+#[[subnavigation]]
+#  name = "More from me..."
+  #pageRef = "tags/interesting-topic"#
+#  weight = 10
 
 [[subnavigation]]
   name = "Find me on GitHub"
@@ -47,10 +47,10 @@
   pageRef = "categories"
   weight = 20
 
-[[main]]
-  name = "Move 'em out'"
-  url = "https://youtube.com/watch?v=76vyMMqURaU"
-  weight = 30
+#[[main]]
+#  name = "Move 'em out'"
+#  url = "https://youtube.com/watch?v=76vyMMqURaU"
+#  weight = 30
 
 
 # -- Footer Menu --
