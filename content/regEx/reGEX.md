@@ -1,12 +1,17 @@
-#+hugo_base_dir: ../
-* DONE RegEx - Regular Expression :programming:@regex:
-CLOSED: [2023-06-02 Fr 00:29]
++++
+author = ["cherma"]
+draft = false
++++
+
+## <span class="org-todo done DONE">DONE</span> RegEx - Regular Expression <span class="tag"><span class="programming">programming</span><span class="_regex">@regex</span></span> {#regex-regular-expression}
+
 RegEx sind Zeichenketten, mit deren Hilfe Texte verarbeitet werden können.
 Mit einem regulären Ausdruck kann innerhalb eines Textes ein bestimmter bereich
 abgesucht werden.
 
 Folgendes Beispiel in Python spiegelt die Funktionsweise wieder:
-#+begin_src jupyter-python :session async
+
+```python
 import re
 from itertools import count
 
@@ -36,9 +41,6 @@ for match in matches:
 
 print(dictionary)
 
-#+end_src
-
-#+RESULTS:
-: {'wichtig0': '1,2,35,5,452,3,3 ', 'wichtig1': '1,21212,35,5,452,3,1313131233 '}
+```
 
 Es ist zu erkennen, dass sich mit regulären Ausdrücken wichtige Sachen aus einem Text heraus extrahieren lassen. Für eine Weiterverarbeitung in zukünftigen Code, kann dieser Umstand eine entscheidene Rolle spielen.
