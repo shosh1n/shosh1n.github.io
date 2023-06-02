@@ -1,17 +1,17 @@
 languageCode = "en"
 languageName = "English"
-displayName = "EN"
-isoCode = "en"
+#displayName = "EN"
+#isoCode = "en"
 weight = 1
-rtl = false
+#rtl = false
 
 title = "And... Another Awesome Blog!"
 #logo = "/img/metroid.png"
 # secondaryLogo = "img/author.jpeg"
-description = "My awesome website"
+#description = "My awesome website"
 #copyright = "Copy, _right?_ :thinking_face:"
 
-dateFormat = "2 January 2006"
+#dateFormat = "2 January 2006"
 
  [author]
    name = "Christoph-Alexander Hermanns"
