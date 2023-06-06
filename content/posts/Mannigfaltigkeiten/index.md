@@ -6,7 +6,7 @@ draft = false
 
 ## Mannigfaltigkeiten - Motivation {#mannigfaltigkeiten-motivation}
 
-Momentan beschäftige ich mich mit differenzierbaren Mannigfaltigkeiten. Das Interesse dieses interessante mathematische Konzept verstehen zu wollen, ist zu groß, als nicht einen Versuch dahingehend zu unternehmen. Dieser Eintrag und kommende unterliegen der Vorsicht, die bei diesem Thema zu walten hat, unter  daher unter ständiger Überarbeitung. ;)
+Momentan beschäftige ich mich mit differenzierbaren Mannigfaltigkeiten. Das Interesse dieses interessante mathematische Konzept verstehen zu wollen, ist zu groß, als nicht einen Versuch dahingehend zu unternehmen. Dieser Eintrag und kommende unterliegen der Vorsicht, die bei diesem Thema zu walten hat, und  daher unter ständiger Überarbeitung. ;)
 
 Ich habe mir das Buch von _Manfredo Perdigão Do Carmo_ - Riemannin Geometry als Hilfslektüre vorgenommen und werde von dort
 aufbauend das Thema angehen.
