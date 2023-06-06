@@ -1,7 +1,7 @@
 #+hugo_base_dir: ../
 #+HUGO_SECTION: posts/Mannigfaltigkeiten
 #+EXPORT_FILE_NAME: index
-#+options: tex:dvisvgm
+
 #+title: Mannigfaltigkeiten
 \begin{equation}
    \textcolor{white}{ \mathbf{E} (\mathbf{r},t) = E(\mathbf{z},t)
