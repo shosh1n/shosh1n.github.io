@@ -4,12 +4,6 @@ author = ["cherma"]
 draft = false
 +++
 
-\begin{equation}
-   \textcolor{white}{ \mathbf{E} (\mathbf{r},t) = E(\mathbf{z},t)
-    = E\_{0}\exp{j\mathbf{k}\cdot\mathbf{r}-j\omega t}}
-\end{equation}
-
-
 ## Mannigfaltigkeiten - Motivation {#mannigfaltigkeiten-motivation}
 
 Momentan beschäftige ich mich mit differenzierbaren Mannigfaltigkeiten. Das Interesse dieses interessante mathematische Konzept verstehen zu wollen, ist zu groß, als nicht einen Versuch dahingehend zu unternehmen. Dieser Eintrag und kommende unterliegen der Vorsicht, die bei diesem Thema zu walten hat, und  daher unter ständiger Überarbeitung. ;)
