@@ -27,4 +27,4 @@ Um allgemein einen Eindruck einer differenzierbaren Mannigfaltigkeit zu erhasche
 Wir können zu der Zuordnung \\(\mathbf{x}\\) auch sagen, dass dies eine Parametrisierung von \\(S\\) durch \\(p\\) sei. Nimmt man nun an, dass im einzelnen mehrere Zuordnungen o.g. Art möglich sind, dann ist es möglich eine Schnittmenge \\(W\\) finden, die nicht leer ist. Algebraisch ausgedrückt in:
 \\(x\_{\alpha}:(U\_{\alpha}) \rightarrow S\\) and \\(x\_{\beta}:(U\_{\beta}) \rightarrow S\\) haben die Relation \\(x\_{\alpha}(U\_{\alpha}) \subset x\_{\beta}(U\_{\beta}) = W = \not0\\).
 Zuordnungen(Funktionen) obiger Art, die irgendwie verkettet, bzw. verknüpft sind, sind dann differenzierbar und es kann von einer differenzierbaren Mannigfaltigkeit gesprochen werden.
-\\(x^{-1}\_{\beta} \circ x\_{\alpha}:x\_{\alpha}^{-1}(W) \rightarrow R^{2}\\) und \\(x\_{\alpha}^{-1}\circ x\_{\beta}:x\_{\beta}^{-^}(W) \rightarrow R^{2}\\)
+\\(x^{-1}\_{\beta} \circ x\_{\alpha}:x\_{\alpha}^{-1}(W) \rightarrow R^{2}\\) und \\(x\_{\alpha}^{-1}\circ x\_{\beta}:x\_{\beta}^{-1}(W) \rightarrow R^{2}\\)
