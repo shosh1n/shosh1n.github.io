@@ -275,7 +275,9 @@ $x^{-1}_{\beta} \circ x_{\alpha}:x_{\alpha}^{-1}(W) \rightarrow R^{2}$ und $x_{\
 [[file:3D-differentiadsdlQuotient.png]]
 :end:
 
- Wie in obiger Abbilung zu erkennen, lassen sich im Prinizp auch nahe Punkte als Nachbarschaft wählen, die entsprechend differenzier- bzw. unterscheidbar ist. Statt nur eine Dimension zu beachten, können hier 3 Dimensionen beobachtet werden. Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es könnte uns dort erlaubt sein mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen.
+ Wie in obiger Abbilung zu erkennen, lassen sich im Prinizp auch nahe Punkte als Nachbarschaft wählen, die entsprechend differenzier- bzw. unterscheidbar ist. Statt nur eine Dimension zu beachten, können hier Änderungen in 2 Dimensionen beobachtet werden.
+ Würden wir eine weitere Koordinate einführen, an der Änderungen gemessen werden, ist die Differzenierung in 3 Dimensionen möglich.
+ Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es könnte uns dort erlaubt sein mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen.
 
  Die Grafiken sind im übrigen nicht von mir, sondern unter folgenden Adressen im Netz zu finden:
 
