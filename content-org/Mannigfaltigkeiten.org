@@ -21,6 +21,7 @@ Um allgemein einen Eindruck einer differenzierbaren Mannigfaltigkeit zu erhasche
   - $\mathbf{x}$ eine differenzierbare Abbildung ist. Das bedeutet, dass wir annehmen, dass sich die Nachbarschaft $V$ nicht groß von $U$ unterscheidet. Sie unterscheidet sich nur infinitesimal. Der einfachste Fall dieses Verhältnisses lässt sich über die Berechnung der Steigung, also die Differenz zwischen zwei zueinander definierten Punkten aufzeigen. In folgender Grafik ist der *$dx$*-Differential-Quotient dargestellt.
 
 ** Der Differential-Quotient
+
 #+name: 3D-Differential-Quotient
 #+header: :results file drawer
 #+header: \usepackage{mathptmx}
@@ -83,8 +84,11 @@ Wir können zu der Zuordnung $\mathbf{x}$ auch sagen, dass dies eine Parametrisi
 $x_{\alpha}:(U_{\alpha}) \rightarrow S$ and $x_{\beta}:(U_{\beta}) \rightarrow S$ haben die Relation $x_{\alpha}(U_{\alpha}) \subset x_{\beta}(U_{\beta}) = W = \not0$.
 Zuordnungen(Funktionen) obiger Art, die irgendwie verkettet, bzw. verknüpft sind, sind dann differenzierbar und es kann von einer differenzierbaren Mannigfaltigkeit gesprochen werden.
 $x^{-1}_{\beta} \circ x_{\alpha}:x_{\alpha}^{-1}(W) \rightarrow R^{2}$ und $x_{\alpha}^{-1}\circ x_{\beta}:x_{\beta}^{-1}(W) \rightarrow R^{2}$
+
 ** Höher dimensionale Mannigfaltigkeit
+
 Eine differenzierbare Abbildung höheren Grades wird mit ihrer Nachbarschaft in folgender Abbildung dargestellt:
+
 #+name: 3D-Differential-Quotiedsdnt
 #+header: :results file drawer
 #+header: \usepackage{mathptmx}
@@ -280,7 +284,7 @@ Eine differenzierbare Abbildung höheren Grades wird mit ihrer Nachbarschaft in 
 
  Wie in obiger Abbilung zu erkennen, lassen sich im Prinizp auch nahe Punkte als Nachbarschaft wählen, die entsprechend differenzier- bzw. unterscheidbar ist. Statt nur eine Dimension zu beachten, können hier Änderungen in 2 Dimensionen beobachtet werden.
  Würden wir eine weitere Koordinate einführen, an der Änderungen gemessen werden, ist die Differzenierung in 3 Dimensionen möglich.
- Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es könnte uns dort erlaubt sein mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen.
+ Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es könnte uns dort erlaubt sein mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen, bevor komplizierte Ausdrücke wie verkettete Funktionen in Betracht gezogen werden müssen
 
  Die Grafiken sind im übrigen nicht von mir, sondern unter folgenden Adressen im Netz zu finden:
 

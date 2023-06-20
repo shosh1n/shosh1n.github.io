@@ -21,7 +21,10 @@ Um allgemein einen Eindruck einer differenzierbaren Mannigfaltigkeit zu erhasche
 -   Weiterhin existiert für jeden Punkt \\(p \in S\\) eine Nachbarschaft \\(V\\)
     die an \\(p\\) in \\(R^{3}\\) liegt (das ist hier zunächst abstrakt gemeint, stell dir einfach vor, dass \\(p\\) dadurch irgendeine Umgebung hat).
 -   Die Zuordnung von einer offenen Menge \\(U \subset R^{2}\\) über \\(\mathbf{x}:U \subset R^{2} \rightarrow V \cap S\\) erreicht eine Nachbarschaft, welche eine Schnittmenge mit \\(S\\) hat. Die Gestaltung dieser Zuordnung ist in ihrer Art so, dass:
-    -   \\(\mathbf{x}\\) ein differenzierbarer Homöomorphismus ist. Das bedeutet, dass wir annehmen, dass sich die Nachbarschaft \\(V\\) nicht groß von \\(U\\) unterscheidet. Sie unterscheidet sich nur infinitesimal. Der einfachste Fall dieses Verhältnisses lässt sich über die Berechnung der Steigung, also die Differenz zwischen zwei zueinander definierten Punkten aufzeigen. In folgender Grafik also der **\\(dx\\)**-Differential-Quotient.
+    -   \\(\mathbf{x}\\) eine differenzierbare Abbildung ist. Das bedeutet, dass wir annehmen, dass sich die Nachbarschaft \\(V\\) nicht groß von \\(U\\) unterscheidet. Sie unterscheidet sich nur infinitesimal. Der einfachste Fall dieses Verhältnisses lässt sich über die Berechnung der Steigung, also die Differenz zwischen zwei zueinander definierten Punkten aufzeigen. In folgender Grafik ist der **\\(dx\\)**-Differential-Quotient dargestellt.
+
+
+### Der Differential-Quotient {#der-differential-quotient}
 
 {{< figure src="/ox-hugo/3D-differentialQuotient.png" >}}
 
@@ -34,9 +37,16 @@ Wir können zu der Zuordnung \\(\mathbf{x}\\) auch sagen, dass dies eine Paramet
 Zuordnungen(Funktionen) obiger Art, die irgendwie verkettet, bzw. verknüpft sind, sind dann differenzierbar und es kann von einer differenzierbaren Mannigfaltigkeit gesprochen werden.
 \\(x^{-1}\_{\beta} \circ x\_{\alpha}:x\_{\alpha}^{-1}(W) \rightarrow R^{2}\\) und \\(x\_{\alpha}^{-1}\circ x\_{\beta}:x\_{\beta}^{-1}(W) \rightarrow R^{2}\\)
 
+
+### Höher dimensionale Mannigfaltigkeit {#höher-dimensionale-mannigfaltigkeit}
+
+Eine differenzierbare Abbildung höheren Grades wird mit ihrer Nachbarschaft in folgender Abbildung dargestellt:
+
 {{< figure src="/ox-hugo/3D-differentiadsdlQuotient.png" >}}
 
-Wie in obiger Abbilung zu erkennen, lassen sich im Prinizp auch nahe Punkte als Nachbarschaft wählen, die entsprechend differenzier- bzw. unterscheidbar ist. Statt nur eine Dimension zu beachten, können hier 3 Dimensionen beobachtet werden. Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es könnte uns dort erlaubt sein mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen.
+Wie in obiger Abbilung zu erkennen, lassen sich im Prinizp auch nahe Punkte als Nachbarschaft wählen, die entsprechend differenzier- bzw. unterscheidbar ist. Statt nur eine Dimension zu beachten, können hier Änderungen in 2 Dimensionen beobachtet werden.
+Würden wir eine weitere Koordinate einführen, an der Änderungen gemessen werden, ist die Differzenierung in 3 Dimensionen möglich.
+Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es könnte uns dort erlaubt sein mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen, bevor komplizierte Ausdrücke wie verkettete Funktionen in Betracht gezogen werden müssen
 
 Die Grafiken sind im übrigen nicht von mir, sondern unter folgenden Adressen im Netz zu finden:
 
