@@ -283,8 +283,8 @@ Eine differenzierbare Abbildung höheren Grades wird mit ihrer Nachbarschaft in 
 :end:
 
  Wie in obiger Abbilung zu erkennen, lassen sich im Prinizp auch nahe Punkte als Nachbarschaft wählen, die entsprechend differenzier- bzw. unterscheidbar ist. Statt nur eine Dimension zu beachten, können hier Änderungen in 2 Dimensionen beobachtet werden.
- Würden wir eine weitere Koordinate einführen, an der Änderungen gemessen werden, ist die Differzenierung in 3 Dimensionen möglich.
- Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es könnte uns dort erlaubt sein mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen, bevor komplizierte Ausdrücke wie verkettete Funktionen in Betracht gezogen werden müssen
+ Würden wir eine weitere Koordinate einführen, an der Änderungen gemessen werden, ist eine Differzenierung in 3 Dimensionen möglich.
+ Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es ist uns dort erlaubt mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen, bevor komplizierte Ausdrücke wie verkettete Funktionen in Betracht gezogen werden.
 
  Die Grafiken sind im übrigen nicht von mir, sondern unter folgenden Adressen im Netz zu finden:
 
