@@ -18,9 +18,267 @@ Um allgemein einen Eindruck einer differenzierbaren Mannigfaltigkeit zu erhasche
 - Weiterhin existiert für jeden Punkt $p \in S$ eine Nachbarschaft $V$
   die an $p$ in $R^{3}$ liegt (das ist hier zunächst abstrakt gemeint, stell dir einfach vor, dass $p$ dadurch irgendeine Umgebung hat).
 - Die Zuordnung von einer offenen Menge $U \subset R^{2}$ über $\mathbf{x}:U \subset R^{2} \rightarrow V \cap S$ erreicht eine Nachbarschaft, welche eine Schnittmenge mit $S$ hat. Die Gestaltung dieser Zuordnung ist in ihrer Art so, dass:
-  - $\mathbf{x}$ ein differenzierbarer Homöomorphismus ist.
+  - $\mathbf{x}$ ein differenzierbarer Homöomorphismus ist. Das bedeutet, dass wir annehmen, dass sich die Nachbarschaft $V$ nicht groß von $U$ unterscheidet. Sie unterscheidet sich nur infinitesimal. Der einfachste Fall dieses Verhältnisses lässt sich über die Berechnung der Steigung, also die Differenz zwischen zwei zueinander definierten Punkten aufzeigen. In folgender Grafik also der *$dx$*-Differential-Quotient.
+#+name: 3D-Differential-Quotient
+#+header: :results file drawer
+#+header: \usepackage{mathptmx}
+#+header: :file 3D-differentialQuotient.png
+#+header: :imagemagick yes :iminoptions -alpha off -density 500 -crop 2048x1500+200+290 :imoutoptions -geometry 400
+#+header: :headers '("\\usepackage{tikz}")
+#+header: :width="600px"
+#+begin_src latex
+\documentclass{}
+\usetikzlibrary{arrows,intersections}
+\begin{document}
+\resizebox{0.5\textwidth}{!}{%
+\begin{tikzpicture}[
+    thick,
+    >=stealth',
+    dot/.style = {
+      draw,
+      fill = white,
+      circle,
+      inner sep = 0pt,
+      minimum size = 4pt
+    }
+  ]
+  \coordinate (O) at (0,0);
+  \draw[->] (-0.3,0) -- (8,0) coordinate[label = {below:$x$}] (xmax);
+  \draw[->] (0,-0.3) -- (0,5) coordinate[label = {right:$f(x)$}] (ymax);
+  \path[name path=x] (0.3,0.5) -- (6.7,4.7);
+  \path[name path=y] plot[smooth] coordinates {(-0.3,2) (2,1.5) (4,2.8) (6,5)};
+  \scope[name intersections = {of = x and y, name = i}]
+    \fill[gray!20] (i-1) -- (i-2 |- i-1) -- (i-2) -- cycle;
+    \draw      (0.3,0.5) -- (6.7,4.7) node[pos=0.8, below right] {Sekante};
+    \draw[red] plot[smooth] coordinates {(-0.3,2) (2,1.5) (4,2.8) (6,5)};
+    \draw (i-1) node[dot, label = {above:$P$}] (i-1) {} -- node[left]
+      {$f(x_0)$} (i-1 |- O) node[dot, label = {below:$x_0$}] {};
+    \path (i-2) node[dot, label = {above:$Q$}] (i-2) {} -- (i-2 |- i-1)
+      node[dot] (i-12) {};
+    \draw           (i-12) -- (i-12 |- O) node[dot,
+                              label = {below:$x_0 + \varepsilon$}] {};
+    \draw[blue, <->] (i-2) -- node[right] {$f(x_0 + \varepsilon) - f(x_0)$}
+                              (i-12);
+    \draw[blue, <->] (i-1) -- node[below] {$\varepsilon$} (i-12);
+    \path       (i-1 |- O) -- node[below] {$\varepsilon$} (i-2 |- O);
+    \draw[gray]      (i-2) -- (i-2 -| xmax);
+    \draw[gray, <->] ([xshift = -0.5cm]i-2 -| xmax) -- node[fill = white]
+      {$f(x_0 + \varepsilon)$}  ([xshift = -0.5cm]xmax);
+  \endscope
+\end{tikzpicture}
+}%
+\end{document}
+#+end_src
+
+#+RESULTS: 3D-Differential-Quotient
+:results:
+[[file:3D-differentialQuotient.png]]
+:end:
+
+Eine ähnliche Darstellung im 3-dimensionalen lässt sich auch finden:
   - Und das /Differential/ $d\mathbf{x}_{q}:R^{2} \rightarrow R^{3}$ /injektiv/ für alle $q \in U$ ist.
 Wir können zu der Zuordnung $\mathbf{x}$ auch sagen, dass dies eine Parametrisierung von $S$ durch $p$ sei. Nimmt man nun an, dass im einzelnen mehrere Zuordnungen o.g. Art möglich sind, dann ist es möglich eine Schnittmenge $W$ finden, die nicht leer ist. Algebraisch ausgedrückt in:
 $x_{\alpha}:(U_{\alpha}) \rightarrow S$ and $x_{\beta}:(U_{\beta}) \rightarrow S$ haben die Relation $x_{\alpha}(U_{\alpha}) \subset x_{\beta}(U_{\beta}) = W = \not0$.
 Zuordnungen(Funktionen) obiger Art, die irgendwie verkettet, bzw. verknüpft sind, sind dann differenzierbar und es kann von einer differenzierbaren Mannigfaltigkeit gesprochen werden.
 $x^{-1}_{\beta} \circ x_{\alpha}:x_{\alpha}^{-1}(W) \rightarrow R^{2}$ und $x_{\alpha}^{-1}\circ x_{\beta}:x_{\beta}^{-1}(W) \rightarrow R^{2}$
+
+#+name: 3D-Differential-Quotiedsdnt
+#+header: :results file drawer
+#+header: \usepackage{mathptmx}
+#+header: :file 3D-differentiadsdlQuotient.png
+#+header: :imagemagick yes :iminoptions -alpha off -density 500 -crop 2048x1500+200+290 :imoutoptions -geometry 400
+#+header: :headers '("\\usepackage{tikz}" "\\usepackage{pgfplots}")
+#+begin_src latex
+\documentclass{}
+\usetikzlibrary{calc}
+\tikzset{
+  myarrow/.style={stealth-,shorten >=3pt,shorten <=3pt}
+}
+\pgfplotsset{
+  lineplot/.style={
+    black,
+    dashed,
+    very thin,
+    samples y=0
+  },
+  coordinate line/.style={
+    black,
+    samples y=0
+  },
+  point/.style={
+    only marks,
+    mark=*,
+    black,
+    mark size=0.5pt
+  }
+}
+\begin{document}
+      \resizebox{0.5\textwidth}{!}{%
+        \begin{tikzpicture}
+            \begin{axis}[
+                name=mfd,
+                axis lines=none,
+                declare function={
+                    f(\x,\y)=10-(\x^2+\y^2);
+                },
+                declare function={
+                    c_x(\t)=(cos(\t)+(sin(5*\t)/10))/3+1;
+                },
+                declare function={
+                    c_y(\t)=(sin(\t))/2-1;
+                },
+                declare function={
+                    c_z(\t)=f(c_x(\t),c_y(\t));
+                },
+                declare function={
+                    x_0(\t)=-1.2;
+                },
+                declare function={
+                    x_1(\t)=0.8;
+                }
+            ]
+                \addplot3[surf,domain=0:2,domain y=-2:0,]{f(x,y)};
+                \addplot3[lineplot,variable=t,domain=0:360] ({c_x(t)},{c_y(t)},{c_z(t)});
+                \addplot3[coordinate line,variable=t,domain=0:2] (t,{x_0(t)},{f(t,{x_0(t)})});
+                \addplot3[coordinate line,variable=t,domain=-2:0] ({x_1(t)},t,{f({x_1(t)},t)});
+                \addplot3[point] (1,-1,{f(1,-1)}) coordinate (a);
+                \addplot3[point](.5,{x_0(.5)},{f(.5,{x_0(.5)})}) coordinate (x_dot);
+                \addplot3[point]({x_1(-.5)},-.5,{f({x_1(-.5)},-.5)}) coordinate (y_dot);
+            \end{axis}
+            \draw [myarrow]  (x_dot) to[bend left] ++(-2cm,-4cm) node[below] {$\gamma_{(0)}$};
+            \draw [myarrow]  (y_dot) to[bend right] ++(2cm,0.5cm) node [right] {$\gamma_{(1)}$};
+            \begin{axis}[
+                at={($(mfd.north east)+(1cm,-2cm)$)},
+                anchor=north west,
+                axis lines=none,
+                declare function={
+                    c_x(\t)=(cos(\t)+(sin(5*\t)/10))/3+1;
+                },
+                declare function={
+                    c_y(\t)=(sin(\t))/2-1;
+                },
+                declare function={
+                    x_0(\t)=-1.2;
+                },
+                declare function={
+                    x_1(\t)=0.8;
+                }
+            ]
+                \addplot[lineplot,variable=t,domain=0:360]({c_x(t)},{c_y(t)});
+                \addplot[point] (1,-1) coordinate (b);
+                \addplot[coordinate line,variable=t,domain=0.6:1.4](t,{x_0(t)});
+                \addplot[coordinate line,variable=t,domain=-1.5:-0.5]({x_1(t)},t);
+                \addplot[point](.8,-.5) coordinate (P1);
+                \addplot[point](.6,-1.2) coordinate (P2);
+            \end{axis}
+            \draw [myarrow] (b) to[bend right] node [above=7pt] {$x$} (a);
+            \draw [myarrow] (P1) to[bend left] ++(-1cm,1cm) node[above] {$(x \circ \gamma_{(1)})$};
+            \draw [myarrow] (P2) to[bend left] ++(-3cm,-1cm) node[above] {$(x \circ \gamma_{(0)})$};
+        \end{tikzpicture}}%
+\end{document}
+
+#+end_src
+
+#+RESULTS:
+#+begin_export latex :results none
+\documentclass{}
+\usetikzlibrary{calc}
+\tikzset{
+  myarrow/.style={stealth-,shorten >=3pt,shorten <=3pt}
+}
+\pgfplotsset{
+  lineplot/.style={
+    black,
+    dashed,
+    very thin,
+    samples y=0
+  },
+  coordinate line/.style={
+    black,
+    samples y=0
+  },
+  point/.style={
+    only marks,
+    mark=*,
+    black,
+    mark size=0.5pt
+  }
+}
+\begin{document}
+      \resizebox{2\textwidth}{!}{%
+        \begin{tikzpicture}
+            \begin{axis}[
+                name=mfd,
+                axis lines=none,
+                declare function={
+                    f(\x,\y)=10-(\x^2+\y^2);
+                },
+                declare function={
+                    c_x(\t)=(cos(\t)+(sin(5*\t)/10))/3+1;
+                },
+                declare function={
+                    c_y(\t)=(sin(\t))/2-1;
+                },
+                declare function={
+                    c_z(\t)=f(c_x(\t),c_y(\t));
+                },
+                declare function={
+                    x_0(\t)=-1.2;
+                },
+                declare function={
+                    x_1(\t)=0.8;
+                }
+            ]
+                \addplot3[surf,domain=0:2,domain y=-2:0,]{f(x,y)};
+                \addplot3[lineplot,variable=t,domain=0:360] ({c_x(t)},{c_y(t)},{c_z(t)});
+                \addplot3[coordinate line,variable=t,domain=0:2] (t,{x_0(t)},{f(t,{x_0(t)})});
+                \addplot3[coordinate line,variable=t,domain=-2:0] ({x_1(t)},t,{f({x_1(t)},t)});
+                \addplot3[point] (1,-1,{f(1,-1)}) coordinate (a);
+                \addplot3[point](.5,{x_0(.5)},{f(.5,{x_0(.5)})}) coordinate (x_dot);
+                \addplot3[point]({x_1(-.5)},-.5,{f({x_1(-.5)},-.5)}) coordinate (y_dot);
+            \end{axis}
+            \draw [myarrow]  (x_dot) to[bend left] ++(-2cm,-4cm) node[below] {$\gamma_{(0)}$};
+            \draw [myarrow]  (y_dot) to[bend right] ++(2cm,0.5cm) node [right] {$\gamma_{(1)}$};
+            \begin{axis}[
+                at={($(mfd.north east)+(1cm,-2cm)$)},
+                anchor=north west,
+                axis lines=none,
+                declare function={
+                    c_x(\t)=(cos(\t)+(sin(5*\t)/10))/3+1;
+                },
+                declare function={
+                    c_y(\t)=(sin(\t))/2-1;
+                },
+                declare function={
+                    x_0(\t)=-1.2;
+                },
+                declare function={
+                    x_1(\t)=0.8;
+                }
+            ]
+                \addplot[lineplot,variable=t,domain=0:360]({c_x(t)},{c_y(t)});
+                \addplot[point] (1,-1) coordinate (b);
+                \addplot[coordinate line,variable=t,domain=0.6:1.4](t,{x_0(t)});
+                \addplot[coordinate line,variable=t,domain=-1.5:-0.5]({x_1(t)},t);
+                \addplot[point](.8,-.5) coordinate (P1);
+                \addplot[point](.6,-1.2) coordinate (P2);
+            \end{axis}
+            \draw [myarrow] (b) to[bend right] node [above=7pt] {$x$} (a);
+            \draw [myarrow] (P1) to[bend left] ++(-1cm,1cm) node[above] {$(x \circ \gamma_{(1)})$};
+            \draw [myarrow] (P2) to[bend left] ++(-3cm,-1cm) node[above] {$(x \circ \gamma_{(0)})$};
+        \end{tikzpicture}}%
+\end{document}
+#+end_export
+
+#+RESULTS: 3D-Differential-Quotiedsdnt
+:results:
+[[file:3D-differentiadsdlQuotient.png]]
+:end:
+
+ Wie in obiger Abbilung zu erkennen, lassen sich im Prinizp auch nahe Punkte als Nachbarschaft wählen, die entsprechend differenzier- bzw. unterscheidbar ist. Statt nur eine Dimension zu beachten, können hier 3 Dimensionen beobachtet werden. Allerdings verändert sich im Bereich einer Nachbarschaft die Steigung kaum merklich. D.h. es könnte uns dort erlaubt sein mit einfachen Rechenoperationen, wie Differenzen, Teilern o. ä. zu rechnen.
+
+ Die Grafiken sind im übrigen nicht von mir, sondern unter folgenden Adressen im Netz zu finden:
+
+[[https://texample.net/tikz/examples/linear-regression/][Differenzen-Quotient]]
+
+[[https://tex.stackexchange.com/questions/388996/a-useful-illustration-for-differential-geometry][3D-Plot]]
